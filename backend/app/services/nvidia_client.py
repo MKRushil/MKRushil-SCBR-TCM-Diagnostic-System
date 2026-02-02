@@ -27,11 +27,14 @@ class NvidiaClient:
             "Accept": "application/json"
         }
 
-    async def get_embedding(self, text: str) -> List[float]:
+    async def get_embedding(self, text: str, input_type: str = "query") -> List[float]:
         """
         獲取向量 (含：空值攔截 + 錯誤軟著陸 + Mock 降級)
+        Args:
+            text: 輸入文本
+            input_type: 'query' 或 'passage' (僅針對 E5 模型生效)
         """
-        # 🛡️ 第一道防線：空值攔截 (Input Sanitization)
+        # [防禦] 第一道防線：空值攔截 (Input Sanitization)
         if not text or not str(text).strip():
             logger.warning(f"[NvidiaClient] Embedding input is empty or None. Returning random vector.")
             return list(np.random.rand(1024))
@@ -40,13 +43,16 @@ class NvidiaClient:
         payload = {
             "input": [text],
             "model": self.embed_model,
-            "input_type": "query",
             "encoding_format": "float"
         }
         
+        # [Compatibility] Only add input_type for E5 models
+        if "e5" in self.embed_model.lower():
+            payload["input_type"] = input_type
+        
         headers = self._get_headers(self.embedding_api_key)
         
-        # 🛡️ 第二道防線：API 錯誤軟著陸 (Soft Landing)
+        # [防禦] 第二道防線：API 錯誤軟著陸 (Soft Landing)
         try:
             async with httpx.AsyncClient(timeout=30.0) as client: # Embedding 快，30s 足夠
                 response = await client.post(url, json=payload, headers=headers)

@@ -3,1000 +3,3184 @@
     "rule_id": "RULE_EXO_001",
     "category": "Exogenous",
     "syndrome_name": "風寒束表證",
-    "main_symptoms": ["惡寒重", "發熱輕", "無汗", "頭痛", "身痛"],
-    "secondary_symptoms": ["鼻塞", "流清涕", "口不渴", "咳嗽音重"],
-    "tongue_pulse": ["舌苔薄白", "脈浮緊"],
-    "exclusion": ["高熱", "咽喉紅腫疼痛", "黃涕", "汗出", "脈數"],
-    "treatment_principle": "辛溫解表，宣肺散寒"
+    "main_symptoms": [
+      "惡寒重",
+      "發熱輕",
+      "無汗",
+      "頭痛",
+      "身痛"
+    ],
+    "secondary_symptoms": [
+      "鼻塞",
+      "流清涕",
+      "口不渴",
+      "咳嗽音重"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白",
+      "脈浮緊"
+    ],
+    "exclusion": [
+      "高熱",
+      "咽喉紅腫疼痛",
+      "黃涕",
+      "汗出",
+      "脈數"
+    ],
+    "treatment_principle": "辛溫解表，宣肺散寒",
+    "eight_principles": [
+      "表",
+      "寒",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_EXO_002",
     "category": "Exogenous",
     "syndrome_name": "風熱犯表證",
-    "main_symptoms": ["發熱重", "惡寒輕", "咽喉腫痛", "有汗", "口乾"],
-    "secondary_symptoms": ["鼻塞", "流黃濁涕", "咳嗽", "痰黏黃"],
-    "tongue_pulse": ["舌邊尖紅", "舌苔薄黃", "脈浮數"],
-    "exclusion": ["惡寒重", "流清涕", "脈緊", "無汗"],
-    "treatment_principle": "辛涼解表，清熱解毒"
+    "main_symptoms": [
+      "發熱重",
+      "惡寒輕",
+      "咽喉腫痛",
+      "有汗",
+      "口乾"
+    ],
+    "secondary_symptoms": [
+      "鼻塞",
+      "流黃濁涕",
+      "咳嗽",
+      "痰黏黃"
+    ],
+    "tongue_pulse": [
+      "舌邊尖紅",
+      "舌苔薄黃",
+      "脈浮數"
+    ],
+    "exclusion": [
+      "惡寒重",
+      "流清涕",
+      "脈緊",
+      "無汗"
+    ],
+    "treatment_principle": "辛涼解表，清熱解毒",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_EXO_003",
     "category": "Exogenous",
     "syndrome_name": "暑濕襲表證",
-    "main_symptoms": ["身熱", "微惡風", "汗出不解", "頭昏重脹", "肢體困重"],
-    "secondary_symptoms": ["胸悶", "噁心嘔吐", "納呆", "心煩", "小便短赤"],
-    "tongue_pulse": ["舌苔黃膩", "脈濡數"],
-    "exclusion": ["高熱無汗", "單純惡寒", "脈浮緊"],
-    "treatment_principle": "清暑祛濕解表"
+    "main_symptoms": [
+      "身熱",
+      "微惡風",
+      "汗出不解",
+      "頭昏重脹",
+      "肢體困重"
+    ],
+    "secondary_symptoms": [
+      "胸悶",
+      "噁心嘔吐",
+      "納呆",
+      "心煩",
+      "小便短赤"
+    ],
+    "tongue_pulse": [
+      "舌苔黃膩",
+      "脈濡數"
+    ],
+    "exclusion": [
+      "高熱無汗",
+      "單純惡寒",
+      "脈浮緊"
+    ],
+    "treatment_principle": "清暑祛濕解表",
+    "eight_principles": [
+      "表",
+      "濕",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_EXO_004",
     "category": "Exogenous",
     "syndrome_name": "少陽證 (半表半裡)",
-    "main_symptoms": ["寒熱往來", "胸脅苦滿", "默默不欲飲食", "心煩喜嘔"],
-    "secondary_symptoms": ["口苦", "咽乾", "目眩"],
-    "tongue_pulse": ["舌苔薄白", "脈弦"],
-    "exclusion": ["持續高熱 (陽明)", "單純惡寒 (太陽)", "大便秘結"],
-    "treatment_principle": "和解少陽"
+    "main_symptoms": [
+      "寒熱往來",
+      "胸脅苦滿",
+      "默默不欲飲食",
+      "心煩喜嘔"
+    ],
+    "secondary_symptoms": [
+      "口苦",
+      "咽乾",
+      "目眩"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白",
+      "脈弦"
+    ],
+    "exclusion": [
+      "持續高熱 (陽明)",
+      "單純惡寒 (太陽)",
+      "大便秘結"
+    ],
+    "treatment_principle": "和解少陽",
+    "eight_principles": [
+      "半表半裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_EXO_005",
     "category": "Exogenous",
     "syndrome_name": "陽明經證 (實熱)",
-    "main_symptoms": ["大熱", "大汗", "大渴", "喜冷飲"],
-    "secondary_symptoms": ["面赤", "心煩", "氣粗", "小便短赤"],
-    "tongue_pulse": ["舌紅苔黃燥", "脈洪大"],
-    "exclusion": ["惡寒", "無汗", "脈浮緊", "腹部劇痛拒按 (腑證)"],
-    "treatment_principle": "清熱生津"
+    "main_symptoms": [
+      "大熱",
+      "大汗",
+      "大渴",
+      "喜冷飲"
+    ],
+    "secondary_symptoms": [
+      "面赤",
+      "心煩",
+      "氣粗",
+      "小便短赤"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃燥",
+      "脈洪大"
+    ],
+    "exclusion": [
+      "惡寒",
+      "無汗",
+      "脈浮緊",
+      "腹部劇痛拒按 (腑證)"
+    ],
+    "treatment_principle": "清熱生津",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_EXO_006",
     "category": "Exogenous",
     "syndrome_name": "陽明腑證 (熱結)",
-    "main_symptoms": ["日晡潮熱", "手足濈然汗出", "腹滿痛拒按", "大便秘結"],
-    "secondary_symptoms": ["煩躁", "譫語", "循衣摸床"],
-    "tongue_pulse": ["舌紅苔焦黃起刺", "脈沉實"],
-    "exclusion": ["大便通暢", "脈浮", "畏寒"],
-    "treatment_principle": "峻下熱結"
+    "main_symptoms": [
+      "日晡潮熱",
+      "手足濈然汗出",
+      "腹滿痛拒按",
+      "大便秘結"
+    ],
+    "secondary_symptoms": [
+      "煩躁",
+      "譫語",
+      "循衣摸床"
+    ],
+    "tongue_pulse": [
+      "舌紅苔焦黃起刺",
+      "脈沉實"
+    ],
+    "exclusion": [
+      "大便通暢",
+      "脈浮",
+      "畏寒"
+    ],
+    "treatment_principle": "峻下熱結",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_EXO_007",
     "category": "Exogenous",
     "syndrome_name": "營血熱毒證",
-    "main_symptoms": ["身熱夜甚", "斑疹隱隱", "神昏譫語", "口乾不欲飲"],
-    "secondary_symptoms": ["躁擾不寧", "出血", "舌絳", "脈細數"],
-    "tongue_pulse": ["舌質深紅或絳", "無苔或少苔", "脈細數"],
-    "exclusion": ["惡寒", "舌苔厚膩", "脈浮"],
-    "treatment_principle": "清營涼血，解毒開竅"
+    "main_symptoms": [
+      "身熱夜甚",
+      "斑疹隱隱",
+      "神昏譫語",
+      "口乾不欲飲"
+    ],
+    "secondary_symptoms": [
+      "躁擾不寧",
+      "出血",
+      "舌絳",
+      "脈細數"
+    ],
+    "tongue_pulse": [
+      "舌質深紅或絳",
+      "無苔或少苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "惡寒",
+      "舌苔厚膩",
+      "脈浮"
+    ],
+    "treatment_principle": "清營涼血，解毒開竅",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_001",
     "category": "QiBlood",
     "syndrome_name": "氣虛證",
-    "main_symptoms": ["少氣懶言", "神疲乏力", "頭暈目眩", "自汗"],
-    "secondary_symptoms": ["活動後加重", "面色晄白", "聲音低微"],
-    "tongue_pulse": ["舌淡嫩", "舌體胖大", "有齒痕", "脈虛無力"],
-    "exclusion": ["脹痛 (氣滯)", "刺痛 (血瘀)", "高熱實證"],
-    "treatment_principle": "補益元氣"
+    "main_symptoms": [
+      "少氣懶言",
+      "神疲乏力",
+      "頭暈目眩",
+      "自汗"
+    ],
+    "secondary_symptoms": [
+      "活動後加重",
+      "面色晄白",
+      "聲音低微"
+    ],
+    "tongue_pulse": [
+      "舌淡嫩",
+      "舌體胖大",
+      "有齒痕",
+      "脈虛無力"
+    ],
+    "exclusion": [
+      "脹痛 (氣滯)",
+      "刺痛 (血瘀)",
+      "高熱實證"
+    ],
+    "treatment_principle": "補益元氣",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_QB_002",
     "category": "QiBlood",
     "syndrome_name": "氣滯證",
-    "main_symptoms": ["脹痛", "竄痛", "胸脅脘腹脹滿", "攻竄不定"],
-    "secondary_symptoms": ["噯氣", "太息 (嘆氣)", "情緒波動時加重", "矢氣 (放屁) 後緩解"],
-    "tongue_pulse": ["舌苔薄白", "脈弦"],
-    "exclusion": ["刺痛 (血瘀)", "固定痛", "出血"],
-    "treatment_principle": "行氣疏導"
+    "main_symptoms": [
+      "脹痛",
+      "竄痛",
+      "胸脅脘腹脹滿",
+      "攻竄不定"
+    ],
+    "secondary_symptoms": [
+      "噯氣",
+      "太息 (嘆氣)",
+      "情緒波動時加重",
+      "矢氣 (放屁) 後緩解"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白",
+      "脈弦"
+    ],
+    "exclusion": [
+      "刺痛 (血瘀)",
+      "固定痛",
+      "出血"
+    ],
+    "treatment_principle": "行氣疏導",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_003",
     "category": "QiBlood",
     "syndrome_name": "氣逆證",
-    "main_symptoms": ["咳嗽喘息", "呃逆", "嘔吐", "頭痛眩暈", "昏厥"],
-    "secondary_symptoms": ["面紅目赤", "咯血", "吐血"],
-    "tongue_pulse": ["視具體臟腑而定", "多脈弦或滑"],
-    "exclusion": ["氣陷 (下墜感)", "腹瀉"],
-    "treatment_principle": "降氣平逆"
+    "main_symptoms": [
+      "咳嗽喘息",
+      "呃逆",
+      "嘔吐",
+      "頭痛眩暈",
+      "昏厥"
+    ],
+    "secondary_symptoms": [
+      "面紅目赤",
+      "咯血",
+      "吐血"
+    ],
+    "tongue_pulse": [
+      "視具體臟腑而定",
+      "多脈弦或滑"
+    ],
+    "exclusion": [
+      "氣陷 (下墜感)",
+      "腹瀉"
+    ],
+    "treatment_principle": "降氣平逆",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_004",
     "category": "QiBlood",
     "syndrome_name": "氣陷證",
-    "main_symptoms": ["脘腹墜脹", "內臟下垂 (脫肛/子宮脫垂)", "頭暈目眩", "久瀉久痢"],
-    "secondary_symptoms": ["神疲乏力", "食後昏困", "便意頻數"],
-    "tongue_pulse": ["舌淡苔白", "脈弱"],
-    "exclusion": ["氣逆 (嘔吐/喘)", "實熱證"],
-    "treatment_principle": "補氣升陽"
+    "main_symptoms": [
+      "脘腹墜脹",
+      "內臟下垂 (脫肛/子宮脫垂)",
+      "頭暈目眩",
+      "久瀉久痢"
+    ],
+    "secondary_symptoms": [
+      "神疲乏力",
+      "食後昏困",
+      "便意頻數"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈弱"
+    ],
+    "exclusion": [
+      "氣逆 (嘔吐/喘)",
+      "實熱證"
+    ],
+    "treatment_principle": "補氣升陽",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_QB_005",
     "category": "QiBlood",
     "syndrome_name": "血虛證",
-    "main_symptoms": ["面色萎黃", "唇甲色淡", "頭暈眼花", "心悸多夢"],
-    "secondary_symptoms": ["手足發麻", "月經量少色淡", "閉經", "視物模糊"],
-    "tongue_pulse": ["舌質淡", "脈細無力"],
-    "exclusion": ["面色紅赤", "舌紅", "脈數"],
-    "treatment_principle": "補血養血"
+    "main_symptoms": [
+      "面色萎黃",
+      "唇甲色淡",
+      "頭暈眼花",
+      "心悸多夢"
+    ],
+    "secondary_symptoms": [
+      "手足發麻",
+      "月經量少色淡",
+      "閉經",
+      "視物模糊"
+    ],
+    "tongue_pulse": [
+      "舌質淡",
+      "脈細無力"
+    ],
+    "exclusion": [
+      "面色紅赤",
+      "舌紅",
+      "脈數"
+    ],
+    "treatment_principle": "補血養血",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_QB_006",
     "category": "QiBlood",
     "syndrome_name": "血瘀證",
-    "main_symptoms": ["刺痛", "痛處固定", "拒按", "夜間痛甚"],
-    "secondary_symptoms": ["腫塊", "出血紫暗有塊", "面色晦暗", "肌膚甲錯"],
-    "tongue_pulse": ["舌紫暗", "有瘀點瘀斑", "脈澀或結代"],
-    "exclusion": ["脹痛 (氣滯)", "遊走痛 (風)", "喜溫喜按 (虛寒)"],
-    "treatment_principle": "活血化瘀"
+    "main_symptoms": [
+      "刺痛",
+      "痛處固定",
+      "拒按",
+      "夜間痛甚"
+    ],
+    "secondary_symptoms": [
+      "腫塊",
+      "出血紫暗有塊",
+      "面色晦暗",
+      "肌膚甲錯"
+    ],
+    "tongue_pulse": [
+      "舌紫暗",
+      "有瘀點瘀斑",
+      "脈澀或結代"
+    ],
+    "exclusion": [
+      "脹痛 (氣滯)",
+      "遊走痛 (風)",
+      "喜溫喜按 (虛寒)"
+    ],
+    "treatment_principle": "活血化瘀",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_007",
     "category": "QiBlood",
     "syndrome_name": "血熱證",
-    "main_symptoms": ["出血色鮮紅", "身熱", "口渴", "心煩"],
-    "secondary_symptoms": ["斑疹", "鼻衄", "吐血", "月經先期量多", "面紅"],
-    "tongue_pulse": ["舌紅絳", "脈數"],
-    "exclusion": ["出血色暗 (瘀)", "出血色淡 (虛)", "畏寒"],
-    "treatment_principle": "清熱涼血"
+    "main_symptoms": [
+      "出血色鮮紅",
+      "身熱",
+      "口渴",
+      "心煩"
+    ],
+    "secondary_symptoms": [
+      "斑疹",
+      "鼻衄",
+      "吐血",
+      "月經先期量多",
+      "面紅"
+    ],
+    "tongue_pulse": [
+      "舌紅絳",
+      "脈數"
+    ],
+    "exclusion": [
+      "出血色暗 (瘀)",
+      "出血色淡 (虛)",
+      "畏寒"
+    ],
+    "treatment_principle": "清熱涼血",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_008",
     "category": "QiBlood",
     "syndrome_name": "血寒證",
-    "main_symptoms": ["局部冷痛", "膚色青白", "得溫痛減", "遇寒加重"],
-    "secondary_symptoms": ["手足冰冷", "小腹冷痛", "月經後期痛經"],
-    "tongue_pulse": ["舌淡紫苔白", "脈沉遲澀"],
-    "exclusion": ["發熱", "紅腫", "脈數"],
-    "treatment_principle": "溫經散寒"
+    "main_symptoms": [
+      "局部冷痛",
+      "膚色青白",
+      "得溫痛減",
+      "遇寒加重"
+    ],
+    "secondary_symptoms": [
+      "手足冰冷",
+      "小腹冷痛",
+      "月經後期痛經"
+    ],
+    "tongue_pulse": [
+      "舌淡紫苔白",
+      "脈沉遲澀"
+    ],
+    "exclusion": [
+      "發熱",
+      "紅腫",
+      "脈數"
+    ],
+    "treatment_principle": "溫經散寒",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_009",
     "category": "QiBlood",
     "syndrome_name": "津液虧虛證 (內燥)",
-    "main_symptoms": ["口燥咽乾", "唇裂", "皮膚乾燥", "小便短少", "大便乾結"],
-    "secondary_symptoms": ["乾咳少痰", "消瘦", "五心煩熱"],
-    "tongue_pulse": ["舌紅少津", "無苔", "脈細數"],
-    "exclusion": ["水腫", "痰多", "舌苔膩"],
-    "treatment_principle": "滋陰生津"
+    "main_symptoms": [
+      "口燥咽乾",
+      "唇裂",
+      "皮膚乾燥",
+      "小便短少",
+      "大便乾結"
+    ],
+    "secondary_symptoms": [
+      "乾咳少痰",
+      "消瘦",
+      "五心煩熱"
+    ],
+    "tongue_pulse": [
+      "舌紅少津",
+      "無苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "水腫",
+      "痰多",
+      "舌苔膩"
+    ],
+    "treatment_principle": "滋陰生津",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_QB_010",
     "category": "QiBlood",
     "syndrome_name": "痰濕證",
-    "main_symptoms": ["胸悶脘痞", "咳嗽痰多", "肢體困重", "形體肥胖"],
-    "secondary_symptoms": ["噁心嘔吐", "頭暈目眩", "口黏", "面部垢膩"],
-    "tongue_pulse": ["舌體胖大", "舌苔白膩或黃膩", "脈滑"],
-    "exclusion": ["乾咳無痰", "舌紅少苔", "消瘦"],
-    "treatment_principle": "燥濕化痰"
+    "main_symptoms": [
+      "胸悶脘痞",
+      "咳嗽痰多",
+      "肢體困重",
+      "形體肥胖"
+    ],
+    "secondary_symptoms": [
+      "噁心嘔吐",
+      "頭暈目眩",
+      "口黏",
+      "面部垢膩"
+    ],
+    "tongue_pulse": [
+      "舌體胖大",
+      "舌苔白膩或黃膩",
+      "脈滑"
+    ],
+    "exclusion": [
+      "乾咳無痰",
+      "舌紅少苔",
+      "消瘦"
+    ],
+    "treatment_principle": "燥濕化痰",
+    "eight_principles": [
+      "裡",
+      "濕",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_011",
     "category": "QiBlood",
     "syndrome_name": "飲證 (水飲)",
-    "main_symptoms": ["咳嗽喘息", "痰液清稀量多", "胸脅脹痛", "眩暈心悸"],
-    "secondary_symptoms": ["腸鳴瀝瀝", "背寒如掌大", "浮腫"],
-    "tongue_pulse": ["舌苔白滑", "脈弦"],
-    "exclusion": ["痰黃稠 (熱痰)", "口乾", "舌苔燥"],
-    "treatment_principle": "溫化水飲"
+    "main_symptoms": [
+      "咳嗽喘息",
+      "痰液清稀量多",
+      "胸脅脹痛",
+      "眩暈心悸"
+    ],
+    "secondary_symptoms": [
+      "腸鳴瀝瀝",
+      "背寒如掌大",
+      "浮腫"
+    ],
+    "tongue_pulse": [
+      "舌苔白滑",
+      "脈弦"
+    ],
+    "exclusion": [
+      "痰黃稠 (熱痰)",
+      "口乾",
+      "舌苔燥"
+    ],
+    "treatment_principle": "溫化水飲",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "濕",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_QB_012",
     "category": "QiBlood",
     "syndrome_name": "氣血兩虛證",
-    "main_symptoms": ["神疲乏力", "少氣懶言", "面色萎黃", "心悸失眠"],
-    "secondary_symptoms": ["頭暈目眩", "肢體麻木", "自汗"],
-    "tongue_pulse": ["舌淡嫩", "脈細弱"],
-    "exclusion": ["實證", "高熱", "苔厚膩"],
-    "treatment_principle": "氣血雙補"
+    "main_symptoms": [
+      "神疲乏力",
+      "少氣懶言",
+      "面色萎黃",
+      "心悸失眠"
+    ],
+    "secondary_symptoms": [
+      "頭暈目眩",
+      "肢體麻木",
+      "自汗"
+    ],
+    "tongue_pulse": [
+      "舌淡嫩",
+      "脈細弱"
+    ],
+    "exclusion": [
+      "實證",
+      "高熱",
+      "苔厚膩"
+    ],
+    "treatment_principle": "氣血雙補",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_QB_013",
     "category": "QiBlood",
     "syndrome_name": "氣滯血瘀證",
-    "main_symptoms": ["局部脹痛刺痛並見", "胸脅脹滿", "痛處固定", "拒按"],
-    "secondary_symptoms": ["情志抑鬱", "紫紺", "經閉痛經", "腫塊"],
-    "tongue_pulse": ["舌紫暗", "有瘀點", "脈弦澀"],
-    "exclusion": ["虛證", "喜按", "面色蒼白"],
-    "treatment_principle": "行氣活血"
+    "main_symptoms": [
+      "局部脹痛刺痛並見",
+      "胸脅脹滿",
+      "痛處固定",
+      "拒按"
+    ],
+    "secondary_symptoms": [
+      "情志抑鬱",
+      "紫紺",
+      "經閉痛經",
+      "腫塊"
+    ],
+    "tongue_pulse": [
+      "舌紫暗",
+      "有瘀點",
+      "脈弦澀"
+    ],
+    "exclusion": [
+      "虛證",
+      "喜按",
+      "面色蒼白"
+    ],
+    "treatment_principle": "行氣活血",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_001",
     "category": "ZangFu",
     "syndrome_name": "心氣虛證",
-    "main_symptoms": ["心悸", "氣短", "神疲乏力", "活動後加重"],
-    "secondary_symptoms": ["自汗", "胸悶", "面色淡白", "脈結代"],
-    "tongue_pulse": ["舌淡苔白", "脈虛或結代"],
-    "exclusion": ["畏寒肢冷 (心陽虛)", "心煩 (心陰虛)", "劇烈胸痛 (心血瘀阻)"],
-    "treatment_principle": "補益心氣"
+    "main_symptoms": [
+      "心悸",
+      "氣短",
+      "神疲乏力",
+      "活動後加重"
+    ],
+    "secondary_symptoms": [
+      "自汗",
+      "胸悶",
+      "面色淡白",
+      "脈結代"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈虛或結代"
+    ],
+    "exclusion": [
+      "畏寒肢冷 (心陽虛)",
+      "心煩 (心陰虛)",
+      "劇烈胸痛 (心血瘀阻)"
+    ],
+    "treatment_principle": "補益心氣",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_002",
     "category": "ZangFu",
     "syndrome_name": "心陽虛證",
-    "main_symptoms": ["心悸怔忡", "心胸憋悶", "畏寒肢冷", "面色晄白"],
-    "secondary_symptoms": ["氣短", "自汗", "舌淡胖", "脈沉遲或微細"],
-    "tongue_pulse": ["舌淡胖嫩苔白滑", "脈沉遲無力"],
-    "exclusion": ["身熱", "舌紅", "單純氣短無寒象 (心氣虛)"],
-    "treatment_principle": "溫補心陽"
+    "main_symptoms": [
+      "心悸怔忡",
+      "心胸憋悶",
+      "畏寒肢冷",
+      "面色晄白"
+    ],
+    "secondary_symptoms": [
+      "氣短",
+      "自汗",
+      "舌淡胖",
+      "脈沉遲或微細"
+    ],
+    "tongue_pulse": [
+      "舌淡胖嫩苔白滑",
+      "脈沉遲無力"
+    ],
+    "exclusion": [
+      "身熱",
+      "舌紅",
+      "單純氣短無寒象 (心氣虛)"
+    ],
+    "treatment_principle": "溫補心陽",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "寒"
+    ]
   },
   {
     "rule_id": "RULE_ZF_003",
     "category": "ZangFu",
     "syndrome_name": "心血虛證",
-    "main_symptoms": ["心悸", "失眠多夢", "健忘", "面色萎黃"],
-    "secondary_symptoms": ["眩暈", "唇甲色淡", "神疲"],
-    "tongue_pulse": ["舌淡苔白", "脈細無力"],
-    "exclusion": ["五心煩熱 (心陰虛)", "口苦 (肝火)", "舌紅"],
-    "treatment_principle": "養血安神"
+    "main_symptoms": [
+      "心悸",
+      "失眠多夢",
+      "健忘",
+      "面色萎黃"
+    ],
+    "secondary_symptoms": [
+      "眩暈",
+      "唇甲色淡",
+      "神疲"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈細無力"
+    ],
+    "exclusion": [
+      "五心煩熱 (心陰虛)",
+      "口苦 (肝火)",
+      "舌紅"
+    ],
+    "treatment_principle": "養血安神",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_004",
     "category": "ZangFu",
     "syndrome_name": "心陰虛證",
-    "main_symptoms": ["心悸", "失眠", "五心煩熱", "潮熱盜汗"],
-    "secondary_symptoms": ["健忘", "口乾咽燥", "兩顴潮紅"],
-    "tongue_pulse": ["舌紅少苔", "脈細數"],
-    "exclusion": ["面色萎黃 (心血虛)", "畏寒 (心陽虛)", "苔厚膩"],
-    "treatment_principle": "滋陰養心"
+    "main_symptoms": [
+      "心悸",
+      "失眠",
+      "五心煩熱",
+      "潮熱盜汗"
+    ],
+    "secondary_symptoms": [
+      "健忘",
+      "口乾咽燥",
+      "兩顴潮紅"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "面色萎黃 (心血虛)",
+      "畏寒 (心陽虛)",
+      "苔厚膩"
+    ],
+    "treatment_principle": "滋陰養心",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_005",
     "category": "ZangFu",
     "syndrome_name": "心火亢盛證",
-    "main_symptoms": ["心煩失眠", "口舌生瘡", "面赤口渴", "尿黃"],
-    "secondary_symptoms": ["吐血", "衄血", "便秘", "狂躁"],
-    "tongue_pulse": ["舌尖紅絳", "脈數有力"],
-    "exclusion": ["虛煩 (陰虛)", "脈細數 (陰虛)", "下利清穀"],
-    "treatment_principle": "清心瀉火"
+    "main_symptoms": [
+      "心煩失眠",
+      "口舌生瘡",
+      "面赤口渴",
+      "尿黃"
+    ],
+    "secondary_symptoms": [
+      "吐血",
+      "衄血",
+      "便秘",
+      "狂躁"
+    ],
+    "tongue_pulse": [
+      "舌尖紅絳",
+      "脈數有力"
+    ],
+    "exclusion": [
+      "虛煩 (陰虛)",
+      "脈細數 (陰虛)",
+      "下利清穀"
+    ],
+    "treatment_principle": "清心瀉火",
+    "eight_principles": [
+      "裡",
+      "實",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_006",
     "category": "ZangFu",
     "syndrome_name": "心脈痺阻證 (瘀血)",
-    "main_symptoms": ["心悸", "心胸刺痛", "痛引肩背", "痛處固定"],
-    "secondary_symptoms": ["胸悶", "口唇紫暗", "爪甲青紫", "冷汗"],
-    "tongue_pulse": ["舌紫暗或有瘀點", "脈澀或結代"],
-    "exclusion": ["悶痛 (痰濁)", "脹痛 (氣滯)", "隱痛喜按 (虛證)"],
-    "treatment_principle": "活血化瘀，通絡止痛"
+    "main_symptoms": [
+      "心悸",
+      "心胸刺痛",
+      "痛引肩背",
+      "痛處固定"
+    ],
+    "secondary_symptoms": [
+      "胸悶",
+      "口唇紫暗",
+      "爪甲青紫",
+      "冷汗"
+    ],
+    "tongue_pulse": [
+      "舌紫暗或有瘀點",
+      "脈澀或結代"
+    ],
+    "exclusion": [
+      "悶痛 (痰濁)",
+      "脹痛 (氣滯)",
+      "隱痛喜按 (虛證)"
+    ],
+    "treatment_principle": "活血化瘀，通絡止痛",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_007",
     "category": "ZangFu",
     "syndrome_name": "痰迷心竅證",
-    "main_symptoms": ["神識癡呆", "精神抑鬱", "表情淡漠", "喃喃獨語"],
-    "secondary_symptoms": ["舉止失常", "面色晦滯", "喉間痰鳴", "卒然昏倒"],
-    "tongue_pulse": ["舌苔白膩", "脈滑"],
-    "exclusion": ["狂躁妄動 (痰火)", "高熱神昏 (熱陷心包)"],
-    "treatment_principle": "豁痰開竅"
+    "main_symptoms": [
+      "神識癡呆",
+      "精神抑鬱",
+      "表情淡漠",
+      "喃喃獨語"
+    ],
+    "secondary_symptoms": [
+      "舉止失常",
+      "面色晦滯",
+      "喉間痰鳴",
+      "卒然昏倒"
+    ],
+    "tongue_pulse": [
+      "舌苔白膩",
+      "脈滑"
+    ],
+    "exclusion": [
+      "狂躁妄動 (痰火)",
+      "高熱神昏 (熱陷心包)"
+    ],
+    "treatment_principle": "豁痰開竅",
+    "eight_principles": [
+      "裡",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_008",
     "category": "ZangFu",
     "syndrome_name": "肺氣虛證",
-    "main_symptoms": ["咳嗽無力", "氣短喘促", "自汗", "易感冒"],
-    "secondary_symptoms": ["神疲乏力", "面色晄白", "聲音低怯", "畏風"],
-    "tongue_pulse": ["舌淡苔白", "脈虛弱"],
-    "exclusion": ["咳聲重濁 (實證)", "黃痰 (熱證)", "乾咳無痰 (陰虛)"],
-    "treatment_principle": "補益肺氣"
+    "main_symptoms": [
+      "咳嗽無力",
+      "氣短喘促",
+      "自汗",
+      "易感冒"
+    ],
+    "secondary_symptoms": [
+      "神疲乏力",
+      "面色晄白",
+      "聲音低怯",
+      "畏風"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈虛弱"
+    ],
+    "exclusion": [
+      "咳聲重濁 (實證)",
+      "黃痰 (熱證)",
+      "乾咳無痰 (陰虛)"
+    ],
+    "treatment_principle": "補益肺氣",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_009",
     "category": "ZangFu",
     "syndrome_name": "肺陰虛證",
-    "main_symptoms": ["乾咳無痰", "痰少黏白", "口乾咽燥", "聲音嘶啞"],
-    "secondary_symptoms": ["午後潮熱", "盜汗", "顴紅", "痰中帶血"],
-    "tongue_pulse": ["舌紅少津", "脈細數"],
-    "exclusion": ["痰多 (濕痰)", "惡寒發熱 (表證)", "苔厚膩"],
-    "treatment_principle": "滋陰潤肺"
+    "main_symptoms": [
+      "乾咳無痰",
+      "痰少黏白",
+      "口乾咽燥",
+      "聲音嘶啞"
+    ],
+    "secondary_symptoms": [
+      "午後潮熱",
+      "盜汗",
+      "顴紅",
+      "痰中帶血"
+    ],
+    "tongue_pulse": [
+      "舌紅少津",
+      "脈細數"
+    ],
+    "exclusion": [
+      "痰多 (濕痰)",
+      "惡寒發熱 (表證)",
+      "苔厚膩"
+    ],
+    "treatment_principle": "滋陰潤肺",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_010",
     "category": "ZangFu",
     "syndrome_name": "風寒束肺證",
-    "main_symptoms": ["咳嗽", "痰稀薄色白", "鼻塞流清涕", "惡寒"],
-    "secondary_symptoms": ["發熱", "無汗", "頭痛", "骨節痠痛"],
-    "tongue_pulse": ["舌苔薄白", "脈浮緊"],
-    "exclusion": ["黃痰 (風熱)", "咽喉紅腫", "汗出"],
-    "treatment_principle": "疏風散寒，宣肺止咳"
+    "main_symptoms": [
+      "咳嗽",
+      "痰稀薄色白",
+      "鼻塞流清涕",
+      "惡寒"
+    ],
+    "secondary_symptoms": [
+      "發熱",
+      "無汗",
+      "頭痛",
+      "骨節痠痛"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白",
+      "脈浮緊"
+    ],
+    "exclusion": [
+      "黃痰 (風熱)",
+      "咽喉紅腫",
+      "汗出"
+    ],
+    "treatment_principle": "疏風散寒，宣肺止咳",
+    "eight_principles": [
+      "表",
+      "寒",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_011",
     "category": "ZangFu",
     "syndrome_name": "風熱犯肺證",
-    "main_symptoms": ["咳嗽", "痰黃黏稠", "咽喉腫痛", "發熱"],
-    "secondary_symptoms": ["鼻流黃涕", "口渴", "汗出", "惡風"],
-    "tongue_pulse": ["舌邊尖紅苔薄黃", "脈浮數"],
-    "exclusion": ["清涕 (風寒)", "惡寒重", "脈緊"],
-    "treatment_principle": "疏風清熱，宣肺化痰"
+    "main_symptoms": [
+      "咳嗽",
+      "痰黃黏稠",
+      "咽喉腫痛",
+      "發熱"
+    ],
+    "secondary_symptoms": [
+      "鼻流黃涕",
+      "口渴",
+      "汗出",
+      "惡風"
+    ],
+    "tongue_pulse": [
+      "舌邊尖紅苔薄黃",
+      "脈浮數"
+    ],
+    "exclusion": [
+      "清涕 (風寒)",
+      "惡寒重",
+      "脈緊"
+    ],
+    "treatment_principle": "疏風清熱，宣肺化痰",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_012",
     "category": "ZangFu",
     "syndrome_name": "燥邪傷肺證",
-    "main_symptoms": ["乾咳", "無痰或痰少黏", "鼻燥咽乾", "胸痛"],
-    "secondary_symptoms": ["痰中帶血", "口渴", "發熱微惡風寒"],
-    "tongue_pulse": ["舌紅少苔", "脈浮數或細數"],
-    "exclusion": ["痰多 (濕痰)", "高熱", "苔膩"],
-    "treatment_principle": "清肺潤燥"
+    "main_symptoms": [
+      "乾咳",
+      "無痰或痰少黏",
+      "鼻燥咽乾",
+      "胸痛"
+    ],
+    "secondary_symptoms": [
+      "痰中帶血",
+      "口渴",
+      "發熱微惡風寒"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔",
+      "脈浮數或細數"
+    ],
+    "exclusion": [
+      "痰多 (濕痰)",
+      "高熱",
+      "苔膩"
+    ],
+    "treatment_principle": "清肺潤燥",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實",
+      "燥"
+    ]
   },
   {
     "rule_id": "RULE_ZF_013",
     "category": "ZangFu",
     "syndrome_name": "痰熱壅肺證",
-    "main_symptoms": ["咳嗽氣喘", "痰多黃稠", "胸悶", "發熱"],
-    "secondary_symptoms": ["喉中痰鳴", "面紅", "口渴", "便秘"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["痰白清稀 (寒痰)", "乾咳 (燥/陰虛)", "惡寒重"],
-    "treatment_principle": "清熱化痰，肅肺平喘"
+    "main_symptoms": [
+      "咳嗽氣喘",
+      "痰多黃稠",
+      "胸悶",
+      "發熱"
+    ],
+    "secondary_symptoms": [
+      "喉中痰鳴",
+      "面紅",
+      "口渴",
+      "便秘"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "痰白清稀 (寒痰)",
+      "乾咳 (燥/陰虛)",
+      "惡寒重"
+    ],
+    "treatment_principle": "清熱化痰，肅肺平喘",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_014",
     "category": "ZangFu",
     "syndrome_name": "寒痰阻肺證",
-    "main_symptoms": ["咳嗽氣喘", "痰多色白清稀", "胸悶", "形寒肢冷"],
-    "secondary_symptoms": ["喉中痰鳴", "易受寒誘發", "舌淡苔白滑", "脈弦緊"],
-    "tongue_pulse": ["舌苔白滑", "脈沉緊或弦滑"],
-    "exclusion": ["黃痰 (熱痰)", "發熱", "咽痛"],
-    "treatment_principle": "溫肺化痰"
+    "main_symptoms": [
+      "咳嗽氣喘",
+      "痰多色白清稀",
+      "胸悶",
+      "形寒肢冷"
+    ],
+    "secondary_symptoms": [
+      "喉中痰鳴",
+      "易受寒誘發",
+      "舌淡苔白滑",
+      "脈弦緊"
+    ],
+    "tongue_pulse": [
+      "舌苔白滑",
+      "脈沉緊或弦滑"
+    ],
+    "exclusion": [
+      "黃痰 (熱痰)",
+      "發熱",
+      "咽痛"
+    ],
+    "treatment_principle": "溫肺化痰",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_015",
     "category": "ZangFu",
     "syndrome_name": "大腸濕熱證",
-    "main_symptoms": ["腹痛腹瀉", "下痢膿血", "裡急後重", "肛門灼熱"],
-    "secondary_symptoms": ["發熱", "口渴", "小便短赤", "身重"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["完穀不化 (脾腎陽虛)", "大便清稀無臭 (寒濕)"],
-    "treatment_principle": "清熱利濕，解毒"
+    "main_symptoms": [
+      "腹痛腹瀉",
+      "下痢膿血",
+      "裡急後重",
+      "肛門灼熱"
+    ],
+    "secondary_symptoms": [
+      "發熱",
+      "口渴",
+      "小便短赤",
+      "身重"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "完穀不化 (脾腎陽虛)",
+      "大便清稀無臭 (寒濕)"
+    ],
+    "treatment_principle": "清熱利濕，解毒",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_016",
     "category": "ZangFu",
     "syndrome_name": "大腸津虧證",
-    "main_symptoms": ["大便乾結", "排便困難", "數日一行", "口乾咽燥"],
-    "secondary_symptoms": ["口臭", "頭暈", "腹脹", "形體消瘦"],
-    "tongue_pulse": ["舌紅少津", "脈細澀"],
-    "exclusion": ["腹滿痛拒按 (實熱)", "大便不乾 (氣虛/陽虛)"],
-    "treatment_principle": "潤腸通便"
+    "main_symptoms": [
+      "大便乾結",
+      "排便困難",
+      "數日一行",
+      "口乾咽燥"
+    ],
+    "secondary_symptoms": [
+      "口臭",
+      "頭暈",
+      "腹脹",
+      "形體消瘦"
+    ],
+    "tongue_pulse": [
+      "舌紅少津",
+      "脈細澀"
+    ],
+    "exclusion": [
+      "腹滿痛拒按 (實熱)",
+      "大便不乾 (氣虛/陽虛)"
+    ],
+    "treatment_principle": "潤腸通便",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "燥"
+    ]
   },
   {
     "rule_id": "RULE_ZF_017",
     "category": "ZangFu",
     "syndrome_name": "腸癰 (大腸熱毒)",
-    "main_symptoms": ["右下腹劇痛", "拒按", "發熱", "噁心嘔吐"],
-    "secondary_symptoms": ["右腿屈伸不利", "高熱寒戰", "便秘"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈洪數或滑數"],
-    "exclusion": ["全腹痛", "左下腹痛", "喜溫喜按"],
-    "treatment_principle": "清熱解毒，消癰排膿"
+    "main_symptoms": [
+      "右下腹劇痛",
+      "拒按",
+      "發熱",
+      "噁心嘔吐"
+    ],
+    "secondary_symptoms": [
+      "右腿屈伸不利",
+      "高熱寒戰",
+      "便秘"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈洪數或滑數"
+    ],
+    "exclusion": [
+      "全腹痛",
+      "左下腹痛",
+      "喜溫喜按"
+    ],
+    "treatment_principle": "清熱解毒，消癰排膿",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_018",
     "category": "ZangFu",
     "syndrome_name": "脾氣虛證",
-    "main_symptoms": ["食少納呆", "腹脹", "大便溏薄", "神疲乏力"],
-    "secondary_symptoms": ["少氣懶言", "面色萎黃", "形體消瘦", "食後腹脹加重"],
-    "tongue_pulse": ["舌淡苔白", "脈緩弱"],
-    "exclusion": ["脘腹冷痛 (陽虛)", "舌紅苔黃 (濕熱)", "噯腐吞酸 (食滯)"],
-    "treatment_principle": "健脾益氣"
+    "main_symptoms": [
+      "食少納呆",
+      "腹脹",
+      "大便溏薄",
+      "神疲乏力"
+    ],
+    "secondary_symptoms": [
+      "少氣懶言",
+      "面色萎黃",
+      "形體消瘦",
+      "食後腹脹加重"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈緩弱"
+    ],
+    "exclusion": [
+      "脘腹冷痛 (陽虛)",
+      "舌紅苔黃 (濕熱)",
+      "噯腐吞酸 (食滯)"
+    ],
+    "treatment_principle": "健脾益氣",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_019",
     "category": "ZangFu",
     "syndrome_name": "脾陽虛證",
-    "main_symptoms": ["腹痛綿綿", "喜溫喜按", "大便稀溏", "畏寒肢冷"],
-    "secondary_symptoms": ["口淡不渴", "肢體浮腫", "白帶清稀", "小便清長"],
-    "tongue_pulse": ["舌淡胖苔白滑", "脈沉遲無力"],
-    "exclusion": ["身熱", "舌紅", "腹痛拒按 (實寒/積滯)"],
-    "treatment_principle": "溫中健脾"
+    "main_symptoms": [
+      "腹痛綿綿",
+      "喜溫喜按",
+      "大便稀溏",
+      "畏寒肢冷"
+    ],
+    "secondary_symptoms": [
+      "口淡不渴",
+      "肢體浮腫",
+      "白帶清稀",
+      "小便清長"
+    ],
+    "tongue_pulse": [
+      "舌淡胖苔白滑",
+      "脈沉遲無力"
+    ],
+    "exclusion": [
+      "身熱",
+      "舌紅",
+      "腹痛拒按 (實寒/積滯)"
+    ],
+    "treatment_principle": "溫中健脾",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "寒"
+    ]
   },
   {
     "rule_id": "RULE_ZF_020",
     "category": "ZangFu",
     "syndrome_name": "脾氣下陷證",
-    "main_symptoms": ["脘腹墜脹", "便意頻數", "久瀉不止", "內臟下垂"],
-    "secondary_symptoms": ["頭暈目眩", "氣短乏力", "脫肛", "子宮脫垂"],
-    "tongue_pulse": ["舌淡苔白", "脈弱"],
-    "exclusion": ["嘔吐 (氣逆)", "突發腹瀉 (濕熱/寒濕)"],
-    "treatment_principle": "補中益氣，升陽舉陷"
+    "main_symptoms": [
+      "脘腹墜脹",
+      "便意頻數",
+      "久瀉不止",
+      "內臟下垂"
+    ],
+    "secondary_symptoms": [
+      "頭暈目眩",
+      "氣短乏力",
+      "脫肛",
+      "子宮脫垂"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈弱"
+    ],
+    "exclusion": [
+      "嘔吐 (氣逆)",
+      "突發腹瀉 (濕熱/寒濕)"
+    ],
+    "treatment_principle": "補中益氣，升陽舉陷",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_021",
     "category": "ZangFu",
     "syndrome_name": "脾不統血證",
-    "main_symptoms": ["便血", "尿血", "崩漏", "皮下出血"],
-    "secondary_symptoms": ["血色淡紅", "神疲乏力", "面色萎黃", "食少便溏"],
-    "tongue_pulse": ["舌淡苔白", "脈細無力"],
-    "exclusion": ["血色鮮紅 (血熱)", "血色紫暗 (血瘀)", "腹痛"],
-    "treatment_principle": "補脾攝血"
+    "main_symptoms": [
+      "便血",
+      "尿血",
+      "崩漏",
+      "皮下出血"
+    ],
+    "secondary_symptoms": [
+      "血色淡紅",
+      "神疲乏力",
+      "面色萎黃",
+      "食少便溏"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈細無力"
+    ],
+    "exclusion": [
+      "血色鮮紅 (血熱)",
+      "血色紫暗 (血瘀)",
+      "腹痛"
+    ],
+    "treatment_principle": "補脾攝血",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_022",
     "category": "ZangFu",
     "syndrome_name": "寒濕困脾證",
-    "main_symptoms": ["脘腹痞悶", "口膩口淡", "頭身困重", "便溏"],
-    "secondary_symptoms": ["噁心嘔吐", "不欲飲食", "面色晦暗", "肢體浮腫"],
-    "tongue_pulse": ["舌苔白膩", "脈濡緩"],
-    "exclusion": ["口苦 (濕熱)", "舌苔黃膩 (濕熱)", "高熱"],
-    "treatment_principle": "燥濕健脾"
+    "main_symptoms": [
+      "脘腹痞悶",
+      "口膩口淡",
+      "頭身困重",
+      "便溏"
+    ],
+    "secondary_symptoms": [
+      "噁心嘔吐",
+      "不欲飲食",
+      "面色晦暗",
+      "肢體浮腫"
+    ],
+    "tongue_pulse": [
+      "舌苔白膩",
+      "脈濡緩"
+    ],
+    "exclusion": [
+      "口苦 (濕熱)",
+      "舌苔黃膩 (濕熱)",
+      "高熱"
+    ],
+    "treatment_principle": "燥濕健脾",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_023",
     "category": "ZangFu",
     "syndrome_name": "濕熱蘊脾證",
-    "main_symptoms": ["脘腹痞悶", "口苦口黏", "肢體困重", "大便黏滯"],
-    "secondary_symptoms": ["納呆噁心", "身熱不揚", "汗出不解", "身目發黃"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈濡數"],
-    "exclusion": ["舌苔白膩 (寒濕)", "脈浮 (表證)", "高熱大汗 (陽明)"],
-    "treatment_principle": "清利濕熱"
+    "main_symptoms": [
+      "脘腹痞悶",
+      "口苦口黏",
+      "肢體困重",
+      "大便黏滯"
+    ],
+    "secondary_symptoms": [
+      "納呆噁心",
+      "身熱不揚",
+      "汗出不解",
+      "身目發黃"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈濡數"
+    ],
+    "exclusion": [
+      "舌苔白膩 (寒濕)",
+      "脈浮 (表證)",
+      "高熱大汗 (陽明)"
+    ],
+    "treatment_principle": "清利濕熱",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_024",
     "category": "ZangFu",
     "syndrome_name": "胃陰虛證",
-    "main_symptoms": ["胃脘隱痛", "飢不欲食", "口燥咽乾", "大便乾結"],
-    "secondary_symptoms": ["乾嘔呃逆", "消瘦", "舌紅少津"],
-    "tongue_pulse": ["舌紅少苔或無苔", "脈細數"],
-    "exclusion": ["舌苔厚膩 (食滯/濕熱)", "喜溫喜按 (虛寒)", "畏寒"],
-    "treatment_principle": "滋養胃陰"
+    "main_symptoms": [
+      "胃脘隱痛",
+      "飢不欲食",
+      "口燥咽乾",
+      "大便乾結"
+    ],
+    "secondary_symptoms": [
+      "乾嘔呃逆",
+      "消瘦",
+      "舌紅少津"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔或無苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "舌苔厚膩 (食滯/濕熱)",
+      "喜溫喜按 (虛寒)",
+      "畏寒"
+    ],
+    "treatment_principle": "滋養胃陰",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_025",
     "category": "ZangFu",
     "syndrome_name": "胃火熾盛證",
-    "main_symptoms": ["胃脘灼痛", "消穀善飢", "口臭", "牙齦腫痛"],
-    "secondary_symptoms": ["渴喜冷飲", "大便秘結", "吐血", "衄血"],
-    "tongue_pulse": ["舌紅苔黃", "脈滑數"],
-    "exclusion": ["飢不欲食 (陰虛)", "喜溫 (寒證)", "畏寒"],
-    "treatment_principle": "清胃瀉火"
+    "main_symptoms": [
+      "胃脘灼痛",
+      "消穀善飢",
+      "口臭",
+      "牙齦腫痛"
+    ],
+    "secondary_symptoms": [
+      "渴喜冷飲",
+      "大便秘結",
+      "吐血",
+      "衄血"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "飢不欲食 (陰虛)",
+      "喜溫 (寒證)",
+      "畏寒"
+    ],
+    "treatment_principle": "清胃瀉火",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_026",
     "category": "ZangFu",
     "syndrome_name": "寒滯胃脘證",
-    "main_symptoms": ["胃脘冷痛", "痛勢劇烈", "遇寒加重", "得溫痛減"],
-    "secondary_symptoms": ["口淡不渴", "嘔吐清水", "面色蒼白", "手足不溫"],
-    "tongue_pulse": ["舌苔白", "脈弦緊"],
-    "exclusion": ["隱隱作痛 (虛寒)", "灼痛 (熱證)", "喜按"],
-    "treatment_principle": "溫胃散寒"
+    "main_symptoms": [
+      "胃脘冷痛",
+      "痛勢劇烈",
+      "遇寒加重",
+      "得溫痛減"
+    ],
+    "secondary_symptoms": [
+      "口淡不渴",
+      "嘔吐清水",
+      "面色蒼白",
+      "手足不溫"
+    ],
+    "tongue_pulse": [
+      "舌苔白",
+      "脈弦緊"
+    ],
+    "exclusion": [
+      "隱隱作痛 (虛寒)",
+      "灼痛 (熱證)",
+      "喜按"
+    ],
+    "treatment_principle": "溫胃散寒",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_027",
     "category": "ZangFu",
     "syndrome_name": "食滯胃脘證",
-    "main_symptoms": ["胃脘脹痛", "噯腐吞酸", "厭食", "嘔吐酸腐"],
-    "secondary_symptoms": ["矢氣臭如敗卵", "大便臭穢", "吐後或瀉後痛減"],
-    "tongue_pulse": ["舌苔厚膩", "脈滑"],
-    "exclusion": ["飢餓痛甚 (虛證)", "腹痛喜按", "頭暈"],
-    "treatment_principle": "消食導滯"
+    "main_symptoms": [
+      "胃脘脹痛",
+      "噯腐吞酸",
+      "厭食",
+      "嘔吐酸腐"
+    ],
+    "secondary_symptoms": [
+      "矢氣臭如敗卵",
+      "大便臭穢",
+      "吐後或瀉後痛減"
+    ],
+    "tongue_pulse": [
+      "舌苔厚膩",
+      "脈滑"
+    ],
+    "exclusion": [
+      "飢餓痛甚 (虛證)",
+      "腹痛喜按",
+      "頭暈"
+    ],
+    "treatment_principle": "消食導滯",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_028",
     "category": "ZangFu",
     "syndrome_name": "肝氣鬱結證",
-    "main_symptoms": ["胸脅脹痛", "情志抑鬱", "善太息 (嘆氣)", "咽中異物感"],
-    "secondary_symptoms": ["乳房脹痛", "月經不調", "痛經", "少腹脹痛"],
-    "tongue_pulse": ["舌苔薄白", "脈弦"],
-    "exclusion": ["刺痛 (瘀血)", "口苦 (化火)", "高熱"],
-    "treatment_principle": "疏肝解鬱"
+    "main_symptoms": [
+      "胸脅脹痛",
+      "情志抑鬱",
+      "善太息 (嘆氣)",
+      "咽中異物感"
+    ],
+    "secondary_symptoms": [
+      "乳房脹痛",
+      "月經不調",
+      "痛經",
+      "少腹脹痛"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白",
+      "脈弦"
+    ],
+    "exclusion": [
+      "刺痛 (瘀血)",
+      "口苦 (化火)",
+      "高熱"
+    ],
+    "treatment_principle": "疏肝解鬱",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_029",
     "category": "ZangFu",
     "syndrome_name": "肝火上炎證",
-    "main_symptoms": ["頭痛眩暈", "面紅目赤", "口苦口乾", "急躁易怒"],
-    "secondary_symptoms": ["耳鳴如潮", "失眠多夢", "脅肋灼痛", "便秘尿黃"],
-    "tongue_pulse": ["舌紅苔黃", "脈弦數"],
-    "exclusion": ["面白 (血虛)", "腰膝痠軟 (陰虛陽亢)", "頭重 (濕熱)"],
-    "treatment_principle": "清肝瀉火"
+    "main_symptoms": [
+      "頭痛眩暈",
+      "面紅目赤",
+      "口苦口乾",
+      "急躁易怒"
+    ],
+    "secondary_symptoms": [
+      "耳鳴如潮",
+      "失眠多夢",
+      "脅肋灼痛",
+      "便秘尿黃"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃",
+      "脈弦數"
+    ],
+    "exclusion": [
+      "面白 (血虛)",
+      "腰膝痠軟 (陰虛陽亢)",
+      "頭重 (濕熱)"
+    ],
+    "treatment_principle": "清肝瀉火",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_030",
     "category": "ZangFu",
     "syndrome_name": "肝血虛證",
-    "main_symptoms": ["視物模糊", "肢體麻木", "月經量少", "面色無華"],
-    "secondary_symptoms": ["爪甲不榮", "眩暈耳鳴", "多夢", "經色淡"],
-    "tongue_pulse": ["舌淡苔白", "脈細"],
-    "exclusion": ["口苦", "舌紅", "脈數 (陰虛/實熱)"],
-    "treatment_principle": "補血養肝"
+    "main_symptoms": [
+      "視物模糊",
+      "肢體麻木",
+      "月經量少",
+      "面色無華"
+    ],
+    "secondary_symptoms": [
+      "爪甲不榮",
+      "眩暈耳鳴",
+      "多夢",
+      "經色淡"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈細"
+    ],
+    "exclusion": [
+      "口苦",
+      "舌紅",
+      "脈數 (陰虛/實熱)"
+    ],
+    "treatment_principle": "補血養肝",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_031",
     "category": "ZangFu",
     "syndrome_name": "肝陰虛證",
-    "main_symptoms": ["頭暈眼花", "兩目乾澀", "脅肋隱痛", "面部烘熱"],
-    "secondary_symptoms": ["五心煩熱", "盜汗", "口燥咽乾", "急躁易怒"],
-    "tongue_pulse": ["舌紅少津", "脈弦細數"],
-    "exclusion": ["面色萎黃 (血虛)", "苔黃膩 (濕熱)", "口不渴"],
-    "treatment_principle": "滋養肝陰"
+    "main_symptoms": [
+      "頭暈眼花",
+      "兩目乾澀",
+      "脅肋隱痛",
+      "面部烘熱"
+    ],
+    "secondary_symptoms": [
+      "五心煩熱",
+      "盜汗",
+      "口燥咽乾",
+      "急躁易怒"
+    ],
+    "tongue_pulse": [
+      "舌紅少津",
+      "脈弦細數"
+    ],
+    "exclusion": [
+      "面色萎黃 (血虛)",
+      "苔黃膩 (濕熱)",
+      "口不渴"
+    ],
+    "treatment_principle": "滋養肝陰",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_032",
     "category": "ZangFu",
     "syndrome_name": "肝陽上亢證",
-    "main_symptoms": ["眩暈耳鳴", "頭目脹痛", "頭重腳輕", "腰膝痠軟"],
-    "secondary_symptoms": ["面赤", "急躁易怒", "失眠多夢", "記憶力減退"],
-    "tongue_pulse": ["舌紅", "脈弦有力或弦細數"],
-    "exclusion": ["高熱", "口苦便秘 (純實火)", "無腰痠 (單純氣鬱化火)"],
-    "treatment_principle": "平肝潛陽"
+    "main_symptoms": [
+      "眩暈耳鳴",
+      "頭目脹痛",
+      "頭重腳輕",
+      "腰膝痠軟"
+    ],
+    "secondary_symptoms": [
+      "面赤",
+      "急躁易怒",
+      "失眠多夢",
+      "記憶力減退"
+    ],
+    "tongue_pulse": [
+      "舌紅",
+      "脈弦有力或弦細數"
+    ],
+    "exclusion": [
+      "高熱",
+      "口苦便秘 (純實火)",
+      "無腰痠 (單純氣鬱化火)"
+    ],
+    "treatment_principle": "平肝潛陽",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_033",
     "category": "ZangFu",
     "syndrome_name": "肝陽化風證 (中風先兆)",
-    "main_symptoms": ["眩暈欲仆", "肢體震顫", "手足麻木", "語言不利"],
-    "secondary_symptoms": ["頭痛搖晃", "步履不穩", "面赤", "舌強"],
-    "tongue_pulse": ["舌紅苔膩或無苔", "脈弦有力"],
-    "exclusion": ["高熱神昏 (熱極生風)", "虛風內動 (單純血虛無陽亢象)"],
-    "treatment_principle": "鎮肝熄風"
+    "main_symptoms": [
+      "眩暈欲仆",
+      "肢體震顫",
+      "手足麻木",
+      "語言不利"
+    ],
+    "secondary_symptoms": [
+      "頭痛搖晃",
+      "步履不穩",
+      "面赤",
+      "舌強"
+    ],
+    "tongue_pulse": [
+      "舌紅苔膩或無苔",
+      "脈弦有力"
+    ],
+    "exclusion": [
+      "高熱神昏 (熱極生風)",
+      "虛風內動 (單純血虛無陽亢象)"
+    ],
+    "treatment_principle": "鎮肝熄風",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_034",
     "category": "ZangFu",
     "syndrome_name": "肝膽濕熱證",
-    "main_symptoms": ["脅肋灼痛", "口苦", "身目發黃", "陰部搔癢/濕疹"],
-    "secondary_symptoms": ["噁心嘔吐", "厭食腹脹", "小便黃赤", "帶下黃臭"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈弦數"],
-    "exclusion": ["苔白膩 (寒濕)", "無濕熱象 (單純肝火)", "面白"],
-    "treatment_principle": "清熱利濕，疏膽退黃"
+    "main_symptoms": [
+      "脅肋灼痛",
+      "口苦",
+      "身目發黃",
+      "陰部搔癢/濕疹"
+    ],
+    "secondary_symptoms": [
+      "噁心嘔吐",
+      "厭食腹脹",
+      "小便黃赤",
+      "帶下黃臭"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈弦數"
+    ],
+    "exclusion": [
+      "苔白膩 (寒濕)",
+      "無濕熱象 (單純肝火)",
+      "面白"
+    ],
+    "treatment_principle": "清熱利濕，疏膽退黃",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_035",
     "category": "ZangFu",
     "syndrome_name": "寒滯肝脈證",
-    "main_symptoms": ["少腹冷痛", "睪丸墜脹冷痛", "陰囊收縮", "遇寒加重"],
-    "secondary_symptoms": ["得溫痛減", "形寒肢冷", "面色蒼白"],
-    "tongue_pulse": ["舌苔白滑", "脈沉弦或遲"],
-    "exclusion": ["發熱", "紅腫", "睪丸灼熱 (濕熱)"],
-    "treatment_principle": "暖肝散寒"
+    "main_symptoms": [
+      "少腹冷痛",
+      "睪丸墜脹冷痛",
+      "陰囊收縮",
+      "遇寒加重"
+    ],
+    "secondary_symptoms": [
+      "得溫痛減",
+      "形寒肢冷",
+      "面色蒼白"
+    ],
+    "tongue_pulse": [
+      "舌苔白滑",
+      "脈沉弦或遲"
+    ],
+    "exclusion": [
+      "發熱",
+      "紅腫",
+      "睪丸灼熱 (濕熱)"
+    ],
+    "treatment_principle": "暖肝散寒",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_036",
     "category": "ZangFu",
     "syndrome_name": "腎陽虛證",
-    "main_symptoms": ["腰膝痠冷", "畏寒肢冷", "夜尿頻多", "性慾減退"],
-    "secondary_symptoms": ["陽痿早洩", "宮寒不孕", "面色晄白", "下肢水腫"],
-    "tongue_pulse": ["舌淡胖苔白", "脈沉遲或微細"],
-    "exclusion": ["腰痛拒按 (瘀血/閃挫)", "小便短赤 (濕熱)", "五心煩熱"],
-    "treatment_principle": "溫補腎陽"
+    "main_symptoms": [
+      "腰膝痠冷",
+      "畏寒肢冷",
+      "夜尿頻多",
+      "性慾減退"
+    ],
+    "secondary_symptoms": [
+      "陽痿早洩",
+      "宮寒不孕",
+      "面色晄白",
+      "下肢水腫"
+    ],
+    "tongue_pulse": [
+      "舌淡胖苔白",
+      "脈沉遲或微細"
+    ],
+    "exclusion": [
+      "腰痛拒按 (瘀血/閃挫)",
+      "小便短赤 (濕熱)",
+      "五心煩熱"
+    ],
+    "treatment_principle": "溫補腎陽",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "寒"
+    ]
   },
   {
     "rule_id": "RULE_ZF_037",
     "category": "ZangFu",
     "syndrome_name": "腎陰虛證",
-    "main_symptoms": ["腰膝痠軟", "頭暈耳鳴", "五心煩熱", "潮熱盜汗"],
-    "secondary_symptoms": ["失眠多夢", "遺精", "口燥咽乾", "形體消瘦"],
-    "tongue_pulse": ["舌紅少苔", "脈細數"],
-    "exclusion": ["畏寒肢冷 (陽虛)", "苔黃膩 (濕熱)", "口不渴"],
-    "treatment_principle": "滋補腎陰"
+    "main_symptoms": [
+      "腰膝痠軟",
+      "頭暈耳鳴",
+      "五心煩熱",
+      "潮熱盜汗"
+    ],
+    "secondary_symptoms": [
+      "失眠多夢",
+      "遺精",
+      "口燥咽乾",
+      "形體消瘦"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "畏寒肢冷 (陽虛)",
+      "苔黃膩 (濕熱)",
+      "口不渴"
+    ],
+    "treatment_principle": "滋補腎陰",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_038",
     "category": "ZangFu",
     "syndrome_name": "腎氣不固證",
-    "main_symptoms": ["腰膝痠軟", "小便頻數而清", "尿後餘瀝", "遺尿"],
-    "secondary_symptoms": ["滑精早洩", "胎動不安", "滑胎", "神疲乏力"],
-    "tongue_pulse": ["舌淡苔白", "脈沉弱"],
-    "exclusion": ["尿痛 (淋證)", "尿赤 (熱證)", "實證"],
-    "treatment_principle": "補腎固攝"
+    "main_symptoms": [
+      "腰膝痠軟",
+      "小便頻數而清",
+      "尿後餘瀝",
+      "遺尿"
+    ],
+    "secondary_symptoms": [
+      "滑精早洩",
+      "胎動不安",
+      "滑胎",
+      "神疲乏力"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈沉弱"
+    ],
+    "exclusion": [
+      "尿痛 (淋證)",
+      "尿赤 (熱證)",
+      "實證"
+    ],
+    "treatment_principle": "補腎固攝",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_039",
     "category": "ZangFu",
     "syndrome_name": "腎精不足證",
-    "main_symptoms": ["小兒發育遲緩", "囟門遲閉", "成人早衰", "健忘恍惚"],
-    "secondary_symptoms": ["耳鳴耳聾", "髮脫齒搖", "足痿無力", "不孕不育"],
-    "tongue_pulse": ["舌淡紅", "脈沉細"],
-    "exclusion": ["急性起病", "實邪致病"],
-    "treatment_principle": "補腎益精"
+    "main_symptoms": [
+      "小兒發育遲緩",
+      "囟門遲閉",
+      "成人早衰",
+      "健忘恍惚"
+    ],
+    "secondary_symptoms": [
+      "耳鳴耳聾",
+      "髮脫齒搖",
+      "足痿無力",
+      "不孕不育"
+    ],
+    "tongue_pulse": [
+      "舌淡紅",
+      "脈沉細"
+    ],
+    "exclusion": [
+      "急性起病",
+      "實邪致病"
+    ],
+    "treatment_principle": "補腎益精",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_040",
     "category": "ZangFu",
     "syndrome_name": "膀胱濕熱證",
-    "main_symptoms": ["尿頻尿急", "尿道灼痛", "小便短赤", "小腹脹痛"],
-    "secondary_symptoms": ["發熱腰痛", "尿血", "尿有砂石", "口苦"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["小便清長 (腎氣虛)", "無痛 (氣虛)", "老年排尿無力 (陽虛)"],
-    "treatment_principle": "清熱利濕通淋"
+    "main_symptoms": [
+      "尿頻尿急",
+      "尿道灼痛",
+      "小便短赤",
+      "小腹脹痛"
+    ],
+    "secondary_symptoms": [
+      "發熱腰痛",
+      "尿血",
+      "尿有砂石",
+      "口苦"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "小便清長 (腎氣虛)",
+      "無痛 (氣虛)",
+      "老年排尿無力 (陽虛)"
+    ],
+    "treatment_principle": "清熱利濕通淋",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_041",
     "category": "ZangFu",
     "syndrome_name": "心腎不交證",
-    "main_symptoms": ["心煩失眠", "心悸", "腰膝痠軟", "多夢遺精"],
-    "secondary_symptoms": ["頭暈耳鳴", "五心煩熱", "潮熱盜汗", "口乾"],
-    "tongue_pulse": ["舌紅少苔", "脈細數"],
-    "exclusion": ["苔黃膩 (痰熱擾心)", "面色蒼白 (心膽氣虛)"],
-    "treatment_principle": "滋陰降火，交通心腎"
+    "main_symptoms": [
+      "心煩失眠",
+      "心悸",
+      "腰膝痠軟",
+      "多夢遺精"
+    ],
+    "secondary_symptoms": [
+      "頭暈耳鳴",
+      "五心煩熱",
+      "潮熱盜汗",
+      "口乾"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "苔黃膩 (痰熱擾心)",
+      "面色蒼白 (心膽氣虛)"
+    ],
+    "treatment_principle": "滋陰降火，交通心腎",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_042",
     "category": "ZangFu",
     "syndrome_name": "心脾兩虛證",
-    "main_symptoms": ["心悸怔忡", "失眠多夢", "食少腹脹", "便溏"],
-    "secondary_symptoms": ["神疲乏力", "面色萎黃", "皮下出血", "月經量少色淡"],
-    "tongue_pulse": ["舌淡嫩", "脈細弱"],
-    "exclusion": ["口苦 (肝火)", "苔膩 (痰濕)", "腹痛拒按"],
-    "treatment_principle": "補益心脾"
+    "main_symptoms": [
+      "心悸怔忡",
+      "失眠多夢",
+      "食少腹脹",
+      "便溏"
+    ],
+    "secondary_symptoms": [
+      "神疲乏力",
+      "面色萎黃",
+      "皮下出血",
+      "月經量少色淡"
+    ],
+    "tongue_pulse": [
+      "舌淡嫩",
+      "脈細弱"
+    ],
+    "exclusion": [
+      "口苦 (肝火)",
+      "苔膩 (痰濕)",
+      "腹痛拒按"
+    ],
+    "treatment_principle": "補益心脾",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_043",
     "category": "ZangFu",
     "syndrome_name": "肝腎陰虛證",
-    "main_symptoms": ["頭暈目眩", "耳鳴", "腰膝痠軟", "兩目乾澀"],
-    "secondary_symptoms": ["五心煩熱", "脅痛", "盜汗", "手足蠕動"],
-    "tongue_pulse": ["舌紅少津", "脈弦細數"],
-    "exclusion": ["面色無華 (血虛)", "苔膩 (濕熱)", "畏寒"],
-    "treatment_principle": "滋補肝腎"
+    "main_symptoms": [
+      "頭暈目眩",
+      "耳鳴",
+      "腰膝痠軟",
+      "兩目乾澀"
+    ],
+    "secondary_symptoms": [
+      "五心煩熱",
+      "脅痛",
+      "盜汗",
+      "手足蠕動"
+    ],
+    "tongue_pulse": [
+      "舌紅少津",
+      "脈弦細數"
+    ],
+    "exclusion": [
+      "面色無華 (血虛)",
+      "苔膩 (濕熱)",
+      "畏寒"
+    ],
+    "treatment_principle": "滋補肝腎",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_044",
     "category": "ZangFu",
     "syndrome_name": "脾腎陽虛證",
-    "main_symptoms": ["五更泄瀉 (晨起腹瀉)", "腰膝痠冷", "形寒肢冷", "面部肢體浮腫"],
-    "secondary_symptoms": ["久瀉不止", "完穀不化", "腹痛喜溫喜按", "小便不利"],
-    "tongue_pulse": ["舌淡胖苔白滑", "脈沉遲無力"],
-    "exclusion": ["暴瀉 (濕熱/寒濕)", "瀉下臭穢", "發熱"],
-    "treatment_principle": "溫補脾腎"
+    "main_symptoms": [
+      "五更泄瀉 (晨起腹瀉)",
+      "腰膝痠冷",
+      "形寒肢冷",
+      "面部肢體浮腫"
+    ],
+    "secondary_symptoms": [
+      "久瀉不止",
+      "完穀不化",
+      "腹痛喜溫喜按",
+      "小便不利"
+    ],
+    "tongue_pulse": [
+      "舌淡胖苔白滑",
+      "脈沉遲無力"
+    ],
+    "exclusion": [
+      "暴瀉 (濕熱/寒濕)",
+      "瀉下臭穢",
+      "發熱"
+    ],
+    "treatment_principle": "溫補脾腎",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "寒"
+    ]
   },
   {
     "rule_id": "RULE_ZF_045",
     "category": "ZangFu",
     "syndrome_name": "肺腎氣虛證",
-    "main_symptoms": ["喘息短氣", "呼多吸少 (腎不納氣)", "動則喘甚", "自汗"],
-    "secondary_symptoms": ["腰膝痠軟", "咳嗽無力", "痰清稀", "聲音低怯"],
-    "tongue_pulse": ["舌淡苔白", "脈弱"],
-    "exclusion": ["痰鳴氣粗 (實喘)", "發熱 (表證)", "苔黃膩"],
-    "treatment_principle": "補肺益腎，納氣平喘"
+    "main_symptoms": [
+      "喘息短氣",
+      "呼多吸少 (腎不納氣)",
+      "動則喘甚",
+      "自汗"
+    ],
+    "secondary_symptoms": [
+      "腰膝痠軟",
+      "咳嗽無力",
+      "痰清稀",
+      "聲音低怯"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈弱"
+    ],
+    "exclusion": [
+      "痰鳴氣粗 (實喘)",
+      "發熱 (表證)",
+      "苔黃膩"
+    ],
+    "treatment_principle": "補肺益腎，納氣平喘",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_046",
     "category": "ZangFu",
     "syndrome_name": "肝胃不和證",
-    "main_symptoms": ["胃脘脹痛", "連及兩脅", "噯氣", "情緒波動加重"],
-    "secondary_symptoms": ["吞酸嘈雜", "煩躁易怒", "飲食減少", "呃逆"],
-    "tongue_pulse": ["舌苔薄白或薄黃", "脈弦"],
-    "exclusion": ["刺痛 (瘀血)", "喜溫喜按 (虛寒)", "高熱"],
-    "treatment_principle": "疏肝和胃"
+    "main_symptoms": [
+      "胃脘脹痛",
+      "連及兩脅",
+      "噯氣",
+      "情緒波動加重"
+    ],
+    "secondary_symptoms": [
+      "吞酸嘈雜",
+      "煩躁易怒",
+      "飲食減少",
+      "呃逆"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白或薄黃",
+      "脈弦"
+    ],
+    "exclusion": [
+      "刺痛 (瘀血)",
+      "喜溫喜按 (虛寒)",
+      "高熱"
+    ],
+    "treatment_principle": "疏肝和胃",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_047",
     "category": "ZangFu",
     "syndrome_name": "肝鬱脾虛證",
-    "main_symptoms": ["胸脅脹滿", "腹痛即瀉", "瀉後痛減", "情志抑鬱"],
-    "secondary_symptoms": ["食少納呆", "腸鳴矢氣", "善太息", "便溏不爽"],
-    "tongue_pulse": ["舌淡苔白", "脈弦緩"],
-    "exclusion": ["裡急後重 (濕熱)", "五更瀉 (腎陽虛)", "暴瀉"],
-    "treatment_principle": "疏肝健脾"
+    "main_symptoms": [
+      "胸脅脹滿",
+      "腹痛即瀉",
+      "瀉後痛減",
+      "情志抑鬱"
+    ],
+    "secondary_symptoms": [
+      "食少納呆",
+      "腸鳴矢氣",
+      "善太息",
+      "便溏不爽"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈弦緩"
+    ],
+    "exclusion": [
+      "裡急後重 (濕熱)",
+      "五更瀉 (腎陽虛)",
+      "暴瀉"
+    ],
+    "treatment_principle": "疏肝健脾",
+    "eight_principles": [
+      "裡",
+      "實",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_048",
     "category": "ZangFu",
     "syndrome_name": "肝火犯肺證",
-    "main_symptoms": ["咳嗽陣作", "咳時脅痛", "面紅目赤", "口苦"],
-    "secondary_symptoms": ["痰黃稠", "咯血", "急躁易怒", "咽乾"],
-    "tongue_pulse": ["舌紅苔薄黃", "脈弦數"],
-    "exclusion": ["惡寒發熱 (表證)", "無脅痛 (單純肺熱)", "陰虛火旺"],
-    "treatment_principle": "清肝瀉肺"
+    "main_symptoms": [
+      "咳嗽陣作",
+      "咳時脅痛",
+      "面紅目赤",
+      "口苦"
+    ],
+    "secondary_symptoms": [
+      "痰黃稠",
+      "咯血",
+      "急躁易怒",
+      "咽乾"
+    ],
+    "tongue_pulse": [
+      "舌紅苔薄黃",
+      "脈弦數"
+    ],
+    "exclusion": [
+      "惡寒發熱 (表證)",
+      "無脅痛 (單純肺熱)",
+      "陰虛火旺"
+    ],
+    "treatment_principle": "清肝瀉肺",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_049",
     "category": "ZangFu",
     "syndrome_name": "肺脾氣虛證",
-    "main_symptoms": ["久咳無力", "痰多清稀", "食少腹脹", "便溏"],
-    "secondary_symptoms": ["神疲乏力", "面色晄白", "聲低懶言", "肢體困重"],
-    "tongue_pulse": ["舌淡胖有齒痕", "脈細弱"],
-    "exclusion": ["黃痰 (熱證)", "乾咳 (陰虛)", "急性咳嗽"],
-    "treatment_principle": "補肺健脾"
+    "main_symptoms": [
+      "久咳無力",
+      "痰多清稀",
+      "食少腹脹",
+      "便溏"
+    ],
+    "secondary_symptoms": [
+      "神疲乏力",
+      "面色晄白",
+      "聲低懶言",
+      "肢體困重"
+    ],
+    "tongue_pulse": [
+      "舌淡胖有齒痕",
+      "脈細弱"
+    ],
+    "exclusion": [
+      "黃痰 (熱證)",
+      "乾咳 (陰虛)",
+      "急性咳嗽"
+    ],
+    "treatment_principle": "補肺健脾",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_050",
     "category": "ZangFu",
     "syndrome_name": "膽鬱痰擾證",
-    "main_symptoms": ["驚悸不寧", "失眠多夢", "煩躁不安", "口苦"],
-    "secondary_symptoms": ["眩暈", "胸悶", "嘔惡", "嘆息"],
-    "tongue_pulse": ["舌苔黃膩", "脈弦滑"],
-    "exclusion": ["急躁易怒 (肝火)", "單純失眠無驚恐 (心陰虛)", "便秘"],
-    "treatment_principle": "理氣化痰，清膽和胃"
+    "main_symptoms": [
+      "驚悸不寧",
+      "失眠多夢",
+      "煩躁不安",
+      "口苦"
+    ],
+    "secondary_symptoms": [
+      "眩暈",
+      "胸悶",
+      "嘔惡",
+      "嘆息"
+    ],
+    "tongue_pulse": [
+      "舌苔黃膩",
+      "脈弦滑"
+    ],
+    "exclusion": [
+      "急躁易怒 (肝火)",
+      "單純失眠無驚恐 (心陰虛)",
+      "便秘"
+    ],
+    "treatment_principle": "理氣化痰，清膽和胃",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_051",
     "category": "ZangFu",
     "syndrome_name": "心膽氣虛證",
-    "main_symptoms": ["心悸膽怯", "善驚易恐", "夜寐多夢", "氣短自汗"],
-    "secondary_symptoms": ["坐臥不安", "神疲乏力", "舌淡苔白", "脈弦細"],
-    "tongue_pulse": ["舌淡苔白", "脈弦細或弱"],
-    "exclusion": ["口苦 (膽熱)", "苔黃膩 (痰熱)", "發熱"],
-    "treatment_principle": "益氣鎮驚，安神定志"
+    "main_symptoms": [
+      "心悸膽怯",
+      "善驚易恐",
+      "夜寐多夢",
+      "氣短自汗"
+    ],
+    "secondary_symptoms": [
+      "坐臥不安",
+      "神疲乏力",
+      "舌淡苔白",
+      "脈弦細"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈弦細或弱"
+    ],
+    "exclusion": [
+      "口苦 (膽熱)",
+      "苔黃膩 (痰熱)",
+      "發熱"
+    ],
+    "treatment_principle": "益氣鎮驚，安神定志",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_052",
     "category": "ZangFu",
     "syndrome_name": "痰火擾神證 (狂證)",
-    "main_symptoms": ["狂躁妄動", "打人毀物", "胡言亂語", "面紅目赤"],
-    "secondary_symptoms": ["頭痛", "失眠", "便秘", "尿赤"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["神識癡呆 (痰迷心竅)", "高熱譫語 (熱入心包)", "悲傷欲哭"],
-    "treatment_principle": "清心瀉火，滌痰鎮驚"
+    "main_symptoms": [
+      "狂躁妄動",
+      "打人毀物",
+      "胡言亂語",
+      "面紅目赤"
+    ],
+    "secondary_symptoms": [
+      "頭痛",
+      "失眠",
+      "便秘",
+      "尿赤"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "神識癡呆 (痰迷心竅)",
+      "高熱譫語 (熱入心包)",
+      "悲傷欲哭"
+    ],
+    "treatment_principle": "清心瀉火，滌痰鎮驚",
+    "eight_principles": [
+      "裡",
+      "實",
+      "熱",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_053",
     "category": "ZangFu",
     "syndrome_name": "寒濕凝滯胞宮證 (痛經/不孕)",
-    "main_symptoms": ["小腹冷痛", "痛經", "得溫痛減", "經色紫暗少塊"],
-    "secondary_symptoms": ["畏寒肢冷", "腰痠", "白帶清稀", "月經後期"],
-    "tongue_pulse": ["舌苔白膩", "脈沉緊"],
-    "exclusion": ["小腹灼痛 (濕熱)", "經色鮮紅 (血熱)", "發熱"],
-    "treatment_principle": "溫經散寒，化瘀止痛"
+    "main_symptoms": [
+      "小腹冷痛",
+      "痛經",
+      "得溫痛減",
+      "經色紫暗少塊"
+    ],
+    "secondary_symptoms": [
+      "畏寒肢冷",
+      "腰痠",
+      "白帶清稀",
+      "月經後期"
+    ],
+    "tongue_pulse": [
+      "舌苔白膩",
+      "脈沉緊"
+    ],
+    "exclusion": [
+      "小腹灼痛 (濕熱)",
+      "經色鮮紅 (血熱)",
+      "發熱"
+    ],
+    "treatment_principle": "溫經散寒，化瘀止痛",
+    "eight_principles": [
+      "裡",
+      "寒",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_054",
     "category": "ZangFu",
     "syndrome_name": "濕熱下注證 (帶下/陰癢)",
-    "main_symptoms": ["帶下量多", "色黃綠如膿", "味臭", "陰部搔癢"],
-    "secondary_symptoms": ["小腹痛", "小便短赤", "口苦", "身熱"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["帶下清稀 (脾腎虛)", "無臭 (寒濕)", "腰膝痠冷"],
-    "treatment_principle": "清熱利濕，殺蟲止癢"
+    "main_symptoms": [
+      "帶下量多",
+      "色黃綠如膿",
+      "味臭",
+      "陰部搔癢"
+    ],
+    "secondary_symptoms": [
+      "小腹痛",
+      "小便短赤",
+      "口苦",
+      "身熱"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "帶下清稀 (脾腎虛)",
+      "無臭 (寒濕)",
+      "腰膝痠冷"
+    ],
+    "treatment_principle": "清熱利濕，殺蟲止癢",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_055",
     "category": "ZangFu",
     "syndrome_name": "衝任不固證 (崩漏/滑胎)",
-    "main_symptoms": ["月經量多", "崩漏", "色淡質稀", "腰膝痠軟"],
-    "secondary_symptoms": ["胎動不安", "滑胎", "小腹墜痛", "夜尿頻"],
-    "tongue_pulse": ["舌淡苔白", "脈沉弱"],
-    "exclusion": ["經色深紅 (血熱)", "有血塊 (血瘀)", "口渴"],
-    "treatment_principle": "補腎固衝，止血安胎"
+    "main_symptoms": [
+      "月經量多",
+      "崩漏",
+      "色淡質稀",
+      "腰膝痠軟"
+    ],
+    "secondary_symptoms": [
+      "胎動不安",
+      "滑胎",
+      "小腹墜痛",
+      "夜尿頻"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈沉弱"
+    ],
+    "exclusion": [
+      "經色深紅 (血熱)",
+      "有血塊 (血瘀)",
+      "口渴"
+    ],
+    "treatment_principle": "補腎固衝，止血安胎",
+    "eight_principles": [
+      "裡",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_056",
     "category": "ZangFu",
     "syndrome_name": "乳食積滯證 (小兒)",
-    "main_symptoms": ["不思乳食", "脘腹脹滿", "嘔吐酸腐", "口臭"],
-    "secondary_symptoms": ["大便酸臭", "夜臥不安", "手足心熱", "矢氣頻"],
-    "tongue_pulse": ["舌苔厚膩 (白或黃)", "脈滑"],
-    "exclusion": ["能食易飢 (胃火)", "腹痛喜按 (虛寒)", "神疲氣短"],
-    "treatment_principle": "消食導滯，和中"
+    "main_symptoms": [
+      "不思乳食",
+      "脘腹脹滿",
+      "嘔吐酸腐",
+      "口臭"
+    ],
+    "secondary_symptoms": [
+      "大便酸臭",
+      "夜臥不安",
+      "手足心熱",
+      "矢氣頻"
+    ],
+    "tongue_pulse": [
+      "舌苔厚膩 (白或黃)",
+      "脈滑"
+    ],
+    "exclusion": [
+      "能食易飢 (胃火)",
+      "腹痛喜按 (虛寒)",
+      "神疲氣短"
+    ],
+    "treatment_principle": "消食導滯，和中",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_057",
     "category": "ZangFu",
     "syndrome_name": "小兒驚風 (風熱動風)",
-    "main_symptoms": ["發熱", "抽搐", "神昏", "雙眼上翻"],
-    "secondary_symptoms": ["咳嗽", "流涕", "咽紅", "脈浮數"],
-    "tongue_pulse": ["舌尖紅苔黃", "脈浮數或滑數"],
-    "exclusion": ["無熱抽搐 (癲癇)", "慢脾風 (虛證)", "面色蒼白"],
-    "treatment_principle": "疏風清熱，熄風定驚"
+    "main_symptoms": [
+      "發熱",
+      "抽搐",
+      "神昏",
+      "雙眼上翻"
+    ],
+    "secondary_symptoms": [
+      "咳嗽",
+      "流涕",
+      "咽紅",
+      "脈浮數"
+    ],
+    "tongue_pulse": [
+      "舌尖紅苔黃",
+      "脈浮數或滑數"
+    ],
+    "exclusion": [
+      "無熱抽搐 (癲癇)",
+      "慢脾風 (虛證)",
+      "面色蒼白"
+    ],
+    "treatment_principle": "疏風清熱，熄風定驚",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_058",
     "category": "ZangFu",
     "syndrome_name": "風痰阻絡證 (中風)",
-    "main_symptoms": ["半身不遂", "口舌歪斜", "語言蹇澀", "肢體麻木"],
-    "secondary_symptoms": ["頭暈目眩", "痰多", "舌強", "脈弦滑"],
-    "tongue_pulse": ["舌苔白膩", "脈弦滑"],
-    "exclusion": ["神昏 (中臟腑)", "高熱", "四肢抽搐"],
-    "treatment_principle": "祛風化痰，通絡行瘀"
+    "main_symptoms": [
+      "半身不遂",
+      "口舌歪斜",
+      "語言蹇澀",
+      "肢體麻木"
+    ],
+    "secondary_symptoms": [
+      "頭暈目眩",
+      "痰多",
+      "舌強",
+      "脈弦滑"
+    ],
+    "tongue_pulse": [
+      "舌苔白膩",
+      "脈弦滑"
+    ],
+    "exclusion": [
+      "神昏 (中臟腑)",
+      "高熱",
+      "四肢抽搐"
+    ],
+    "treatment_principle": "祛風化痰，通絡行瘀",
+    "eight_principles": [
+      "裡",
+      "實",
+      "濕",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_059",
     "category": "ZangFu",
     "syndrome_name": "熱入心包證 (溫病)",
-    "main_symptoms": ["高熱不退", "神昏譫語", "舌蹇肢厥", "灼熱感"],
-    "secondary_symptoms": ["煩躁", "斑疹", "口乾不欲飲", "脈細數"],
-    "tongue_pulse": ["舌絳", "脈細數"],
-    "exclusion": ["苔膩 (濕溫)", "惡寒 (表證)", "大便秘結 (腑實)"],
-    "treatment_principle": "清心開竅"
+    "main_symptoms": [
+      "高熱不退",
+      "神昏譫語",
+      "舌蹇肢厥",
+      "灼熱感"
+    ],
+    "secondary_symptoms": [
+      "煩躁",
+      "斑疹",
+      "口乾不欲飲",
+      "脈細數"
+    ],
+    "tongue_pulse": [
+      "舌絳",
+      "脈細數"
+    ],
+    "exclusion": [
+      "苔膩 (濕溫)",
+      "惡寒 (表證)",
+      "大便秘結 (腑實)"
+    ],
+    "treatment_principle": "清心開竅",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_060",
     "category": "ZangFu",
     "syndrome_name": "熱極生風證 (痙證)",
-    "main_symptoms": ["高熱", "項背強直", "四肢抽搐", "角弓反張"],
-    "secondary_symptoms": ["神昏", "兩目上視", "牙關緊閉", "躁動"],
-    "tongue_pulse": ["舌紅絳苔黃燥", "脈弦數有力"],
-    "exclusion": ["無熱抽搐 (虛風)", "惡寒 (表寒)", "半身不遂"],
-    "treatment_principle": "涼肝熄風，增液舒筋"
+    "main_symptoms": [
+      "高熱",
+      "項背強直",
+      "四肢抽搐",
+      "角弓反張"
+    ],
+    "secondary_symptoms": [
+      "神昏",
+      "兩目上視",
+      "牙關緊閉",
+      "躁動"
+    ],
+    "tongue_pulse": [
+      "舌紅絳苔黃燥",
+      "脈弦數有力"
+    ],
+    "exclusion": [
+      "無熱抽搐 (虛風)",
+      "惡寒 (表寒)",
+      "半身不遂"
+    ],
+    "treatment_principle": "涼肝熄風，增液舒筋",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_061",
     "category": "ZangFu",
     "syndrome_name": "血虛生風證 (虛風)",
-    "main_symptoms": ["肢體麻木", "手足震顫", "肌肉瞤動", "關節拘急"],
-    "secondary_symptoms": ["眩暈耳鳴", "面色無華", "爪甲不榮", "皮膚瘙癢"],
-    "tongue_pulse": ["舌淡苔白", "脈細弱"],
-    "exclusion": ["高熱", "抽搐有力", "舌紅"],
-    "treatment_principle": "養血熄風"
+    "main_symptoms": [
+      "肢體麻木",
+      "手足震顫",
+      "肌肉瞤動",
+      "關節拘急"
+    ],
+    "secondary_symptoms": [
+      "眩暈耳鳴",
+      "面色無華",
+      "爪甲不榮",
+      "皮膚瘙癢"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈細弱"
+    ],
+    "exclusion": [
+      "高熱",
+      "抽搐有力",
+      "舌紅"
+    ],
+    "treatment_principle": "養血熄風",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_062",
     "category": "ZangFu",
     "syndrome_name": "陰虛動風證 (虛風)",
-    "main_symptoms": ["手足蠕動", "形體消瘦", "五心煩熱", "潮熱盜汗"],
-    "secondary_symptoms": ["口乾咽燥", "神倦", "舌紅少津", "脈虛數"],
-    "tongue_pulse": ["舌紅少苔或無苔", "脈細數"],
-    "exclusion": ["高熱", "苔厚膩", "面色白"],
-    "treatment_principle": "滋陰熄風"
+    "main_symptoms": [
+      "手足蠕動",
+      "形體消瘦",
+      "五心煩熱",
+      "潮熱盜汗"
+    ],
+    "secondary_symptoms": [
+      "口乾咽燥",
+      "神倦",
+      "舌紅少津",
+      "脈虛數"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔或無苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "高熱",
+      "苔厚膩",
+      "面色白"
+    ],
+    "treatment_principle": "滋陰熄風",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_063",
     "category": "ZangFu",
     "syndrome_name": "小腸實熱證",
-    "main_symptoms": ["心煩", "口舌生瘡", "小便短赤", "尿道灼熱"],
-    "secondary_symptoms": ["口渴", "尿血", "腹脹", "咽痛"],
-    "tongue_pulse": ["舌尖紅苔黃", "脈數"],
-    "exclusion": ["尿頻清長 (腎虛)", "小腹絞痛 (疝氣)", "惡寒"],
-    "treatment_principle": "清心利尿"
+    "main_symptoms": [
+      "心煩",
+      "口舌生瘡",
+      "小便短赤",
+      "尿道灼熱"
+    ],
+    "secondary_symptoms": [
+      "口渴",
+      "尿血",
+      "腹脹",
+      "咽痛"
+    ],
+    "tongue_pulse": [
+      "舌尖紅苔黃",
+      "脈數"
+    ],
+    "exclusion": [
+      "尿頻清長 (腎虛)",
+      "小腹絞痛 (疝氣)",
+      "惡寒"
+    ],
+    "treatment_principle": "清心利尿",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_064",
     "category": "ZangFu",
     "syndrome_name": "肺腎陰虛證",
-    "main_symptoms": ["乾咳少痰", "痰中帶血", "腰膝痠軟", "潮熱盜汗"],
-    "secondary_symptoms": ["聲音嘶啞", "口乾咽燥", "形體消瘦", "顴紅"],
-    "tongue_pulse": ["舌紅少苔", "脈細數"],
-    "exclusion": ["痰多 (濕痰)", "惡寒發熱 (表證)", "苔膩"],
-    "treatment_principle": "滋補肺腎"
+    "main_symptoms": [
+      "乾咳少痰",
+      "痰中帶血",
+      "腰膝痠軟",
+      "潮熱盜汗"
+    ],
+    "secondary_symptoms": [
+      "聲音嘶啞",
+      "口乾咽燥",
+      "形體消瘦",
+      "顴紅"
+    ],
+    "tongue_pulse": [
+      "舌紅少苔",
+      "脈細數"
+    ],
+    "exclusion": [
+      "痰多 (濕痰)",
+      "惡寒發熱 (表證)",
+      "苔膩"
+    ],
+    "treatment_principle": "滋補肺腎",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "熱"
+    ]
   },
   {
     "rule_id": "RULE_ZF_065",
     "category": "ZangFu",
     "syndrome_name": "肝火犯胃證",
-    "main_symptoms": ["胃脘灼痛", "脅肋脹痛", "嘔吐吞酸", "口苦"],
-    "secondary_symptoms": ["急躁易怒", "嘈雜", "吐血", "便秘"],
-    "tongue_pulse": ["舌紅苔黃", "脈弦數"],
-    "exclusion": ["喜溫喜按 (虛寒)", "得食痛減", "腹瀉"],
-    "treatment_principle": "瀉肝和胃"
+    "main_symptoms": [
+      "胃脘灼痛",
+      "脅肋脹痛",
+      "嘔吐吞酸",
+      "口苦"
+    ],
+    "secondary_symptoms": [
+      "急躁易怒",
+      "嘈雜",
+      "吐血",
+      "便秘"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃",
+      "脈弦數"
+    ],
+    "exclusion": [
+      "喜溫喜按 (虛寒)",
+      "得食痛減",
+      "腹瀉"
+    ],
+    "treatment_principle": "瀉肝和胃",
+    "eight_principles": []
   },
   {
     "rule_id": "RULE_ZF_066",
     "category": "ZangFu",
     "syndrome_name": "風寒濕痺證 (關節痛)",
-    "main_symptoms": ["關節疼痛", "痛處固定或遊走", "遇寒濕加重", "屈伸不利"],
-    "secondary_symptoms": ["肢體重著", "畏寒", "局部冷感", "苔白膩"],
-    "tongue_pulse": ["舌苔白膩", "脈弦緊或濡緩"],
-    "exclusion": ["關節紅腫灼熱 (熱痺)", "發熱口渴", "脈數"],
-    "treatment_principle": "祛風散寒，除濕通絡"
+    "main_symptoms": [
+      "關節疼痛",
+      "痛處固定或遊走",
+      "遇寒濕加重",
+      "屈伸不利"
+    ],
+    "secondary_symptoms": [
+      "肢體重著",
+      "畏寒",
+      "局部冷感",
+      "苔白膩"
+    ],
+    "tongue_pulse": [
+      "舌苔白膩",
+      "脈弦緊或濡緩"
+    ],
+    "exclusion": [
+      "關節紅腫灼熱 (熱痺)",
+      "發熱口渴",
+      "脈數"
+    ],
+    "treatment_principle": "祛風散寒，除濕通絡",
+    "eight_principles": [
+      "表",
+      "寒",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_067",
     "category": "ZangFu",
     "syndrome_name": "風濕熱痺證 (急性關節炎)",
-    "main_symptoms": ["關節紅腫灼熱", "疼痛劇烈", "拒按", "發熱"],
-    "secondary_symptoms": ["口渴", "汗出", "煩躁", "小便黃"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["關節冷痛 (寒痺)", "得溫痛減", "面白"],
-    "treatment_principle": "清熱通絡，祛風除濕"
+    "main_symptoms": [
+      "關節紅腫灼熱",
+      "疼痛劇烈",
+      "拒按",
+      "發熱"
+    ],
+    "secondary_symptoms": [
+      "口渴",
+      "汗出",
+      "煩躁",
+      "小便黃"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "關節冷痛 (寒痺)",
+      "得溫痛減",
+      "面白"
+    ],
+    "treatment_principle": "清熱通絡，祛風除濕",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_068",
     "category": "ZangFu",
     "syndrome_name": "風熱蘊膚證 (蕁麻疹/急性濕疹)",
-    "main_symptoms": ["皮膚紅疹", "瘙癢劇烈", "抓破滲液", "遇熱加重"],
-    "secondary_symptoms": ["發熱", "微惡風", "咽痛", "口乾"],
-    "tongue_pulse": ["舌紅苔薄黃", "脈浮數"],
-    "exclusion": ["皮疹色白 (風寒)", "遇冷加重", "苔白"],
-    "treatment_principle": "疏風清熱，止癢"
+    "main_symptoms": [
+      "皮膚紅疹",
+      "瘙癢劇烈",
+      "抓破滲液",
+      "遇熱加重"
+    ],
+    "secondary_symptoms": [
+      "發熱",
+      "微惡風",
+      "咽痛",
+      "口乾"
+    ],
+    "tongue_pulse": [
+      "舌紅苔薄黃",
+      "脈浮數"
+    ],
+    "exclusion": [
+      "皮疹色白 (風寒)",
+      "遇冷加重",
+      "苔白"
+    ],
+    "treatment_principle": "疏風清熱，止癢",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_069",
     "category": "ZangFu",
     "syndrome_name": "濕熱浸淫證 (濕疹/瘡)",
-    "main_symptoms": ["皮膚糜爛", "流黃水", "紅腫", "劇癢"],
-    "secondary_symptoms": ["身熱不揚", "心煩口渴", "小便短赤", "大便秘結"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈滑數"],
-    "exclusion": ["皮膚乾燥 (血燥)", "脫屑", "無滲液"],
-    "treatment_principle": "清熱利濕，解毒"
+    "main_symptoms": [
+      "皮膚糜爛",
+      "流黃水",
+      "紅腫",
+      "劇癢"
+    ],
+    "secondary_symptoms": [
+      "身熱不揚",
+      "心煩口渴",
+      "小便短赤",
+      "大便秘結"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈滑數"
+    ],
+    "exclusion": [
+      "皮膚乾燥 (血燥)",
+      "脫屑",
+      "無滲液"
+    ],
+    "treatment_principle": "清熱利濕，解毒",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_070",
     "category": "ZangFu",
     "syndrome_name": "血虛風燥證 (慢性皮膚病)",
-    "main_symptoms": ["皮膚乾燥", "肥厚粗糙 (苔蘚化)", "脫屑", "瘙癢無度"],
-    "secondary_symptoms": ["面色無華", "頭暈", "失眠", "抓痕血痂"],
-    "tongue_pulse": ["舌淡苔白", "脈細弦"],
-    "exclusion": ["滲液流湯 (濕熱)", "紅腫熱痛", "脈滑數"],
-    "treatment_principle": "養血潤燥，祛風止癢"
+    "main_symptoms": [
+      "皮膚乾燥",
+      "肥厚粗糙 (苔蘚化)",
+      "脫屑",
+      "瘙癢無度"
+    ],
+    "secondary_symptoms": [
+      "面色無華",
+      "頭暈",
+      "失眠",
+      "抓痕血痂"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈細弦"
+    ],
+    "exclusion": [
+      "滲液流湯 (濕熱)",
+      "紅腫熱痛",
+      "脈滑數"
+    ],
+    "treatment_principle": "養血潤燥，祛風止癢",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "燥",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_071",
     "category": "ZangFu",
     "syndrome_name": "肺經風熱證 (鼻淵/咽痛)",
-    "main_symptoms": ["鼻塞", "流黃濁涕", "前額脹痛", "咽喉腫痛"],
-    "secondary_symptoms": ["發熱", "咳嗽", "痰黃", "口乾"],
-    "tongue_pulse": ["舌紅苔黃", "脈浮數"],
-    "exclusion": ["流清涕 (風寒/氣虛)", "無熱", "脈弱"],
-    "treatment_principle": "疏風清熱，宣肺通竅"
+    "main_symptoms": [
+      "鼻塞",
+      "流黃濁涕",
+      "前額脹痛",
+      "咽喉腫痛"
+    ],
+    "secondary_symptoms": [
+      "發熱",
+      "咳嗽",
+      "痰黃",
+      "口乾"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃",
+      "脈浮數"
+    ],
+    "exclusion": [
+      "流清涕 (風寒/氣虛)",
+      "無熱",
+      "脈弱"
+    ],
+    "treatment_principle": "疏風清熱，宣肺通竅",
+    "eight_principles": [
+      "表",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_072",
     "category": "ZangFu",
     "syndrome_name": "肺氣虛寒證 (過敏性鼻炎)",
-    "main_symptoms": ["鼻癢噴嚏", "流大量清涕", "鼻塞", "遇冷加重"],
-    "secondary_symptoms": ["氣短自汗", "畏風", "面色晄白", "嗅覺減退"],
-    "tongue_pulse": ["舌淡苔白", "脈虛弱"],
-    "exclusion": ["黃涕 (風熱)", "發熱", "咽痛"],
-    "treatment_principle": "溫補肺氣，散寒通竅"
+    "main_symptoms": [
+      "鼻癢噴嚏",
+      "流大量清涕",
+      "鼻塞",
+      "遇冷加重"
+    ],
+    "secondary_symptoms": [
+      "氣短自汗",
+      "畏風",
+      "面色晄白",
+      "嗅覺減退"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈虛弱"
+    ],
+    "exclusion": [
+      "黃涕 (風熱)",
+      "發熱",
+      "咽痛"
+    ],
+    "treatment_principle": "溫補肺氣，散寒通竅",
+    "eight_principles": [
+      "表",
+      "虛",
+      "寒"
+    ]
   },
   {
     "rule_id": "RULE_ZF_073",
     "category": "ZangFu",
     "syndrome_name": "風火上擾清竅證 (突發耳鳴/頭痛)",
-    "main_symptoms": ["耳鳴如潮", "突發耳聾", "頭脹痛", "面紅目赤"],
-    "secondary_symptoms": ["口苦咽乾", "煩躁易怒", "便秘", "睡眠不安"],
-    "tongue_pulse": ["舌紅苔黃", "脈弦數"],
-    "exclusion": ["耳鳴如蟬 (腎虛)", "漸進性耳聾", "面色萎黃"],
-    "treatment_principle": "清肝瀉火，聰耳明目"
+    "main_symptoms": [
+      "耳鳴如潮",
+      "突發耳聾",
+      "頭脹痛",
+      "面紅目赤"
+    ],
+    "secondary_symptoms": [
+      "口苦咽乾",
+      "煩躁易怒",
+      "便秘",
+      "睡眠不安"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃",
+      "脈弦數"
+    ],
+    "exclusion": [
+      "耳鳴如蟬 (腎虛)",
+      "漸進性耳聾",
+      "面色萎黃"
+    ],
+    "treatment_principle": "清肝瀉火，聰耳明目",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "風"
+    ]
   },
   {
     "rule_id": "RULE_ZF_074",
     "category": "ZangFu",
     "syndrome_name": "氣滯心胸證",
-    "main_symptoms": ["胸悶不舒", "胸痛隱隱", "脹痛", "太息"],
-    "secondary_symptoms": ["情志不暢", "心悸", "脘腹脹悶", "苔薄白"],
-    "tongue_pulse": ["舌暗紅或苔薄白", "脈弦"],
-    "exclusion": ["刺痛 (瘀血)", "劇烈絞痛 (真心痛)", "冷汗"],
-    "treatment_principle": "疏肝理氣，寬胸解鬱"
+    "main_symptoms": [
+      "胸悶不舒",
+      "胸痛隱隱",
+      "脹痛",
+      "太息"
+    ],
+    "secondary_symptoms": [
+      "情志不暢",
+      "心悸",
+      "脘腹脹悶",
+      "苔薄白"
+    ],
+    "tongue_pulse": [
+      "舌暗紅或苔薄白",
+      "脈弦"
+    ],
+    "exclusion": [
+      "刺痛 (瘀血)",
+      "劇烈絞痛 (真心痛)",
+      "冷汗"
+    ],
+    "treatment_principle": "疏肝理氣，寬胸解鬱",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_075",
     "category": "ZangFu",
     "syndrome_name": "胃氣上逆證",
-    "main_symptoms": ["噁心嘔吐", "呃逆", "噯氣", "反胃"],
-    "secondary_symptoms": ["胃脘脹滿", "不思飲食", "口淡", "苔白"],
-    "tongue_pulse": ["舌苔白", "脈弦或滑"],
-    "exclusion": ["嘔吐酸腐 (食滯)", "口苦 (膽熱)", "高熱"],
-    "treatment_principle": "和胃降逆"
+    "main_symptoms": [
+      "噁心嘔吐",
+      "呃逆",
+      "噯氣",
+      "反胃"
+    ],
+    "secondary_symptoms": [
+      "胃脘脹滿",
+      "不思飲食",
+      "口淡",
+      "苔白"
+    ],
+    "tongue_pulse": [
+      "舌苔白",
+      "脈弦或滑"
+    ],
+    "exclusion": [
+      "嘔吐酸腐 (食滯)",
+      "口苦 (膽熱)",
+      "高熱"
+    ],
+    "treatment_principle": "和胃降逆",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_076",
     "category": "ZangFu",
     "syndrome_name": "肝氣犯脾證",
-    "main_symptoms": ["腹痛腹瀉", "瀉後痛減", "兩脅脹痛", "情志抑鬱"],
-    "secondary_symptoms": ["食少", "腹脹", "腸鳴", "矢氣"],
-    "tongue_pulse": ["舌苔薄白", "脈弦緩"],
-    "exclusion": ["裡急後重 (濕熱)", "膿血便", "五更瀉"],
-    "treatment_principle": "調和肝脾"
+    "main_symptoms": [
+      "腹痛腹瀉",
+      "瀉後痛減",
+      "兩脅脹痛",
+      "情志抑鬱"
+    ],
+    "secondary_symptoms": [
+      "食少",
+      "腹脹",
+      "腸鳴",
+      "矢氣"
+    ],
+    "tongue_pulse": [
+      "舌苔薄白",
+      "脈弦緩"
+    ],
+    "exclusion": [
+      "裡急後重 (濕熱)",
+      "膿血便",
+      "五更瀉"
+    ],
+    "treatment_principle": "調和肝脾",
+    "eight_principles": [
+      "裡",
+      "實",
+      "虛"
+    ]
   },
   {
     "rule_id": "RULE_ZF_077",
     "category": "ZangFu",
     "syndrome_name": "胞宮虛寒證 (不孕/閉經)",
-    "main_symptoms": ["婚久不孕", "月經後期", "量少色淡", "小腹冷痛"],
-    "secondary_symptoms": ["性慾淡漠", "腰膝痠軟", "畏寒肢冷", "面色晄白"],
-    "tongue_pulse": ["舌淡苔白", "脈沉遲"],
-    "exclusion": ["發熱", "腹痛拒按 (實證)", "經色深紅"],
-    "treatment_principle": "溫補腎陽，暖宮孕子"
+    "main_symptoms": [
+      "婚久不孕",
+      "月經後期",
+      "量少色淡",
+      "小腹冷痛"
+    ],
+    "secondary_symptoms": [
+      "性慾淡漠",
+      "腰膝痠軟",
+      "畏寒肢冷",
+      "面色晄白"
+    ],
+    "tongue_pulse": [
+      "舌淡苔白",
+      "脈沉遲"
+    ],
+    "exclusion": [
+      "發熱",
+      "腹痛拒按 (實證)",
+      "經色深紅"
+    ],
+    "treatment_principle": "溫補腎陽，暖宮孕子",
+    "eight_principles": [
+      "裡",
+      "虛",
+      "寒"
+    ]
   },
   {
     "rule_id": "RULE_ZF_078",
     "category": "ZangFu",
     "syndrome_name": "肝鬱化火證",
-    "main_symptoms": ["頭痛目赤", "急躁易怒", "脅痛", "口苦"],
-    "secondary_symptoms": ["便秘", "尿黃", "失眠", "月經先期"],
-    "tongue_pulse": ["舌紅苔黃", "脈弦數"],
-    "exclusion": ["腰痠 (陰虛)", "畏寒", "苔白"],
-    "treatment_principle": "清肝瀉火"
+    "main_symptoms": [
+      "頭痛目赤",
+      "急躁易怒",
+      "脅痛",
+      "口苦"
+    ],
+    "secondary_symptoms": [
+      "便秘",
+      "尿黃",
+      "失眠",
+      "月經先期"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃",
+      "脈弦數"
+    ],
+    "exclusion": [
+      "腰痠 (陰虛)",
+      "畏寒",
+      "苔白"
+    ],
+    "treatment_principle": "清肝瀉火",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實"
+    ]
   },
   {
     "rule_id": "RULE_ZF_079",
     "category": "ZangFu",
     "syndrome_name": "中焦濕熱證",
-    "main_symptoms": ["身熱不揚", "脘腹痞悶", "嘔惡", "身重"],
-    "secondary_symptoms": ["便溏不爽", "小便不利", "口苦黏", "汗出"],
-    "tongue_pulse": ["舌紅苔黃膩", "脈濡數"],
-    "exclusion": ["高熱大渴 (陽明)", "苔白膩 (寒濕)", "無濕象"],
-    "treatment_principle": "清熱化濕"
+    "main_symptoms": [
+      "身熱不揚",
+      "脘腹痞悶",
+      "嘔惡",
+      "身重"
+    ],
+    "secondary_symptoms": [
+      "便溏不爽",
+      "小便不利",
+      "口苦黏",
+      "汗出"
+    ],
+    "tongue_pulse": [
+      "舌紅苔黃膩",
+      "脈濡數"
+    ],
+    "exclusion": [
+      "高熱大渴 (陽明)",
+      "苔白膩 (寒濕)",
+      "無濕象"
+    ],
+    "treatment_principle": "清熱化濕",
+    "eight_principles": [
+      "裡",
+      "熱",
+      "實",
+      "濕"
+    ]
   },
   {
     "rule_id": "RULE_ZF_080",
     "category": "ZangFu",
     "syndrome_name": "肺氣上逆證",
-    "main_symptoms": ["咳嗽", "氣喘", "呼吸急促", "胸部脹滿"],
-    "secondary_symptoms": ["痰多", "不能平臥", "面赤", "咽喉不利"],
-    "tongue_pulse": ["脈浮或弦滑"],
-    "exclusion": ["氣短息微 (虛喘)", "吸氣困難 (腎不納氣)"],
-    "treatment_principle": "降氣平喘"
+    "main_symptoms": [
+      "咳嗽",
+      "氣喘",
+      "呼吸急促",
+      "胸部脹滿"
+    ],
+    "secondary_symptoms": [
+      "痰多",
+      "不能平臥",
+      "面赤",
+      "咽喉不利"
+    ],
+    "tongue_pulse": [
+      "脈浮或弦滑"
+    ],
+    "exclusion": [
+      "氣短息微 (虛喘)",
+      "吸氣困難 (腎不納氣)"
+    ],
+    "treatment_principle": "降氣平喘",
+    "eight_principles": [
+      "裡",
+      "實"
+    ]
   }
 ]

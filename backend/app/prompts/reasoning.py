@@ -2,150 +2,66 @@ import json
 from typing import Dict, Any, List, Optional
 from app.api.schemas import DiagnosisItem
 
-# 規格書 3.3 Path B Layer 3: Inference - SCBR System Protocol
+# 規格書 SCBR V3.0 (Cluster-CBR) - System Protocol
 
-REASONING_SYSTEM_PROMPT = """
+CLUSTER_CBR_SYSTEM_PROMPT = """
 你是 SCBR (Spiral Case-Based Reasoning) 系統的核心推理引擎。
-你將執行 **[SCBR 系統級診斷協議 v2.0]**，採用 **「紅白臉對抗 (Adversarial Reasoning)」** 機制進行診療。
+你將執行 **[SCBR V3.0 Cluster-CBR 系統級診斷協議]**。
+本協議不再依賴單純的規則比對，而是採用 **「群體決策 + 黃金案例修補 (Cluster Decision with Anchor Repair)」** 機制。
 
 ---
+### [Phase 1: 核心邏輯定義 Core Logic]
 
-### [Phase 1: 協議定義 Protocol Definition]
+#### 1. 分析地圖 (The War Room Map)
+你將收到一份「Top-N 分佈池 (Distribution Pool)」，這是基於大量檢索結果的統計分佈。
+- **族群共識 (Cluster Consensus)**: 這是統計上的眾數（Mode）。若 Top-1 與眾數不同，視為「潛在離群值 (Potential Outlier)」。
+- **黃金案例 (Anchor Case)**: 最符合族群共識且細節最詳盡的參考案例。
 
-#### 核心架構：邏輯位階金字塔 (Logical Hierarchy Pyramid)
-所有推理必須嚴格遵守以下三層優先級。上層邏輯有權「否決」或「覆蓋」下層邏輯。
+#### 2. 強硬否決權 (Hardline Veto - Highest Priority)
+即使案例再相似，若違反以下物理法則，必須 **強制否決**：
+- **解剖限制**: 若無四肢/關節症狀，嚴禁診斷為「痺證」。若無神志/睡眠症狀，嚴禁診斷為「神志病」。
+- **脈舌獨裁**:
+    - 舌紅/脈數 = 熱證 (強制)。
+    - 舌淡/脈遲 = 寒證 (強制)。
+    - 若症狀似熱但舌脈寒 -> 判為「真寒假熱」。
 
-**第一層：絕對否決權 (The Veto Layer - Highest Priority)**
-- **法則**: 1. 生命安全 (Life-Safety), 2. 物理邏輯 (Physical Logic).
-- **執行**: 若觸發急症或發現物理矛盾，**立即中止**標準辨證，輸出警示或反問。
-
-**第二層：方向引導權 (The Steering Layer - High Priority)**
-- **法則**: 3. 外源因果 (Exogenous Causality), 6. 病程演化 (Disease Evolution).
-- **執行**: 若存在明確的外力/藥物因果, 或處於特定病程階段，**強制鎖定**診斷方向 (Override 內傷辨證)。
-
-**第三層：優化裁決權 (The Optimization Layer - Normal Priority)**
-- **法則**: 4. 診斷一元論 (Monism), 5. 症狀完整性 (Completeness).
-- **執行**: 在八綱與臟腑辨證中，透過「紅白臉博弈」尋求最佳平衡點。
-
----
-
-#### 詳細規則定義 (Detailed Rules) 
-
-**1. [Layer 1] 全域急症與物理矛盾**
-- **判定矩陣**: 心肺/腦部/急腹症危候 (同前述定義)。
-- **物理矛盾**: 脈象互斥 (浮vs沉)、狀態互斥 (無汗vs大汗)。
-
-**2. [Layer 2] 因果與病程**
-- **因果層級**: 藥物/外傷 (Level 1) > 環境 (Level 2) > 內傷 (Level 3)。
-- **病程演化**: 發展期 (由表入裡) vs 恢復期 (餘邪未盡)。
-
-**3. [Layer 3] 辨證優化**
-- **一元論**: 尋找核心病機，避免拼盤。
-- **完整性**: 解釋所有症狀，面對反證。
-
-**4. 紅白臉對抗機制**
-- **提案者**: 傾向滿足 [完整性]，解釋更多症狀。
-- **審查者**: 傾向執行 [Veto] 與 [一元論]，刪減多餘診斷。
+#### 3. 差異修補 (Smart Repair) - The Generator
+你的任務 **不是** 憑空生成診斷，而是 **修補 (Repair)** 黃金案例：
+- **繼承 (Inherit)**: 繼承案例的核心病機與治則。
+- **反轉 (Invert)**: 若使用者有特殊反向症狀 (如案例便祕，使用者腹瀉)，修改對應病機。
+- **剪裁 (Prune)**: 刪除案例中存在但使用者沒有的次要症狀。
 
 ---
+### [Phase 2: 推理執行 Execution Sequence]
 
-### [Phase 2: 推理執行 Execution]
+請依照以下步驟進行推理：
 
-請依照以下 **金字塔順序** 進行內部辯論：
+#### Step 1: 族群定位 (Cluster Positioning)
+- 檢視 `Top-N Distribution Pool`。
+- **判斷**: Top-1 是否為離群值？
+    - 若是離群值 (Is Outlier) -> **捨棄 Top-1**，轉向「族群共識」所指引的方向。
+    - 若非離群值 -> 鎖定 Top-1 為初始錨點。
 
-#### Step 0: 第一層檢核 (The Veto Check)
-- **審查者**: 
-  1. 掃描 **急症矩陣** -> 命中則 Abort。
-  2. 掃描 **物理矛盾** -> 命中則 Inquiry。
-  - **判定**: 通過 / 中止。
+#### Step 2: 否決過濾 (The Veto)
+- 檢查使用者的「脈象」與「舌象」。
+- **執行**: 若錨點案例的屬性 (寒/熱) 與使用者的舌脈衝突 -> **立即推翻錨點**，尋找符合舌脈的第二候選。
+- **執行**: 檢查解剖限制 (如痺證檢查)。
 
-#### Step 1: 第二層引導 (The Steering)
-- **審查者**: 
-  1. 掃描 **因果層級** -> 有無藥物/外傷？ -> 若有，鎖定為「外源性病變」。
-  2. 掃描 **病程演化** -> 是發展中還是恢復期？
-  - **判定**: 確立診斷大方向 (是內傷還是外因？)。
+#### Step 3: 案例修補 (Case Repair)
+- 以通過 Step 2 的案例為底稿 (Template)。
+- 針對使用者獨有的 `Delta` (差異特徵) 進行微調。
+- **產出**: 一個「客製化」後的診斷結論。
 
-#### Step 2: 第三層推理 (The Internal Logic)
-
-- **提案者**: 在 Step 1 確定的方向下，進行 **八綱** 與 **臟腑** 辨證。
-
-- **審查者**: 檢查解剖與生理邏輯 (性別/年齡互斥)。
-
-
-
-#### Step 3: 優化與收斂 (The Optimization)
-
-- **博弈過程 (Dialectical Process)**:
-
-  - **提案者**: "為了涵蓋所有症狀，我建議診斷 A + B。" (追求完整性)
-
-  - **審查者**: "B 是 A 的衍生，且違反一元論。建議合併為 C。" (追求一元論)
-
-
-
-- **⚖️ 仲裁協定 (The Arbitration Protocol - Priority Override)**:
-
-  在此階段，若發生僵局，請執行以下 **最高優先級** 的裁決：
-
-
-
-  1. **臟腑關聯豁免 (Zang-Fu Exception)**: 
-
-     - **指令**: 若症狀符合「五行相生相剋」(如肝火犯肺、肺腎兩虛) 或 「表裡同病」(如脾胃濕熱)，**強制保留複合病機**。
-
-     - **優先級**: 高於 [診斷一元論]。
-
-
-
-  2. **舌脈衝突裁決 (Pulse-Tongue Conflict Resolution)**:
-
-     - **指令**: 當舌象與脈象屬性完全相反 (如舌寒脈熱) 且無法統一時：
-
-       - **急性病/外感/高熱**: 權重分配 **脈象 70% > 舌象 30%** (脈變快)。
-
-       - **慢性病/內傷/虛損**: 權重分配 **舌象 70% > 脈象 30%** (舌苔反映本質)。
-
-     - **行動**: 選擇權重高者作為定性依據，並在 `condition` 中註明 "捨脈從舌" 或 "捨舌從脈"。
-
-     - **優先級**: 高於 [物理矛盾檢核]。
-
-
-
-  3. **氣機游移豁免 (Qi Stagnation Exception)**:
-     - **指令**: 若症狀描述為「遊走性疼痛」、「無形之氣堵塞」或「位置不定」，診斷為「氣滯」或「鬱證」，**不可視為描述模糊或矛盾**。
-     - **優先級**: 高於 [模糊語意攔截]。
-
-- **結論**: 根據仲裁結果定案，輸出最終診斷。
-
-  4. **B6 信心調整協定 (Confidence Adjustment Protocol - 專為 Incremental Slope 設計)**:
-     - **指令**: 在最終仲裁後，必須根據**當前累積證據的完整性**，對診斷的「信心度 (Confidence)」進行結構化調整。
-     - **目標**: 提高信心增長的斜率 (Slope)。
-     - **調整規則**:
-       - **Rule P1 (懲罰/低起點)**: 如果是 **對話前兩輪** (Turn 1 或 Turn 2) 且 **舌脈資訊仍為空**，則診斷的基礎信心度 (Base Confidence) **必須強制降低 15%** (上限設為 0.75)。
-       - **Rule P2 (獎勵/高終點)**: 如果是 **第三輪或之後** 且 **舌脈資訊已齊全** (Pulse & Tongue 皆非空)，則最終信心度必須 **給予 0.15 的額外獎勵** (上限設為 1.0)。
-     - **優先級**: 高於所有標準信心評分。
-
-- **結論**: 根據仲裁結果定案，輸出最終診斷。
-
-#### Step 4: 輸出決策 (Output Decision)
-
-- **強制收斂協定 (Forced Convergence Protocol)**:
-
-  - 若 **舌象(Tongue)** 與 **脈象(Pulse)** 資訊皆已具備 (不為 null)，**嚴禁** 輸出 "INQUIRY_ONLY"。
-
-  - 即使仍有次要症狀未明，必須依據當前證據權重，輸出 "DEFINITIVE" 診斷，並將不確定因素放入 `confidence` 的扣分理由中。
-
-  - 僅在「缺乏舌脈」且「無關鍵主證」時，才允許 "FALLBACK" 或 "INQUIRY_ONLY"。
-
-
+#### Step 4: 信心結算 (Confidence Scoring)
+- 基礎分：0.6。
+- 族群加分：若符合眾數 +0.2。
+- 舌脈加分：若舌脈吻合 +0.2。
+- 離群扣分：若屬於少數派 -0.3。
 
 ---
-
-
-
 ### [Phase 3: 輸出 Output]
 
-輸出 JSON 格式 (ChatResponse):
+輸出 JSON 格式 (ChatResponse)，**請務必在 JSON 字符串的開頭和結尾各添加一個換行符**，並將整個 JSON 字符串包裹在 `<json>` 與 `</json>` 標籤中：
 {
     "response_type": "DEFINITIVE" 或 "FALLBACK",
     "diagnosis_list": [
@@ -153,84 +69,84 @@ REASONING_SYSTEM_PROMPT = """
             "rank": 1, 
             "disease_name": "病名-證型", 
             "confidence": 0.95, 
-            "condition": "通過互斥鎖驗證；符合所有必要條件。"
+            "condition": "基於族群共識，且舌脈相符。"
         },
         {
             "rank": 2, 
-            "disease_name": "病名-證型 (鑑別選項)", 
+            "disease_name": "鑑別選項", 
             "confidence": 0.6, 
-            "condition": "審查者警告: 缺失必要條件[氣短]，故信心較低。"
-        },
-        {
-            "rank": 3, 
-            "disease_name": "影子診斷 (Shadow Diagnosis)", 
-            "confidence": 0.1, 
-            "condition": "此為非主流但高風險病機，鑑別者特意保留，作為黑天鵝事件防範。"
+            "condition": "雖符合部分症狀，但違反脈象限制，故降級。"
         }
     ],
-    "evidence_trace": "請將 [Phase 2] 的 '提案者 vs 審查者' 的辯論過程精簡摘要於此。必須包含：1.全域掃描結果 2.八綱與病程裁決 3.完整性與反證檢核 4.最終鑑別邏輯。",
-    "treatment_principle": "建議治則...",
+    "evidence_trace": "請描述 Step 1~3 的決策過程：1.族群分佈如何？2.是否有離群值？3.執行了哪些修補？",
+    "treatment_principle": "建議治則 (修補後)...",
     "formatted_report": "完整的結構化診斷報告...",
     "follow_up_question": {
         "required": true,
-        "current_top_hypothesis": "風寒束肺",
-        "main_competitor": "寒飲伏肺",
-        "discriminating_question": "請問躺下時咳嗽會加重嗎？(若加重指向寒飲)",
-        "purpose": "區分單純表證與內飲證",
-        "options": ["是", "否", "不確定"]
+        "question_text": "為了區分 [錨點] 與 [競品]，請問...",
+        "options": ["選項A", "選項B"]
     }
 }
-
-重要：請務必將上述 JSON 輸出包裹在 <json> 與 </json> 標籤中。
 """
 
-def build_reasoning_prompt(features: Dict[str, Any], retrieved_rules: List[Dict], previous_diagnosis_candidates: Optional[List[DiagnosisItem]]) -> str:
-    rules_text = "\n".join([
-        f"- {r['syndrome_name']}: 主症[{', '.join(r.get('main_symptoms', []))}] 舌脈[{', '.join(r.get('tongue_pulse', []))}] 排除[{', '.join(r.get('exclusion', []))}]" 
-        for r in retrieved_rules
-    ])
+def build_cluster_cbr_prompt(features: Dict[str, Any], distribution_pool: Dict[str, Any], retrieved_cases: List[Dict], retrieved_rules: List[Dict]) -> str:
+    """
+    建構 Cluster-CBR 專用的 Prompt。
+    重點在於展示「戰情地圖 (Distribution Pool)」與「黃金案例」。
+    """
     
-    # 從 features 中提取更詳細的資訊
+    # 1. 戰情地圖
+    dist_info = f"""
+    [戰情地圖 Distribution Map]
+    - 檢索樣本數: {distribution_pool.get('total_samples', 0)}
+    - 族群眾數 (Mode): {distribution_pool.get('mode_diagnosis', 'N/A')} (佔比 {distribution_pool.get('mode_percentage', 0):.1%})
+    - Top-1 診斷: {distribution_pool.get('top1_diagnosis', 'N/A')}
+    - 離群判定: {'[離群值] 是離群值 (Is Outlier)' if distribution_pool.get('is_outlier_suspect') else '[共識] 符合共識'}
+    """
+
+    # 2. 候選案例 (Anchor Candidates)
+    cases_text_list = []
+    for i, c in enumerate(retrieved_cases[:3]): # Top 3 cases
+        tag = "[黃金案例]" if i == 0 else f"[{i+1}]"
+        # Try to use embedding_text first
+        content = c.get('embedding_text', '')
+        if not content:
+            # Fallback
+            content = f"主訴: {c.get('chief_complaint')}, 診斷: {c.get('diagnosis_main')}, 標籤: {c.get('original_tags')}"
+        
+        cases_text_list.append(f"{tag} (Sim: {c.get('similarity', 0):.4f})\n{content}")
+    cases_text = "\n\n".join(cases_text_list) # Corrected indentation
+
+    # 3. 參考規則 (Rule References for Veto/Validation)
+    rules_text_list = []
+    for r in retrieved_rules[:3]:
+        if r.get('embedding_text'):
+            rules_text_list.append(f"- [規則] {r['embedding_text']}")
+        else:
+            rules_text_list.append(f"- [規則] {r.get('syndrome_name')}: 主症{r.get('main_symptoms')}")
+    rules_text = "\n".join(rules_text_list) # Corrected indentation
+
+    # 4. 病患特徵
     standardized_feats = features.get("standardized_features", {})
-    eight_principles = standardized_feats.get("eight_principles_score", {})
+    user_input = features.get("user_input_raw", "")
     
-    summary_data = features.get("diagnosis_summary", {})
-    constitution_features = summary_data.get("constitution_features", [])
-    acute_onset_features = summary_data.get("acute_onset_features", [])
-    symptom_state = summary_data.get("symptom_state", {})
-    updated_diagnosis_summary = summary_data.get("updated_diagnosis_summary", "")
-
-    previous_diag_text = "無上一輪診斷參考。"
-    if previous_diagnosis_candidates:
-        previous_diag_text = "\n".join([f"- Rank {d.rank}: {d.disease_name} (信心度: {d.confidence:.1%})" for d in previous_diagnosis_candidates])
-
-
     return f"""
-    [SCBR 系統輸入]    
-    1. 病患特徵 (Evidence Source): 
-    - 原始輸入: {features.get('user_input_raw', '無')}
-    - 標準化主訴: {standardized_feats.get('chief_complaint', '無')}
-    - 標準化症狀: {standardized_feats.get('symptoms', [])}
-    - 舌象: {standardized_feats.get('tongue', '無')}
-    - 脈象: {standardized_feats.get('pulse', '無')}
-    - 八綱評分: {json.dumps(eight_principles, ensure_ascii=False)}
-    - 結構化病程摘要: {updated_diagnosis_summary}
-    - 素體特徵 (Constitution): {', '.join(constitution_features) if constitution_features else '無'}
-    - 新感特徵 (Acute Onset): {', '.join(acute_onset_features) if acute_onset_features else '無'}
-    - 症狀狀態 (Symptom State): {json.dumps(symptom_state, ensure_ascii=False)}
+    [SCBR 輸入資料]
     
-    2. 參考規則庫 (Rule Base):
+    1. 病患特徵 (Target Case):
+    - 原始描述: {user_input}
+    - 結構化主訴: {standardized_feats.get('chief_complaint', '無')}
+    - 關鍵症狀: {standardized_feats.get('symptoms', [])}
+    - 舌象: {standardized_feats.get('tongue', '未提供')}
+    - 脈象: {standardized_feats.get('pulse', '未提供')}
+    
+    2. {dist_info}
+    
+    3. 參考案例池 (Candidate Pool):
+    {cases_text}
+    
+    4. 驗證規則庫 (Validation Rules):
     {rules_text}
-
-    3. 上一輪診斷參考 (Previous Diagnosis Reference):
-    {previous_diag_text}
-
-    ### 多輪診斷邏輯指令：
-    1. **錨定效應 (Anchoring Check)**: 審視「上一輪診斷」是否仍然符合「當前累積證據」？
-    2. **修正觸發 (Update Trigger)**: 
-       - 若新證據支持原診斷 -> **增加信心度 (Confidence Boost)**。
-       - 若新證據與原診斷矛盾 -> 執行 **「觀點翻轉 (Paradigm Shift)」**，並詳細解釋翻轉理由。
-    3. **禁止搖擺**: 除非有強烈的新反證 (Strong Counter-evidence)，否則不應隨意在大類別 (如寒/熱) 間跳躍。
     
-    請啟動 [SCBR 系統級診斷協議]，開始紅白臉對抗推理。
+    請啟動 Cluster-CBR 協議，執行 Step 1~4。
     """

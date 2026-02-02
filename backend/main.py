@@ -1,4 +1,5 @@
 import logging
+from logging.handlers import TimedRotatingFileHandler
 import asyncio
 import os
 from contextlib import asynccontextmanager
@@ -28,7 +29,13 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(), # 輸出到 Console
-        logging.FileHandler(settings.LOG_FILE_PATH, encoding='utf-8') # 輸出到檔案
+        TimedRotatingFileHandler(
+            filename=settings.LOG_FILE_PATH,
+            when='midnight',
+            interval=1,
+            backupCount=30,
+            encoding='utf-8'
+        ) # 輸出到檔案 (按日輪轉)
     ]
 )
 logger = logging.getLogger(__name__)

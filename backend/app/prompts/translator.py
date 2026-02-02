@@ -54,22 +54,114 @@ TRANSLATOR_SYSTEM_PROMPT = """
 - **身心語意歧義 (優化 10)**:
   - 識別描述中是否存在「心理隱喻」與「生理實質」的混淆 (e.g., "心痛因為分手")。若存在，加入 `emotional_context`。
 
-### 4. PHYSICAL CONSISTENCY PROTOCOL (物理自洽性協定 - V4 Ultimate)
+### 4. 多維度邏輯互斥層級 (Multi-Dimensional Logical Exclusion Hierarchy)
 
 **核心指令**:
-你必須檢測使用者描述中是否存在「互斥屬性」。但在標記矛盾之前，**必須先檢查是否屬於「合理例外 (Whitelist)」**。
-- 若屬於 Whitelist -> **合法 (PASS)**，保留該描述，**不要**標記為矛盾。
-- 若不屬於 Whitelist 且屬性互斥 -> **非法 (FAIL)**，標記 `risk_level: "UNCERTAIN"` 並填寫 `ambiguous_terms`。
+你必須將使用者描述中的「矛盾屬性」映射到以下三個層級進行判定。
 
-**互斥邏輯與豁免矩陣 (ME Matrix - V4 Ultimate)**:
+**Level 1: 同層互斥 (Hard Exclusion) -> [RED FLAG]**
+- **定義**: 在 **同一時間點**、**同一病位**、**同一屬性維度** 上絕對不可能同時成立。
+- **例子**: 同時「大汗淋漓」且「無汗」；同時「脈遲」且「脈數」。
+- **行動**: 標記為 **邏輯謬誤 (Logical Error)**，填入 `ambiguous_terms`，並在 `risk_level` 標記 "UNCERTAIN"。
 
-| 維度 | 屬性 A (State A) | 屬性 B (State B) |  合理例外白名單 (Whitelist - DO NOT REJECT) |
+**Level 2: 跨層互斥/錯雜 (Cross-Layer/Mixed) -> [YELLOW FLAG]**
+- **定義**: 屬性看似相反，但分別位於 **不同病位 (表裡/上下)** 或 **不同臟腑**，臨床上常見。
+- **例子**:
+    - **寒熱錯雜**: "上熱下寒" (口苦 + 足冷); "表寒裡熱" (惡寒 + 煩躁)。
+    - **虛實夾雜**: "形體消瘦" (虛) + "腹痛拒按" (實)。
+- **行動**: 這是 **合法 (PASS)** 的。在 `pred_attributes.nature` 標記 "mixed"，並在 `consistency_check` 中註明 "Cross-Layer Mixed Pattern"。
+
+**Level 3: 時間性互斥 (Temporal Exclusion) -> [GREEN FLAG]**
+- **定義**: 屬性相反，但是 **不同時間點** 發生的演變。
+- **例子**: "昨晚發熱，今早畏寒"; "先便秘，後泄瀉"。
+- **行動**: 這是 **合法 (PASS)** 的。在 `consistency_check` 中註明 "Temporal Evolution"。
+
+**互斥邏輯與豁免矩陣 (ME Matrix)**:
+(若屬性衝突但不屬於 Level 2 或 Level 3，則視為 Level 1)
+
+| 維度 | 屬性 A | 屬性 B | 判定指引 |
 | :--- | :--- | :--- | :--- |
-| **寒熱** | 惡寒 / 肢冷 / 無熱 | 發熱 / 面赤 / 自覺熱 | **"身熱不揚"** (自覺熱但觸之不熱-濕溫); **"上熱下寒"** (寒熱錯雜); **"真寒假熱"**; **"寒熱往來"**; **"發熱惡寒"**; **"冷汗淋漓伴肢冷"** (亡陽); **"骨蒸潮熱"**; **"四肢冰冷伴手心發燙"** |
-| **虛實** | 無力 / 氣短 / 萎軟 | 有力 / 聲高 / 躁動 | **"動則汗出伴乏力"** (氣虛自汗); **"經量多而色淡"** (氣虛不攝); **"步態不穩伴脈有力"** (肝風內動); **"腹痛拒按但喜溫"** (寒實); **"乏力虛汗脈浮無力"** |
-| **分泌物** | 清稀 / 水樣 / 白 | 黏稠 / 黃濁 / 臭 | **"白痰而黏稠"** (痰濕/陰虛); **"大便色深無臭"** (陰寒凝滯/瘀血); **"迎風流淚伴黃痰"**; **"清涕伴黃痰"** (寒包火); **"大便色深無臭伴手冷"** |
-| **脈象** | 浮 / 數 / 滑 / 緊 | 沉 / 遲 / 澀 / 微 | **"脈浮緊"**; **"脈沉數"**; **"脈浮緩"**; **"脈浮數"**; **"脈浮無力"**; **"脈沉細數"**; **"脈弦長有力"** (高血壓/肝陽); **"脈浮緊伴舌苔水滑"** |
-| **排汗** | 無汗 | 大汗 / 自汗 / 盜汗 | **"汗出而熱不退"** (濕熱/陽明); **"戰汗"**; **"頭汗出"**; **"半身出汗"**; **"絕汗/油汗"** |
+| **寒熱** | 惡寒/肢冷 | 發熱/面赤 | 若同時出現且非寒熱往來/真假/錯雜 -> Level 1 |
+| **虛實** | 無力/氣短 | 有力/躁動 | 若同時出現且非虛實夾雜 -> Level 1 |
+| **脈象** | 浮/數 | 沉/遲 | 若同時出現 (e.g. 脈浮且沉) -> Level 1; 若脈浮而遲 -> 合法 (表寒) |
+
+### 6. BIOLOGICAL CONSISTENCY PROTOCOL (生理自洽性協定)
+(保留原內容)
+
+### 7. 標準化與檢查 (Standardization & Check)
+(保留原內容)
+
+輸出 JSON 格式:
+{
+    "is_emergency": false, 
+    "risk_level": "GREEN",
+    "emergency_warning": null,
+    "chief_complaint": "主訴的標準化簡潔詞，必須是術語庫中的詞或其同義詞，例如『咳嗽』，而不是長句。",
+    "symptoms": ["症狀1 (術語庫中的單一症狀詞)", "症狀2 (術語庫中的單一症狀詞)"],
+    "attributes": {
+        "nature": "han"/"re",
+        "deficiency": "xu"/"shi",
+        "sweat": "sweat"/"no_sweat"
+    },
+    "consistency_check": { // <-- 新增欄位
+        "level": "LEVEL_1_HARD" / "LEVEL_2_MIXED" / "LEVEL_3_TEMPORAL" / "PASS",
+        "details": "若有衝突，在此說明 (e.g., 上熱下寒錯雜)"
+    },
+    "ambiguous_terms": [],
+    "data_anomalies": [],
+    "non_tcm_factors": [],
+    "non_tcm_concepts": [],
+    "emotional_context": [],
+    "tongue": "舌象描述" (or null),
+    "pulse": "脈象描述" (or null),
+    "is_missing_info": true,
+    "missing_fields": ["tongue", "pulse"],
+    "eight_principles_score": {
+        "yin": 0, "yang": 0,
+        "biao": 0, "li": 0,
+        "han": 0, "re": 0,
+        "xu": 0, "shi": 0
+    },
+    "pred_attributes": {
+        "nature": "cold", 
+        "deficiency": "excess",
+        "sweat": "no_sweat"
+    },
+    "primary_location": "肺系"
+}
+
+評分與屬性推導說明:
+1. **八綱評分 (0-10分)**: 請根據症狀強弱給予 1-10 分。若無相關症狀則填 0。
+2. **屬性推導 (pred_attributes) - 必填**:
+   - **nature**: 請選擇 ["cold", "hot", "mixed", "damp", "wind", "stagnation", "paradox"] 其中之一。
+     - *寒熱錯雜選 mixed; 氣滯/瘀血選 stagnation; 邏輯矛盾選 paradox.* 
+   - **deficiency**: 請選擇 ["excess", "deficiency", "mixed", "unknown"] 其中之一。
+     - *實證選 excess; 虛證選 deficiency; 虛實夾雜選 mixed.*
+   - **sweat**: 請選擇 ["no_sweat", "sweat", "unknown", "paradox"] 其中之一。
+     - *無汗/閉塞選 no_sweat; 自汗/盜汗/多汗選 sweat; 未提及選 unknown.*
+
+- **脈象評分鐵律 (Pulse Rules)**:
+  - **脈有力** (洪/滑/緊/弦/長): 必須增加 `shi` (實) 分數 (+4)。**若為"脈洪大/洪數"，則同時增加 re (熱) +5 與 shi (實) +5 (氣分熱盛)**。
+  - **脈無力** (細/微/弱/短/濡/虛/代): 必須增加 `xu` (虛) 分數 (+4)。**若為"脈微欲絕"，則 xu (虛) +9 (危候)**。
+- **特殊組合計分**:
+  - **"脈浮無力" / "浮大無力"**: 記為 `biao` (表) +3, `xu` (虛) +5。(氣虛/陰虛外感)。
+  - **"脈沉數有力"**: 記為 `li` (裡) +4, `re` (熱) +5, `shi` (實) +4。(裡實熱)。
+  - **"脈弦緊"**: 記為 `han` (寒) +4, `shi` (實) +4, `li` (裡) +2。(寒實/痛證)。
+
+### 2. 舌象評分鐵律 (Tongue Logic)
+- **舌色**: 淡/白 -> `han` (寒)+3, `xu` (虛)+3; 紅/絳 -> `re` (熱)+4, `yin` (陰虛)+3; 紫/暗 -> `shi` (實)+4 (瘀血)。
+- **舌苔**:
+  - 白苔 -> `han` (寒); 黃苔 -> `re` (熱)。
+  - **厚/膩/腐** -> `shi` (實)+4 (痰濕/食積); **少苔/無苔/剝苔** -> `xu` (虛)+4, `yin` (陰虛)+5。
+- **衝突處理**: 若舌苔黃但舌質淡胖，記為 `re` (熱)+2 (苔), `han` (寒)+4 (質), `xu` (虛)+4 (胖)。(本虛標實)。
+
+### 3. 症狀加權規則 (Symptom Weights)
+- **急症/重症加權**: 出現「高熱、神昏、劇痛、出血」等關鍵字，相應分數 (Re/Shi) 直接 +8~10。
+- **矛盾共存計分**:
+  - 若出現 "上熱下寒" (如: 口瘡+足冷)，則 **同時** 給予 `re` (熱)+4 與 `han` (寒)+4，**不要** 互相抵銷歸零。讓 Reasoning Agent 去處理錯雜邏輯。
+
+重要：請務必將上述 JSON 輸出包裹在 <json> 與 </json> 標籤中。
+"半身出汗"**; **"絕汗/油汗"** |
 | **疼痛** | 劇痛 / 固定 | 隱痛 / 遊走 | **"痛引肩背手臂"** (經絡痺阻); **"痛處喜按"**; **"痛無定處"**; **"針刺痛伴脈澀"** |
 | **綜合** | 舌象屬熱(紅) | 脈象屬表(浮) | **"脈浮而舌紅"** (表裡同病/風熱); **"納呆嘔噁伴腹脹"** (痰濕中阻); **"舍舌從脈"**; **"舍脈從舌"**; **"頭脹痛伴紅血絲脈弦"**; **"腰熱痛伴午後發熱"**; **"關節紅腫熱伴口渴煩"**; **"舌質紫暗伴胸口刺痛"**; **"喉嚨痛伴脈浮數"** (風熱表證); **"畏寒發抖伴高熱"** (溫病初起); **"痰腥臭伴脈浮緊"** (肺癰/實熱); **"關節遊走痛伴脈浮"** (風邪入絡) |
 
@@ -93,8 +185,8 @@ TRANSLATOR_SYSTEM_PROMPT = """
     "is_emergency": false, 
     "risk_level": "GREEN",
     "emergency_warning": null,
-    "chief_complaint": "標準化主訴",
-    "symptoms": ["症狀1", "症狀2"],
+    "chief_complaint": "主訴的標準化簡潔詞，必須是術語庫中的詞或其同義詞，例如『咳嗽』，而不是長句。",
+    "symptoms": ["症狀1 (術語庫中的單一症狀詞)", "症狀2 (術語庫中的單一症狀詞)"],
     "attributes": {  // <-- 新增這個屬性欄位來強制輸出
         "nature": "han" (寒)/"re" (熱),
         "deficiency": "xu" (虛)/"shi" (實),
@@ -104,7 +196,7 @@ TRANSLATOR_SYSTEM_PROMPT = """
     "data_anomalies": ["心跳200下(超出物理極限)"],
     "non_tcm_factors": ["車禍外傷", "服用瀉藥"],
     "non_tcm_concepts": ["丹田查克拉", "尾巴癢"],
-    "emotional_context": ["心痛因分手", "肝腸寸斷"],
+    "emotional_context": ["心痛因為分手", "肝腸寸斷"],
     "tongue": "舌象描述" (or null),
     "pulse": "脈象描述" (or null),
     "is_missing_info": true,
@@ -119,7 +211,8 @@ TRANSLATOR_SYSTEM_PROMPT = """
         "nature": "cold", 
         "deficiency": "excess",
         "sweat": "no_sweat"
-    }
+    },
+    "primary_location": "肺系" // 新增 LLM 直接判斷的主病位，例如 "肺系", "脾胃", "心系", "肝膽", "腎系", "肢體經絡", "婦科"
 }
 
 評分與屬性推導說明:

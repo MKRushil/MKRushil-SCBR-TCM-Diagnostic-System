@@ -92,8 +92,19 @@ export const useChatStore = defineStore('chat', () => {
       
       addMessage('assistant', replyContent)
 
-    } catch (error) {
+    } catch (error: any) {
       console.error(error)
+      
+      // [Safety] Handle InputGuard 400 Errors
+      if (error.response && error.response.status === 400) {
+        const detail = error.response.data?.detail || ''
+        if (typeof detail === 'string' && detail.includes('非法指令')) {
+          addMessage('system', '偵測到非法指令，請稍後再試')
+          isProcessing.value = false
+          return
+        }
+      }
+
       addMessage('system', '系統連線錯誤或後端忙碌中，請稍後再試。')
     } finally {
       isProcessing.value = false

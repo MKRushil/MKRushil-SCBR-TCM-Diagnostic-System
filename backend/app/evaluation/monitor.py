@@ -11,7 +11,7 @@ class MonitorService:
     """
     規格書 6.3: 線上監控 (Online Monitoring)
     負責記錄系統運作指標：回應時間、Token 使用量、使用者反饋。
-    整合 SCBREvaluator 進行 Spec 6.2 指標計算。
+    [V2.1 Update] Integrates with SCBREvaluator for TCRS calculation (Online Mode).
     """
     
     def __init__(self):
@@ -46,7 +46,7 @@ class MonitorService:
         """
         規格書 6.2: 紀錄詳細線上評估指標
         包含: Confidence, Path Similarity, Convergence Turns, Info Gain (Entropy)
-        並同步至 SCBREvaluator。
+        [V2.1] Calculate Online TCRS.
         """
         try:
             session_id = state.session_id
@@ -67,7 +67,8 @@ class MonitorService:
             max_sim = 0.0
             if state.retrieved_context:
                 try:
-                    max_sim = max([item.get('similarity', 0.0) for item in state.retrieved_context], default=0.0)
+                    # If 'similarity' is not available (e.g. from Reranker), use cross_encoder_score if normalized, or just skip
+                    max_sim = max([item.get('rerank_score', 0.0) for item in state.retrieved_context], default=0.0)
                 except:
                     pass
             logger.info(f"[METRIC] Type=PathSimilarity | Session={session_id} | Value={max_sim:.4f}")
@@ -87,43 +88,44 @@ class MonitorService:
                     entropy = -sum(p * math.log2(p) for p in probs if p > 0)
             logger.info(f"[METRIC] Type=InfoEntropy | Session={session_id} | Value={entropy:.4f}")
 
-            # --- Sync to SCBREvaluator ---
-            # 嘗試從 standardized_features 獲取 ambiguous_terms_count
+            # --- [V2.1] Online TCRS Calculation ---
+            # Prepare log for Evaluator
             amb_count = 0
-            pred_attributes = {} 
+            pred_attributes = {}
+            pred_risk = "GREEN"
             
             if state.standardized_features:
                 amb_count = len(state.standardized_features.get("ambiguous_terms", []))
-                # Extract pred_attributes directly from LLM output
                 pred_attributes = state.standardized_features.get("pred_attributes", {})
+                pred_risk = state.standardized_features.get("risk_level", "GREEN")
             
             pred_type = "FALLBACK"
             if state.final_response:
                 pred_type = state.final_response.response_type.value
 
             turn_data = {
-                "case_id": session_id,
-                "turn_id": int(time.time()), # Proxy for turn_id
-                "input_text": state.user_input_raw,
-                "gt_diagnosis": None, # Online mode: No GT
-                "gt_attributes": None,
-                "is_emergency_gt": None,
-                "pred_response_type": pred_type,
-                "pred_diagnosis": pred_diag,
                 "pred_confidence": max_confidence,
-                "pred_attributes": pred_attributes, # Use the populated pred_attributes
-                "ambiguous_terms_count": amb_count
+                "ambiguous_terms_count": amb_count,
+                # Online mode lacks GT, so Retrieval Validity (R) will be 0
+                "retrieved_context": state.retrieved_context, 
+                "category": None, 
+                # Safety checks
+                "is_emergency_gt": False, # Unknown
+                "pred_response_type": pred_type,
+                "pred_risk_level": pred_risk,
+                "pred_attributes": pred_attributes
             }
-            self.evaluator.log_turn(turn_data)
+            
+            # We assume initial ambiguity is somewhat constant or we don't normalize it perfectly online
+            # Passing current amb_count as initial effectively makes A component 0 change, or we pass a standard value (e.g. 5)
+            # This is just an estimation.
+            tcrs_result = self.evaluator.calculate_turn_metrics(turn_data, initial_ambiguity_count=5)
+            online_tcrs = tcrs_result.get("TCRS", 0.0)
+            
+            logger.info(f"[METRIC] Type=TCRS_Online | Session={session_id} | Value={online_tcrs:.4f}")
 
         except Exception as e:
             logger.error(f"[Monitor] Failed to log detailed metrics: {str(e)}")
-
-    def get_online_metrics_report(self) -> Dict[str, float]:
-        """
-        獲取當前累積的線上評估報告
-        """
-        return self.evaluator.get_summary_report()
 
 # Global Instance
 monitor = MonitorService()

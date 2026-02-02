@@ -73,43 +73,74 @@ class SyncManager:
     async def _process_batch(self, class_name: str, items: List[Dict]):
         """
         序列化處理 Embedding 並寫入，避免觸發 API Rate Limit
+        Updated to match Ingestion.py embedding_text format for consistency.
         """
         for item in items:
             try:
                 # 準備 Embedding Text 與 屬性轉換 (ETL)
                 properties = {}
-                text_to_embed = ""
+                text_to_embed = "" # This will be the rich embedding text
                 
                 if class_name == "TCM_Reference_Case":
-                    text_to_embed = f"{item.get('chief_complaint')} {' '.join(item.get('symptom_tags', []))}"
+                    # Logic from Ingestion.py: resolve_symptoms logic simplified here (no ontology lookup for enrichment in sync for now)
+                    # To keep it simple but compatible, we construct the text structure.
+                    symptoms_text = " ".join(item.get('symptom_tags', []))
+                    
+                    # Aggressive Weighting: Repeat chief_complaint 5 times
+                    weighted_chief_complaint = (item.get('chief_complaint') + " ") * 5
+                    
+                    text_to_embed = (
+                        f"主訴: {weighted_chief_complaint}\n"
+                        f"關鍵症狀: {symptoms_text}\n" 
+                        f"病機分析: {item.get('pathology_analysis')}\n"
+                        f"診斷: {item.get('diagnosis_disease')} {item.get('diagnosis_syndrome')}"
+                    )
                     
                     # ETL: Map JSON fields to Schema
                     properties = {
                         "case_id": item.get("case_id"),
-                        "source_type": item.get("type"), # Map 'type' to 'source_type'
+                        "source_type": item.get("type"), 
                         "chief_complaint": item.get("chief_complaint"),
-                        "symptom_tags": item.get("symptom_tags"),
-                        "diagnosis_main": f"{item.get('diagnosis_disease')} - {item.get('diagnosis_syndrome')}", # Combine
+                        "original_tags": item.get("symptom_tags"), # Mapped to original_tags
+                        "diagnosis_main": item.get("diagnosis_disease"),
+                        "diagnosis_syndrome": item.get("diagnosis_syndrome"),
                         "treatment_principle": item.get("treatment_principle"),
                         "pathology_analysis": item.get("pathology_analysis"),
-                        "confidence_score": item.get("confidence_score")
+                        "confidence_score": item.get("confidence_score"),
+                        "embedding_text": text_to_embed # Store the rich text
                     }
                     
                 elif class_name == "TCM_Standard_Ontology":
-                    text_to_embed = f"{item.get('term_name')} {item.get('definition')}"
-                    properties = item # 欄位大致相符
+                    # Logic from Ingestion.py
+                    enrich_text = f"{item.get('term_name')} ({item.get('category')}): {item.get('definition')} 同義詞:{' '.join(item.get('synonyms', []))}"
+                    text_to_embed = enrich_text
+                    
+                    properties = item
+                    properties["embedding_text"] = enrich_text
                     
                 elif class_name == "TCM_Diagnostic_Rules":
-                    text_to_embed = f"{item.get('syndrome_name')} {' '.join(item.get('main_symptoms', []))}"
+                    # Logic from Ingestion.py
+                    main_text = " ".join(item.get('main_symptoms', []))
+                    sec_text = " ".join(item.get('secondary_symptoms', []))
+                    
+                    text_to_embed = (
+                        f"證型: {item.get('syndrome_name')}\n"
+                        f"必要主症: {main_text}\n" 
+                        f"次要症狀: {sec_text}\n"
+                        f"排除條件: {' '.join(item.get('exclusion', []))}"
+                    )
+                    
                     properties = {
                         "rule_id": item.get("rule_id"),
                         "syndrome_name": item.get("syndrome_name"),
                         "category": item.get("category"),
-                        "main_symptoms": item.get("main_symptoms"),
-                        "secondary_symptoms": item.get("secondary_symptoms"),
-                        "tongue_pulse": item.get("tongue_pulse"), # Now a list
+                        # Note: Ingestion.py doesn't store main/sec symptoms in properties, only in refs or embedding_text.
+                        # But we can't easily add refs in sync without ontology lookup.
+                        # Storing them in embedding_text is sufficient for the fallback logic.
+                        "tongue_pulse": item.get("tongue_pulse"), 
                         "exclusion": item.get("exclusion"),
-                        "treatment_principle": item.get("treatment_principle")
+                        "treatment_principle": item.get("treatment_principle"),
+                        "embedding_text": text_to_embed
                     }
 
                 # 呼叫 Embedding API
