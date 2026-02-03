@@ -53,7 +53,7 @@ docker-compose logs -f
 2.  **Backend**: 連線資料庫並執行 `SyncManager` (若 `RUN_SYNC_ON_STARTUP=True`，此時會自動載入 `data/` 下的 JSON 進行向量化)。
 3.  **Frontend**: 網頁介面啟動。
 
-### 4. 驗證服務 (Verification)
+###  驗證服務 (Verification)
 啟動完成後，您可以透過瀏覽器訪問以下服務：
 
 | 服務名稱 | 網址 | 功能說明 |
@@ -74,6 +74,9 @@ docker-compose logs -f
 *   **重啟特定服務** (例如修改了 Python 程式碼，雖然有 Hot Reload 但有時需重啟):
     ```bash
     docker-compose restart backend
+    ```
+    ```bash
+    docker-compose restart frontend
     ```
 *   **完全停止並移除容器**:
     ```bash
@@ -103,4 +106,29 @@ python run_100_case_experiment.py
 *   `frontend/`: React 前端代碼
 *   `data/`: 原始中醫案例與規則資料 (JSON)
 *   `test_workspace_v31/`: 實驗腳本與評估結果輸出區
-*   `Thesis_*.md`: 論文各章節草稿
+
+## 📖 系統操作指南 (System Usage Guide)
+
+本系統以「螺旋式協商推理」為核心，模擬真實中醫師的問診流程。操作流程分為以下三個階段：
+
+### 1. 初始問診 (Initial Consultation)
+*   **進入首頁**：打開瀏覽器訪問 [http://localhost:3000](http://localhost:3000)。
+*   **輸入主訴**：在對話框中輸入您的主要不適症狀。
+    *   *範例*：「最近常常失眠，覺得心煩口乾，晚上這幾天特別嚴重。」
+*   **送出訊息**：按下 Enter 或發送按鈕。
+
+### 2. 互動式追問 (Interactive Inquiry)
+*   系統會根據您的主訴，啟動 **Symptom Analysis** 與初步推理。
+*   若資訊不足以確診，系統會扮演醫師角色，提出針對性的 **追問 (Follow-up Questions)**。
+    *   *系統提問*：「請問您是否有伴隨便秘或小便黃的情況？」
+    *   *您的回應*：「有，大便比較乾硬，小便顏色深。」
+*   此過程可能會進行 1~3 回合，直到系統收集足夠的證據 。
+
+### 3. 診斷報告 (Analysis & Decision)
+*   當系統收集齊全資訊後，會進行最終推理並生成完整報告。
+*   **診斷結果 (Diagnosis)**：顯示辨證結果 (如「心火亢盛」)。
+*   **病機分析 (Pathology)**：解釋病因、病機與症狀的關聯。
+*   **治則建議 (Treatment)**：提供相應的治法原則 (如「清心瀉火，養陰安神」)。
+*   **信心分數 (Confidence)**：若分數過低 (<0.6)，系統可能會建議「由真人醫師診斷」。
+
+> **💡 小提示**：這是輔助診斷系統，所有建議僅供參考，實際醫療行為請諮詢合格中醫師。
