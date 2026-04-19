@@ -1,0 +1,3502 @@
+[
+  {
+    "term_id": "ONT_001",
+    "term_name": "惡寒",
+    "category": "症狀",
+    "definition": "病人自覺怕冷，多加衣被或近火取暖仍不緩解，為外感表證之特徵。",
+    "synonyms": ["怕冷", "畏寒", "身體發冷", "發冷"]
+  },
+  {
+    "term_id": "ONT_002",
+    "term_name": "發熱",
+    "category": "症狀",
+    "definition": "體溫升高，超出正常範圍；或體溫正常但病人自覺身熱。",
+    "synonyms": ["發燒", "身熱", "發燙", "體溫高"]
+  },
+  {
+    "term_id": "ONT_003",
+    "term_name": "無汗",
+    "category": "症狀",
+    "definition": "當汗出而無汗，多因外寒束表，腠理閉塞所致。",
+    "synonyms": ["不出汗", "流不出汗", "肌表無汗"]
+  },
+  {
+    "term_id": "ONT_004",
+    "term_name": "自汗",
+    "category": "症狀",
+    "definition": "不因勞累或天氣炎熱，白晝時時汗出，動則益甚。",
+    "synonyms": ["流虛汗", "容易流汗", "一動就流汗"]
+  },
+  {
+    "term_id": "ONT_005",
+    "term_name": "盜汗",
+    "category": "症狀",
+    "definition": "入睡後汗出，醒後汗止，多屬陰虛內熱。",
+    "synonyms": ["睡覺流汗", "夜間流汗", "寢汗"]
+  },
+  {
+    "term_id": "ONT_006",
+    "term_name": "神疲乏力",
+    "category": "症狀",
+    "definition": "精神疲憊，肢體倦怠無力，多屬氣虛。",
+    "synonyms": ["很累", "沒力氣", "疲倦", "精神不好", "想睡覺", "身重"]
+  },
+  {
+    "term_id": "ONT_007",
+    "term_name": "頭痛",
+    "category": "症狀",
+    "definition": "頭部疼痛，可分巔頂、前額、兩側或後枕。",
+    "synonyms": ["頭殼痛", "腦袋痛", "偏頭痛", "頭脹痛", "頭暈痛", "腦袋脹", "偏頭風"]
+  },
+  {
+    "term_id": "ONT_008",
+    "term_name": "眩暈",
+    "category": "症狀",
+    "definition": "頭暈目眩，視物旋轉或搖晃不定。",
+    "synonyms": ["頭暈", "眼花", "天旋地轉", "頭暈暈的", "暈眩"]
+  },
+  {
+    "term_id": "ONT_009",
+    "term_name": "口苦",
+    "category": "症狀",
+    "definition": "口中有苦味，多屬肝膽火旺或濕熱。",
+    "synonyms": ["嘴巴苦", "嘴苦"]
+  },
+  {
+    "term_id": "ONT_010",
+    "term_name": "口乾",
+    "category": "症狀",
+    "definition": "口中津液不足，感覺乾燥，多伴隨欲飲水。",
+    "synonyms": ["嘴巴乾", "口渴", "想喝水", "口燥"]
+  },
+  {
+    "term_id": "ONT_011",
+    "term_name": "咽痛",
+    "category": "症狀",
+    "definition": "咽喉部位紅腫疼痛，吞嚥時加重。",
+    "synonyms": ["喉嚨痛", "吞嚥痛", "喉嚨不舒服"]
+  },
+  {
+    "term_id": "ONT_012",
+    "term_name": "鼻塞",
+    "category": "症狀",
+    "definition": "鼻竅阻塞，呼吸不通暢。",
+    "synonyms": ["鼻子不通", "鼻窒"]
+  },
+  {
+    "term_id": "ONT_013",
+    "term_name": "咳嗽",
+    "category": "症狀",
+    "definition": "肺氣上逆，發出咳聲。",
+    "synonyms": ["咳", "嗽", "咳喘"]
+  },
+  {
+    "term_id": "ONT_014",
+    "term_name": "胸悶",
+    "category": "症狀",
+    "definition": "胸部感覺痞塞滿悶，呼吸不暢。",
+    "synonyms": ["胸口悶", "透不過氣", "胸部脹悶", "胸痞"]
+  },
+  {
+    "term_id": "ONT_015",
+    "term_name": "心悸",
+    "category": "症狀",
+    "definition": "病人自覺心中急劇跳動，驚慌不安。",
+    "synonyms": ["心跳快", "心慌", "心跳很大力", "驚悸", "怔忡"]
+  },
+  {
+    "term_id": "ONT_016",
+    "term_name": "胃痛",
+    "category": "症狀",
+    "definition": "上腹部近心窩處疼痛，又稱胃脘痛。",
+    "synonyms": ["胃脘痛", "胃不舒服", "心窩痛", "肚子上面痛", "脘腹痛", "心下痛", "胃部不適", "胃氣痛"]
+  },
+  {
+    "term_id": "ONT_017",
+    "term_name": "腹脹",
+    "category": "症狀",
+    "definition": "腹部脹滿不適，叩之如鼓。",
+    "synonyms": ["肚子脹", "胃脹氣", "脹氣", "脘腹脹滿"]
+  },
+  {
+    "term_id": "ONT_018",
+    "term_name": "納呆",
+    "category": "症狀",
+    "definition": "食慾減退，不想進食。",
+    "synonyms": ["沒胃口", "食慾不振", "吃不下", "厭食", "不思飲食"]
+  },
+  {
+    "term_id": "ONT_019",
+    "term_name": "噁心",
+    "category": "症狀",
+    "definition": "胃脘不適，欲吐之感。",
+    "synonyms": ["想吐", "反胃", "嘔惡"]
+  },
+  {
+    "term_id": "ONT_020",
+    "term_name": "噯氣",
+    "category": "症狀",
+    "definition": "胃氣上逆，氣體從口中出，聲音長而緩。",
+    "synonyms": ["打嗝", "飽嗝"]
+  },
+  {
+    "term_id": "ONT_021",
+    "term_name": "便秘",
+    "category": "症狀",
+    "definition": "大便排出困難，排便時間延長，或糞質乾結。",
+    "synonyms": ["排便困難", "大便乾", "大便硬", "好幾天沒大便", "便結"]
+  },
+  {
+    "term_id": "ONT_022",
+    "term_name": "便溏",
+    "category": "症狀",
+    "definition": "大便稀薄，不成形，水分較多。",
+    "synonyms": ["拉肚子", "腹瀉", "大便稀", "軟便", "下利"]
+  },
+  {
+    "term_id": "ONT_023",
+    "term_name": "裡急後重",
+    "category": "症狀",
+    "definition": "腹痛窘迫欲便，肛門重墜，便出不爽。",
+    "synonyms": ["想大便大不出來", "肛門墜脹", "一直想上廁所"]
+  },
+  {
+    "term_id": "ONT_024",
+    "term_name": "尿頻",
+    "category": "症狀",
+    "definition": "排尿次數明顯增多，超過正常範圍。",
+    "synonyms": ["頻尿", "一直跑廁所", "小便次數多"]
+  },
+  {
+    "term_id": "ONT_025",
+    "term_name": "尿赤",
+    "category": "症狀",
+    "definition": "小便顏色深黃或帶紅。",
+    "synonyms": ["小便黃", "尿黃", "尿色深"]
+  },
+  {
+    "term_id": "ONT_026",
+    "term_name": "失眠",
+    "category": "症狀",
+    "definition": "入睡困難，或睡眠時間不足，或睡眠品質不佳。",
+    "synonyms": ["睡不著", "不寐", "難入睡", "早醒", "眠差"]
+  },
+  {
+    "term_id": "ONT_027",
+    "term_name": "多夢",
+    "category": "症狀",
+    "definition": "睡眠中夢境紛紜，醒後感覺疲勞。",
+    "synonyms": ["一直作夢", "夢很多"]
+  },
+  {
+    "term_id": "ONT_028",
+    "term_name": "煩躁",
+    "category": "症狀",
+    "definition": "心中煩悶，急躁不安。",
+    "synonyms": ["心情不好", "易怒", "心煩", "阿雜"]
+  },
+  {
+    "term_id": "ONT_029",
+    "term_name": "痛經",
+    "category": "症狀",
+    "definition": "月經前後或經期出現小腹疼痛。",
+    "synonyms": ["經痛", "月經痛", "生理痛"]
+  },
+  {
+    "term_id": "ONT_030",
+    "term_name": "帶下",
+    "category": "症狀",
+    "definition": "陰道分泌物量、色、質、味發生異常。",
+    "synonyms": ["白帶", "分泌物多"]
+  },
+  {
+    "term_id": "ONT_031",
+    "term_name": "舌淡",
+    "category": "舌象",
+    "definition": "舌色較正常淺淡，主氣血兩虛或陽虛。",
+    "synonyms": ["舌頭白", "舌色淡白"]
+  },
+  {
+    "term_id": "ONT_032",
+    "term_name": "舌紅",
+    "category": "舌象",
+    "definition": "舌色較正常紅，主熱證。",
+    "synonyms": ["舌頭紅", "舌質紅"]
+  },
+  {
+    "term_id": "ONT_033",
+    "term_name": "舌紫暗",
+    "category": "舌象",
+    "definition": "舌色紫暗或有瘀斑，主血瘀。",
+    "synonyms": ["舌頭紫紫的", "有瘀點", "舌暗"]
+  },
+  {
+    "term_id": "ONT_034",
+    "term_name": "舌胖大",
+    "category": "舌象",
+    "definition": "舌體較大，伸出滿口，多伴有齒痕，主水濕痰飲。",
+    "synonyms": ["舌頭肥大", "有齒痕"]
+  },
+  {
+    "term_id": "ONT_035",
+    "term_name": "苔白",
+    "category": "舌象",
+    "definition": "舌面上附著白色苔狀物，主表證、寒證。",
+    "synonyms": ["舌苔白", "白苔"]
+  },
+  {
+    "term_id": "ONT_036",
+    "term_name": "苔黃",
+    "category": "舌象",
+    "definition": "舌苔呈現黃色，主熱證、裡證。",
+    "synonyms": ["舌苔黃", "黃苔"]
+  },
+  {
+    "term_id": "ONT_037",
+    "term_name": "苔膩",
+    "category": "舌象",
+    "definition": "苔質顆粒細膩緻密，揩之不去，主濕濁、痰飲。",
+    "synonyms": ["舌苔厚膩", "舌苔很厚"]
+  },
+  {
+    "term_id": "ONT_038",
+    "term_name": "脈浮",
+    "category": "脈象",
+    "definition": "輕取即得，重按稍減，主表證。",
+    "synonyms": ["脈像浮在水面"]
+  },
+  {
+    "term_id": "ONT_039",
+    "term_name": "脈沉",
+    "category": "脈象",
+    "definition": "輕取不應，重按始得，主裡證。",
+    "synonyms": ["脈按很深才有"]
+  },
+  {
+    "term_id": "ONT_040",
+    "term_name": "脈遲",
+    "category": "脈象",
+    "definition": "脈來遲慢，一息不足四至（低於60次/分），主寒證。",
+    "synonyms": ["脈慢", "心跳慢"]
+  },
+  {
+    "term_id": "ONT_041",
+    "term_name": "脈數",
+    "category": "脈象",
+    "definition": "脈來急促，一息五至以上（高於90次/分），主熱證。",
+    "synonyms": ["脈快", "心跳快"]
+  },
+  {
+    "term_id": "ONT_042",
+    "term_name": "脈弦",
+    "category": "脈象",
+    "definition": "端直而長，如按琴弦，主肝膽病、痛證。",
+    "synonyms": ["脈像琴弦", "脈緊繃"]
+  },
+  {
+    "term_id": "ONT_043",
+    "term_name": "脈滑",
+    "category": "脈象",
+    "definition": "往來流利，如盤走珠，主痰濕、食積或妊娠。",
+    "synonyms": ["脈滑滑的", "滑脈"]
+  },
+  {
+    "term_id": "ONT_044",
+    "term_name": "脈澀",
+    "category": "脈象",
+    "definition": "往來艱澀，如輕刀刮竹，主血瘀、精傷。",
+    "synonyms": ["脈不順", "澀脈"]
+  },
+  {
+    "term_id": "ONT_045",
+    "term_name": "脈細",
+    "category": "脈象",
+    "definition": "脈細如線，應指明顯，主氣血兩虛、濕邪。",
+    "synonyms": ["脈細細的", "脈小"]
+  },
+  {
+    "term_id": "ONT_046",
+    "term_name": "五心煩熱",
+    "category": "症狀",
+    "definition": "兩手心、兩足心發熱，並自覺心胸煩熱。",
+    "synonyms": ["手腳心熱", "手心燙"]
+  },
+  {
+    "term_id": "ONT_047",
+    "term_name": "潮熱",
+    "category": "症狀",
+    "definition": "發熱如潮汐之有定時，多在下午或夜間。",
+    "synonyms": ["定時發熱", "午後發熱"]
+  },
+  {
+    "term_id": "ONT_048",
+    "term_name": "惡風",
+    "category": "症狀",
+    "definition": "遇風覺冷，避之可緩，較惡寒輕。",
+    "synonyms": ["怕風", "吹風不舒服"]
+  },
+  {
+    "term_id": "ONT_049",
+    "term_name": "身重",
+    "category": "症狀",
+    "definition": "身體感覺沉重酸困，多屬濕邪困脾。",
+    "synonyms": ["身體重重的", "身體沉重"]
+  },
+  {
+    "term_id": "ONT_050",
+    "term_name": "面色萎黃",
+    "category": "症狀",
+    "definition": "面色黃而無光澤，多屬脾胃氣虛或血虛。",
+    "synonyms": ["臉色蠟黃", "臉色黃黃的"]
+  },
+  {
+    "term_id": "ONT_051",
+    "term_name": "頭重",
+    "category": "症狀",
+    "definition": "頭部感覺沈重，如被布帶包裹，多屬濕邪困遏。",
+    "synonyms": ["頭重重的", "頭昏沉", "頭重如裹"]
+  },
+  {
+    "term_id": "ONT_052",
+    "term_name": "耳鳴",
+    "category": "症狀",
+    "definition": "自覺耳內有響聲，如蟬鳴或潮水聲。",
+    "synonyms": ["耳朵嗡嗡叫", "耳聾", "聽不到"]
+  },
+  {
+    "term_id": "ONT_053",
+    "term_name": "目赤",
+    "category": "症狀",
+    "definition": "白睛紅赤，多屬風熱或肝火。",
+    "synonyms": ["眼睛紅", "紅眼", "眼睛充血"]
+  },
+  {
+    "term_id": "ONT_054",
+    "term_name": "流清涕",
+    "category": "症狀",
+    "definition": "鼻流清稀鼻涕，多屬風寒或肺氣虛。",
+    "synonyms": ["流鼻水", "鼻水清清的"]
+  },
+  {
+    "term_id": "ONT_055",
+    "term_name": "流黃涕",
+    "category": "症狀",
+    "definition": "鼻流黃色黏稠鼻涕，多屬風熱或膽經鬱熱。",
+    "synonyms": ["黃鼻涕", "濃鼻涕"]
+  },
+  {
+    "term_id": "ONT_056",
+    "term_name": "痰白",
+    "category": "症狀",
+    "definition": "咳出之痰顏色白，質地較清稀，主寒證、濕證。",
+    "synonyms": ["白痰", "痰白白的"]
+  },
+  {
+    "term_id": "ONT_057",
+    "term_name": "痰黃",
+    "category": "症狀",
+    "definition": "咳出之痰顏色黃，質地較黏稠，主熱證。",
+    "synonyms": ["黃痰", "痰黃黃的", "濃痰"]
+  },
+  {
+    "term_id": "ONT_058",
+    "term_name": "痰黏",
+    "category": "症狀",
+    "definition": "痰液黏稠，難以咳出，主燥痰或濕熱膠結。",
+    "synonyms": ["卡痰", "痰咳不出來", "痰很黏"]
+  },
+  {
+    "term_id": "ONT_059",
+    "term_name": "氣短",
+    "category": "症狀",
+    "definition": "呼吸氣息短促，不足以息，多屬氣虛。",
+    "synonyms": ["呼吸短促", "喘不過氣", "吸不到氣", "少氣"]
+  },
+  {
+    "term_id": "ONT_060",
+    "term_name": "喘",
+    "category": "症狀",
+    "definition": "呼吸困難，張口抬肩，鼻翼煽動。",
+    "synonyms": ["氣喘", "喘氣", "哮喘"]
+  },
+  {
+    "term_id": "ONT_061",
+    "term_name": "月經先期",
+    "category": "症狀",
+    "definition": "月經週期提前七天以上，甚至一月兩至。",
+    "synonyms": ["月經提早", "經期提前"]
+  },
+  {
+    "term_id": "ONT_062",
+    "term_name": "月經後期",
+    "category": "症狀",
+    "definition": "月經週期延後七天以上，甚至四五十日一至。",
+    "synonyms": ["月經延後", "月經晚來", "經期延後"]
+  },
+  {
+    "term_id": "ONT_063",
+    "term_name": "月經量多",
+    "category": "症狀",
+    "definition": "經量明顯多於平日，或經期延長。",
+    "synonyms": ["經血很多", "量很大"]
+  },
+  {
+    "term_id": "ONT_064",
+    "term_name": "月經量少",
+    "category": "症狀",
+    "definition": "經量明顯少於平日，或點滴即淨。",
+    "synonyms": ["經血很少", "量很少", "來一點點"]
+  },
+  {
+    "term_id": "ONT_065",
+    "term_name": "血塊",
+    "category": "症狀",
+    "definition": "經血中夾雜凝固之血塊，多屬血瘀或寒凝。",
+    "synonyms": ["有血塊", "經血結塊"]
+  },
+  {
+    "term_id": "ONT_066",
+    "term_name": "崩漏",
+    "category": "病名",
+    "definition": "不在經期而陰道大量出血為崩，淋漓不斷為漏。",
+    "synonyms": ["功能性子宮出血", "血崩", "非經期出血"]
+  },
+  {
+    "term_id": "ONT_067",
+    "term_name": "大便乾結",
+    "category": "症狀",
+    "definition": "糞質乾燥堅硬，排出困難，主熱結或陰虧。",
+    "synonyms": ["大便很硬", "大便像羊大便", "便秘"]
+  },
+  {
+    "term_id": "ONT_068",
+    "term_name": "完穀不化",
+    "category": "症狀",
+    "definition": "大便中夾雜未消化的食物殘渣，主脾腎陽虛。",
+    "synonyms": ["大便有菜渣", "吃什麼拉什麼", "消化不良"]
+  },
+  {
+    "term_id": "ONT_069",
+    "term_name": "小便短赤",
+    "category": "症狀",
+    "definition": "尿量少且顏色深黃或紅，主實熱證。",
+    "synonyms": ["尿很少", "尿很黃", "小便黃短"]
+  },
+  {
+    "term_id": "ONT_070",
+    "term_name": "小便清長",
+    "category": "症狀",
+    "definition": "尿量多且顏色清白，主虛寒證。",
+    "synonyms": ["尿很多", "尿顏色很淡", "夜尿"]
+  },
+  {
+    "term_id": "ONT_071",
+    "term_name": "脹痛",
+    "category": "症狀",
+    "definition": "疼痛伴有脹滿感，多屬氣滯。",
+    "synonyms": ["脹脹的痛", "肚子脹痛", "胸部脹痛"]
+  },
+  {
+    "term_id": "ONT_072",
+    "term_name": "刺痛",
+    "category": "症狀",
+    "definition": "疼痛如針刺，痛處固定，多屬血瘀。",
+    "synonyms": ["像針在刺", "刺刺的痛"]
+  },
+  {
+    "term_id": "ONT_073",
+    "term_name": "隱痛",
+    "category": "症狀",
+    "definition": "疼痛輕微，綿綿不休，多屬虛證。",
+    "synonyms": ["隱隱作痛", "悶悶的痛"]
+  },
+  {
+    "term_id": "ONT_074",
+    "term_name": "冷痛",
+    "category": "症狀",
+    "definition": "疼痛伴有冷感，得溫則減，多屬寒證。",
+    "synonyms": ["痛的時候覺得冷", "敷熱水會好一點"]
+  },
+  {
+    "term_id": "ONT_075",
+    "term_name": "灼痛",
+    "category": "症狀",
+    "definition": "疼痛伴有灼熱感，喜冷惡熱，多屬熱證。",
+    "synonyms": ["熱熱的痛", "燒灼感", "火燒心"]
+  },
+  {
+    "term_id": "ONT_076",
+    "term_name": "絞痛",
+    "category": "症狀",
+    "definition": "疼痛劇烈如刀絞，多屬有形實邪阻滯。",
+    "synonyms": ["絞痛", "痛得受不了", "像刀在割"]
+  },
+  {
+    "term_id": "ONT_077",
+    "term_name": "遊走痛",
+    "category": "症狀",
+    "definition": "疼痛部位不定，走竄移動，多屬風邪或氣滯。",
+    "synonyms": ["跑來跑去的痛", "痛的位置不固定"]
+  },
+  {
+    "term_id": "ONT_078",
+    "term_name": "感冒",
+    "category": "病名",
+    "definition": "感受觸冒風邪，出現鼻塞、流涕、噴嚏、咳嗽、頭痛、惡寒發熱等表證。",
+    "synonyms": ["傷風", "流感", "流行性感冒"]
+  },
+  {
+    "term_id": "ONT_079",
+    "term_name": "消渴",
+    "category": "病名",
+    "definition": "以多飲、多食、多尿、乏力、消瘦為主要表現的疾病。",
+    "synonyms": ["糖尿病", "血糖高"]
+  },
+  {
+    "term_id": "ONT_080",
+    "term_name": "胸痺",
+    "category": "病名",
+    "definition": "以胸部悶痛，甚則胸痛徹背，短氣、喘息不得臥為主要表現。",
+    "synonyms": ["冠心病", "心絞痛", "心肌梗塞", "心臟病"]
+  },
+  {
+    "term_id": "ONT_081",
+    "term_name": "中風",
+    "category": "病名",
+    "definition": "以猝然昏仆，不省人事，伴口眼歪斜，半身不遂，語言不利為主要表現。",
+    "synonyms": ["腦中風", "腦梗塞", "腦出血", "半身不遂"]
+  },
+  {
+    "term_id": "ONT_082",
+    "term_name": "痺證",
+    "category": "病名",
+    "definition": "因風、寒、濕、熱等邪氣侵襲，導致肢體關節疼痛、麻木、屈伸不利。",
+    "synonyms": ["關節炎", "風濕", "痛風", "關節痛"]
+  },
+  {
+    "term_id": "ONT_083",
+    "term_name": "水腫",
+    "category": "病名",
+    "definition": "體內水液瀦留，泛濫肌膚，引起眼瞼、頭面、四肢、腹背甚至全身浮腫。",
+    "synonyms": ["浮腫", "腎臟病水腫", "腳腫"]
+  },
+  {
+    "term_id": "ONT_084",
+    "term_name": "淋證",
+    "category": "病名",
+    "definition": "以小便頻數短澀，滴瀝刺痛，欲出未盡，小腹拘急痛為主要表現。",
+    "synonyms": ["尿道炎", "膀胱炎", "泌尿道感染", "結石"]
+  },
+  {
+    "term_id": "ONT_085",
+    "term_name": "哮病",
+    "category": "病名",
+    "definition": "發作性痰鳴氣喘，喉中有哮鳴音，呼吸急促困難。",
+    "synonyms": ["氣喘", "哮喘", "支氣管哮喘"]
+  },
+  {
+    "term_id": "ONT_086",
+    "term_name": "鬱證",
+    "category": "病名",
+    "definition": "因情志不舒，氣機鬱滯所致，以心情抑鬱、情緒不寧、胸脅脹痛為主要表現。",
+    "synonyms": ["憂鬱症", "焦慮症", "自律神經失調", "心情不好"]
+  },
+  {
+    "term_id": "ONT_087",
+    "term_name": "高血壓",
+    "category": "病名",
+    "definition": "中醫無此病名，多歸屬於眩暈、頭痛範疇，常與肝腎陰虛陽亢有關。",
+    "synonyms": ["血壓高"]
+  },
+  {
+    "term_id": "ONT_088",
+    "term_name": "風邪",
+    "category": "病因",
+    "definition": "六淫之一，百病之長，善行數變，多侵犯人體上部和肌表。",
+    "synonyms": ["吹風", "受風"]
+  },
+  {
+    "term_id": "ONT_089",
+    "term_name": "寒邪",
+    "category": "病因",
+    "definition": "六淫之一，其性凝滯收引，易傷陽氣。",
+    "synonyms": ["受寒", "著涼", "冷到"]
+  },
+  {
+    "term_id": "ONT_090",
+    "term_name": "濕邪",
+    "category": "病因",
+    "definition": "六淫之一，其性重濁黏滯，易阻遏氣機，損傷陽氣。",
+    "synonyms": ["濕氣重", "濕氣"]
+  },
+  {
+    "term_id": "ONT_091",
+    "term_name": "熱邪",
+    "category": "病因",
+    "definition": "六淫之一，其性炎上，易傷津耗氣，生風動血。",
+    "synonyms": ["火氣大", "熱氣"]
+  },
+  {
+    "term_id": "ONT_092",
+    "term_name": "脈虛",
+    "category": "脈象",
+    "definition": "舉之無力，按之空虛，主虛證。",
+    "synonyms": ["脈無力", "脈弱"]
+  },
+  {
+    "term_id": "ONT_093",
+    "term_name": "脈實",
+    "category": "脈象",
+    "definition": "舉按均有力，主實證。",
+    "synonyms": ["脈有力", "脈強"]
+  },
+  {
+    "term_id": "ONT_094",
+    "term_name": "脈結代",
+    "category": "脈象",
+    "definition": "脈來緩慢而有不規則的歇止，主心臟氣血虧虛或瘀阻。",
+    "synonyms": ["心律不整", "漏跳拍"]
+  },
+  {
+    "term_id": "ONT_095",
+    "term_name": "舌淡胖",
+    "category": "舌象",
+    "definition": "舌體胖大色淡，多伴齒痕，主脾腎陽虛水濕停聚。",
+    "synonyms": ["舌頭肥大", "有齒痕"]
+  },
+  {
+    "term_id": "ONT_096",
+    "term_name": "舌紅絳",
+    "category": "舌象",
+    "definition": "舌色深紅，主熱勢深重，營血熱盛。",
+    "synonyms": ["舌頭很紅", "深紅色"]
+  },
+  {
+    "term_id": "ONT_097",
+    "term_name": "少苔",
+    "category": "舌象",
+    "definition": "舌上苔少，甚至部分剝落，主陰虛或氣陰兩傷。",
+    "synonyms": ["沒有舌苔", "剝苔", "地圖舌"]
+  },
+  {
+    "term_id": "ONT_098",
+    "term_name": "無苔",
+    "category": "舌象",
+    "definition": "舌面光潔如鏡，無苔，主胃氣陰大傷。",
+    "synonyms": ["鏡面舌", "光亮舌"]
+  },
+  {
+    "term_id": "ONT_099",
+    "term_name": "苔白滑",
+    "category": "舌象",
+    "definition": "苔白而濕潤多津，主寒濕水飲。",
+    "synonyms": ["舌苔水水的", "濕濕的"]
+  },
+  {
+    "term_id": "ONT_100",
+    "term_name": "苔黃燥",
+    "category": "舌象",
+    "definition": "苔黃而乾燥少津，主熱盛傷津。",
+    "synonyms": ["舌苔乾乾黃黃的", "火氣大"]
+  },
+  {
+    "term_id": "ONT_101",
+    "term_name": "胃脘",
+    "category": "部位",
+    "definition": "心窩下方、肚臍上方的區域，主受納腐熟水穀，為胃之所在。",
+    "synonyms": ["心窩", "心下", "胃口", "上腹部"]
+  },
+  {
+    "term_id": "ONT_102",
+    "term_name": "大腹",
+    "category": "部位",
+    "definition": "肚臍周圍及以上的腹部區域，多屬脾胃病變。",
+    "synonyms": ["肚臍周圍", "肚子中間"]
+  },
+  {
+    "term_id": "ONT_103",
+    "term_name": "小腹",
+    "category": "部位",
+    "definition": "肚臍以下至恥骨毛際的部位，主膀胱、胞宮、大小腸病變。",
+    "synonyms": ["下腹部", "肚臍下面"]
+  },
+  {
+    "term_id": "ONT_104",
+    "term_name": "少腹",
+    "category": "部位",
+    "definition": "小腹兩側的區域，為肝經所過，主肝膽、婦科病變。",
+    "synonyms": ["側腹", "肚子兩側"]
+  },
+  {
+    "term_id": "ONT_105",
+    "term_name": "脅肋",
+    "category": "部位",
+    "definition": "側胸部，腋下至第12肋骨端的區域，肝膽經循行之處。",
+    "synonyms": ["脅邊", "肋骨邊", "兩脅"]
+  },
+  {
+    "term_id": "ONT_106",
+    "term_name": "巔頂",
+    "category": "部位",
+    "definition": "頭頂最高處，百會穴所在，厥陰肝經與督脈交會處。",
+    "synonyms": ["頭頂", "腦門"]
+  },
+  {
+    "term_id": "ONT_107",
+    "term_name": "項背",
+    "category": "部位",
+    "definition": "脖子後方至背部上方的區域，太陽經循行，易受風寒。",
+    "synonyms": ["後頸", "脖子後面", "後背上部"]
+  },
+  {
+    "term_id": "ONT_108",
+    "term_name": "腰府",
+    "category": "部位",
+    "definition": "腰部，腎之府，兩腎所在之處。",
+    "synonyms": ["腰子", "腰部"]
+  },
+  {
+    "term_id": "ONT_109",
+    "term_name": "膻中",
+    "category": "部位",
+    "definition": "兩乳之間，氣會之所，心包所在，主氣機。",
+    "synonyms": ["胸口中間", "心口"]
+  },
+  {
+    "term_id": "ONT_110",
+    "term_name": "缺盆",
+    "category": "部位",
+    "definition": "鎖骨上窩，諸陽經所過。",
+    "synonyms": ["鎖骨窩"]
+  },
+  {
+    "term_id": "ONT_111",
+    "term_name": "腠理",
+    "category": "生理結構",
+    "definition": "皮膚肌肉的紋理，氣血津液流通的門戶，外邪入侵之處。",
+    "synonyms": ["毛孔", "肌表", "皮毛"]
+  },
+  {
+    "term_id": "ONT_112",
+    "term_name": "四末",
+    "category": "部位",
+    "definition": "四肢的末端（手腳指/趾），陽氣與氣血交接之處。",
+    "synonyms": ["手腳尖", "手腳末梢"]
+  },
+  {
+    "term_id": "ONT_113",
+    "term_name": "膏肓",
+    "category": "部位",
+    "definition": "心之下，膈之上，藥力難及之處，喻病情深重。",
+    "synonyms": ["肩胛縫深處"]
+  },
+  {
+    "term_id": "ONT_114",
+    "term_name": "宗筋",
+    "category": "生理結構",
+    "definition": "指男性的生殖器，亦指眾筋匯聚之處。",
+    "synonyms": ["陰莖", "那話兒"]
+  },
+  {
+    "term_id": "ONT_115",
+    "term_name": "胞宮",
+    "category": "生理結構",
+    "definition": "女性內生殖器，主月經與孕育胎兒。",
+    "synonyms": ["子宮", "女子胞"]
+  },
+  {
+    "term_id": "ONT_116",
+    "term_name": "二陰",
+    "category": "部位",
+    "definition": "前陰（尿道/生殖器）與後陰（肛門）的統稱，腎所主。",
+    "synonyms": ["大小便處", "下陰"]
+  },
+  {
+    "term_id": "ONT_117",
+    "term_name": "虛里",
+    "category": "部位",
+    "definition": "左乳下心尖搏動處，胃之大絡，可診宗氣盛衰。",
+    "synonyms": ["心尖跳動處"]
+  },
+  {
+    "term_id": "ONT_118",
+    "term_name": "阿是穴",
+    "category": "部位",
+    "definition": "無固定名稱與位置，以壓痛點為穴，多主局部氣滯血瘀。",
+    "synonyms": ["痛點", "壓痛點"]
+  },
+  {
+    "term_id": "ONT_119",
+    "term_name": "太陽穴",
+    "category": "部位",
+    "definition": "眉梢與外眼角之間，向後約一橫指的凹陷處，多主頭痛。",
+    "synonyms": ["鬢角痛", "兩邊頭痛"]
+  },
+  {
+    "term_id": "ONT_120",
+    "term_name": "湧泉",
+    "category": "部位",
+    "definition": "足底前三分之一凹陷處，腎經井穴，主引火歸元。",
+    "synonyms": ["腳底板", "腳心"]
+  },
+  {
+    "term_id": "ONT_121",
+    "term_name": "關節拘急",
+    "category": "症狀",
+    "definition": "關節屈伸不利，活動受限，甚至強直，多因寒邪凝滯。",
+    "synonyms": ["筋縮", "伸不直", "活動卡卡"]
+  },
+  {
+    "term_id": "ONT_122",
+    "term_name": "肢體麻木",
+    "category": "症狀",
+    "definition": "肌膚感覺減退或消失，麻為氣虛，木為血虛濕痰死血。",
+    "synonyms": ["手腳麻", "麻痺", "沒知覺"]
+  },
+  {
+    "term_id": "ONT_123",
+    "term_name": "手足蠕動",
+    "category": "症狀",
+    "definition": "手足手指輕微地、不自主地顫動，多屬虛風內動。",
+    "synonyms": ["手抖", "末梢抖動"]
+  },
+  {
+    "term_id": "ONT_124",
+    "term_name": "肉瞤",
+    "category": "症狀",
+    "definition": "肌肉不由自主地跳動或抽動，多屬脾虛或血虛生風。",
+    "synonyms": ["肌肉跳動", "眼皮跳", "肌肉抽動"]
+  },
+  {
+    "term_id": "ONT_125",
+    "term_name": "身痛",
+    "category": "症狀",
+    "definition": "全身肌肉、筋骨疼痛，多見於外感風寒濕邪。",
+    "synonyms": ["全身痠痛", "骨頭痠痛"]
+  },
+  {
+    "term_id": "ONT_126",
+    "term_name": "身重",
+    "category": "症狀",
+    "definition": "身體感覺沈重，舉動乏力，如負重物，多屬濕邪困脾。",
+    "synonyms": ["身體重重的", "懶得動"]
+  },
+  {
+    "term_id": "ONT_127",
+    "term_name": "腰膝痠軟",
+    "category": "症狀",
+    "definition": "腰部與膝蓋感覺痠軟無力，多屬腎虛。",
+    "synonyms": ["腰痠", "膝蓋沒力", "腳軟"]
+  },
+  {
+    "term_id": "ONT_128",
+    "term_name": "足痿",
+    "category": "症狀",
+    "definition": "下肢痿軟無力，不能隨意運動，甚至肌肉萎縮。",
+    "synonyms": ["腳無力", "不能走路", "腿萎縮"]
+  },
+  {
+    "term_id": "ONT_129",
+    "term_name": "角弓反張",
+    "category": "症狀",
+    "definition": "項背強直，身體向後反折如弓狀，多屬肝風內動之重症。",
+    "synonyms": ["身體僵硬後仰", "抽筋反折"]
+  },
+  {
+    "term_id": "ONT_130",
+    "term_name": "半身不遂",
+    "category": "症狀",
+    "definition": "身體一側（左側或右側）肢體癱瘓，活動不利，中風主症。",
+    "synonyms": ["半邊癱瘓", "偏癱"]
+  },
+  {
+    "term_id": "ONT_131",
+    "term_name": "循衣摸床",
+    "category": "症狀",
+    "definition": "重病神昏時，手不自主地撫摸衣被或床緣，真氣將竭之兆。",
+    "synonyms": ["手亂摸"]
+  },
+  {
+    "term_id": "ONT_132",
+    "term_name": "撮空理線",
+    "category": "症狀",
+    "definition": "神識不清時，手指在空中抓抓弄弄，如理絲線，元氣大虛之兆。",
+    "synonyms": ["手抓空氣"]
+  },
+  {
+    "term_id": "ONT_133",
+    "term_name": "口噤",
+    "category": "症狀",
+    "definition": "牙關緊閉，口不能張，多屬風痰阻絡或熱極生風。",
+    "synonyms": ["牙關咬緊", "張不開嘴"]
+  },
+  {
+    "term_id": "ONT_134",
+    "term_name": "口僻",
+    "category": "症狀",
+    "definition": "口角歪斜，多因風邪中絡。",
+    "synonyms": ["嘴巴歪", "嘴歪"]
+  },
+  {
+    "term_id": "ONT_135",
+    "term_name": "舌強",
+    "category": "症狀",
+    "definition": "舌體僵硬，活動不靈，語言蹇澀，中風先兆。",
+    "synonyms": ["大舌頭", "舌頭僵硬", "講話不清楚"]
+  },
+  {
+    "term_id": "ONT_136",
+    "term_name": "喉中痰鳴",
+    "category": "症狀",
+    "definition": "呼吸時喉間有痰聲漉漉，多屬痰濕壅盛。",
+    "synonyms": ["喉嚨有痰聲", "呼嚕聲"]
+  },
+  {
+    "term_id": "ONT_137",
+    "term_name": "哮鳴音",
+    "category": "症狀",
+    "definition": "呼吸時喉間發出高調如吹哨之聲，主哮病。",
+    "synonyms": ["喘鳴聲", "咻咻聲"]
+  },
+  {
+    "term_id": "ONT_138",
+    "term_name": "喜按",
+    "category": "疼痛性質",
+    "definition": "疼痛時按壓患處則痛減或覺舒適，主虛證、寒證。",
+    "synonyms": ["按了比較舒服", "喜歡按摩"]
+  },
+  {
+    "term_id": "ONT_139",
+    "term_name": "拒按",
+    "category": "疼痛性質",
+    "definition": "疼痛時按壓患處則痛劇，不欲人按，主實證。",
+    "synonyms": ["按了會痛", "不能碰", "一碰就痛"]
+  },
+  {
+    "term_id": "ONT_140",
+    "term_name": "得溫痛減",
+    "category": "疼痛性質",
+    "definition": "遇暖或熱敷則疼痛減輕，主寒證。",
+    "synonyms": ["熱敷會好", "喜歡熱"]
+  },
+  {
+    "term_id": "ONT_141",
+    "term_name": "遇寒加重",
+    "category": "疼痛性質",
+    "definition": "接觸冷空氣或冷水則疼痛加劇，主寒證、風濕。",
+    "synonyms": ["碰到冷就痛", "吹冷氣會痛"]
+  },
+  {
+    "term_id": "ONT_142",
+    "term_name": "夜間痛甚",
+    "category": "疼痛性質",
+    "definition": "疼痛在夜間加重，多屬血瘀（血行夜滯）或陰虛。",
+    "synonyms": ["晚上比較痛", "半夜痛醒"]
+  },
+  {
+    "term_id": "ONT_143",
+    "term_name": "掣痛",
+    "category": "疼痛性質",
+    "definition": "抽掣牽引作痛，多屬肝風或經脈失養。",
+    "synonyms": ["抽痛", "拉扯痛"]
+  },
+  {
+    "term_id": "ONT_144",
+    "term_name": "空痛",
+    "category": "疼痛性質",
+    "definition": "疼痛而有空虛感，多屬氣血精髓虧虛。",
+    "synonyms": ["空空的痛", "腦袋空痛"]
+  },
+  {
+    "term_id": "ONT_145",
+    "term_name": "重痛",
+    "category": "疼痛性質",
+    "definition": "疼痛伴有沈重感，多屬濕邪困阻。",
+    "synonyms": ["頭重痛", "身體重痛"]
+  },
+  {
+    "term_id": "ONT_146",
+    "term_name": "酸痛",
+    "category": "疼痛性質",
+    "definition": "疼痛伴有痠軟感，多屬濕邪或腎虛。",
+    "synonyms": ["痠痠的", "痠軟"]
+  },
+  {
+    "term_id": "ONT_147",
+    "term_name": "竄痛",
+    "category": "疼痛性質",
+    "definition": "疼痛部位遊走不定，攻竄作痛，多屬氣滯或風邪。",
+    "synonyms": ["跑來跑去的痛", "遊走痛"]
+  },
+  {
+    "term_id": "ONT_148",
+    "term_name": "善太息",
+    "category": "症狀",
+    "definition": "頻頻嘆氣，自覺嘆氣後胸悶稍舒，主肝氣鬱結。",
+    "synonyms": ["常嘆氣", "嘆大氣", "長嘆"]
+  },
+  {
+    "term_id": "ONT_149",
+    "term_name": "梅核氣",
+    "category": "症狀",
+    "definition": "自覺咽中如有物梗塞，吞之不下，吐之不出，主痰氣鬱結。",
+    "synonyms": ["喉嚨有異物感", "吞不下去吐不出來", "喉嚨卡卡"]
+  },
+  {
+    "term_id": "ONT_150",
+    "term_name": "奔豚",
+    "category": "症狀",
+    "definition": "自覺有氣從少腹上衝胸咽，如豚之奔，主腎積寒氣或肝氣上逆。",
+    "synonyms": ["氣往上衝", "肚子有氣衝上來"]
+  },
+  {
+    "term_id": "ONT_151",
+    "term_name": "呃逆",
+    "category": "症狀",
+    "definition": "胃氣上逆動膈，氣逆上衝，喉間呃呃連聲，聲短而頻。",
+    "synonyms": ["打嗝不斷", "膈肌痙攣"]
+  },
+  {
+    "term_id": "ONT_152",
+    "term_name": "吞酸",
+    "category": "症狀",
+    "definition": "酸水自胃上激於咽喉之間，未吐出而嚥下。",
+    "synonyms": ["胃酸倒流", "溢酸水"]
+  },
+  {
+    "term_id": "ONT_153",
+    "term_name": "吐酸",
+    "category": "症狀",
+    "definition": "酸水直接嘔吐而出，多屬肝氣犯胃或熱證。",
+    "synonyms": ["吐酸水"]
+  },
+  {
+    "term_id": "ONT_154",
+    "term_name": "嘈雜",
+    "category": "症狀",
+    "definition": "胃中空虛，似飢非飢，似痛非痛，心中懊憹不適。",
+    "synonyms": ["胃嘈嘈", "胃不舒服", "肚子磨磨的"]
+  },
+  {
+    "term_id": "ONT_155",
+    "term_name": "消穀善飢",
+    "category": "症狀",
+    "definition": "食慾亢進，進食不久即感飢餓，多屬胃火熾盛。",
+    "synonyms": ["吃很多還會餓", "容易餓", "大胃王"]
+  },
+  {
+    "term_id": "ONT_156",
+    "term_name": "飢不欲食",
+    "category": "症狀",
+    "definition": "雖有飢餓感，但不想進食，或進食很少，主胃陰不足。",
+    "synonyms": ["餓但吃不下", "肚子餓沒胃口"]
+  },
+  {
+    "term_id": "ONT_157",
+    "term_name": "厭油",
+    "category": "症狀",
+    "definition": "厭惡油膩食物，聞之即欲吐，多屬濕熱蘊脾肝膽病。",
+    "synonyms": ["怕油味", "看到油就想吐"]
+  },
+  {
+    "term_id": "ONT_158",
+    "term_name": "除中",
+    "category": "症狀",
+    "definition": "病重垂危之際，突然食慾大增，為胃氣將絕之反照。",
+    "synonyms": ["迴光返照"]
+  },
+  {
+    "term_id": "ONT_159",
+    "term_name": "煩渴",
+    "category": "症狀",
+    "definition": "口渴甚而心煩，多屬熱盛傷津。",
+    "synonyms": ["又渴又煩", "一直想喝冰水"]
+  },
+  {
+    "term_id": "ONT_160",
+    "term_name": "渴不欲飲",
+    "category": "症狀",
+    "definition": "口乾渴，但不想喝水，或水入即吐，多屬痰飲內停或瘀血。",
+    "synonyms": ["嘴巴乾不想喝水", "漱水不想吞"]
+  },
+  {
+    "term_id": "ONT_161",
+    "term_name": "喜熱飲",
+    "category": "症狀",
+    "definition": "口渴喜喝熱水，多屬太陰虛寒。",
+    "synonyms": ["想喝熱水", "喝熱的舒服"]
+  },
+  {
+    "term_id": "ONT_162",
+    "term_name": "喜冷飲",
+    "category": "症狀",
+    "definition": "口渴喜喝冷飲，多屬陽明實熱。",
+    "synonyms": ["想喝冰水", "喝冰的舒服"]
+  },
+  {
+    "term_id": "ONT_163",
+    "term_name": "口淡",
+    "category": "症狀",
+    "definition": "口中無味，味覺減退，多屬脾胃虛寒。",
+    "synonyms": ["嘴巴沒味道", "吃東西沒味道"]
+  },
+  {
+    "term_id": "ONT_164",
+    "term_name": "口甜",
+    "category": "症狀",
+    "definition": "口中自覺有甜味，多屬脾胃濕熱。",
+    "synonyms": ["嘴巴甜甜的"]
+  },
+  {
+    "term_id": "ONT_165",
+    "term_name": "口鹹",
+    "category": "症狀",
+    "definition": "口中自覺有鹹味，多屬腎虛火旺。",
+    "synonyms": ["嘴巴鹹鹹的"]
+  },
+  {
+    "term_id": "ONT_166",
+    "term_name": "口膩",
+    "category": "症狀",
+    "definition": "口舌黏膩不爽，多屬濕濁停滯。",
+    "synonyms": ["嘴巴黏黏的", "口黏"]
+  },
+  {
+    "term_id": "ONT_167",
+    "term_name": "驚悸",
+    "category": "症狀",
+    "definition": "因受驚嚇而心悸，或無故心跳如受驚狀，多屬膽鬱痰擾。",
+    "synonyms": ["受驚嚇心跳快", "容易嚇到"]
+  },
+  {
+    "term_id": "ONT_168",
+    "term_name": "怔忡",
+    "category": "症狀",
+    "definition": "心跳劇烈，上至心胸下至臍腹，跳動不已，較心悸為重，多屬虛證。",
+    "synonyms": ["心臟狂跳", "心悸嚴重"]
+  },
+  {
+    "term_id": "ONT_169",
+    "term_name": "善驚",
+    "category": "症狀",
+    "definition": "易受驚嚇，稍有聲響即驚慌不安，多屬膽氣虛。",
+    "synonyms": ["容易嚇到", "膽子小"]
+  },
+  {
+    "term_id": "ONT_170",
+    "term_name": "善恐",
+    "category": "症狀",
+    "definition": "無故恐懼，如人將捕之，多屬腎虛。",
+    "synonyms": ["害怕", "恐懼感"]
+  },
+  {
+    "term_id": "ONT_171",
+    "term_name": "多怒",
+    "category": "症狀",
+    "definition": "容易生氣發怒，不能自制，多屬肝火旺。",
+    "synonyms": ["易怒", "脾氣暴躁", "愛生氣"]
+  },
+  {
+    "term_id": "ONT_172",
+    "term_name": "憂鬱",
+    "category": "症狀",
+    "definition": "情緒低落，愁眉苦臉，悲觀厭世，多屬肝氣鬱結。",
+    "synonyms": ["心情不好", "悶悶不樂", "憂鬱"]
+  },
+  {
+    "term_id": "ONT_173",
+    "term_name": "喜笑不休",
+    "category": "症狀",
+    "definition": "無故發笑，不能自止，多屬心火盛或痰火。",
+    "synonyms": ["一直笑", "傻笑"]
+  },
+  {
+    "term_id": "ONT_174",
+    "term_name": "獨語",
+    "category": "症狀",
+    "definition": "神識不清，喃喃自語，見人則止，多屬心氣虛。",
+    "synonyms": ["自言自語"]
+  },
+  {
+    "term_id": "ONT_175",
+    "term_name": "錯語",
+    "category": "症狀",
+    "definition": "神識清醒，但語言錯亂，說後自知，多屬心氣虛。",
+    "synonyms": ["講錯話"]
+  },
+  {
+    "term_id": "ONT_176",
+    "term_name": "譫語",
+    "category": "症狀",
+    "definition": "神識不清，胡言亂語，聲高有力，多屬熱擾心神（實證）。",
+    "synonyms": ["發燒講胡話", "亂講話"]
+  },
+  {
+    "term_id": "ONT_177",
+    "term_name": "鄭聲",
+    "category": "症狀",
+    "definition": "神識不清，語言重複，聲低無力，多屬心氣大傷（虛證）。",
+    "synonyms": ["一直重複講話", "有氣無力"]
+  },
+  {
+    "term_id": "ONT_178",
+    "term_name": "失音",
+    "category": "症狀",
+    "definition": "聲音嘶啞，甚至發不出聲音。暴喑屬實，久喑屬虛。",
+    "synonyms": ["失聲", "啞巴", "沒聲音"]
+  },
+  {
+    "term_id": "ONT_179",
+    "term_name": "嗜睡",
+    "category": "症狀",
+    "definition": "精神萎靡，不分晝夜，時時欲睡，多屬陽虛或濕困。",
+    "synonyms": ["一直想睡", "昏睡", "多臥"]
+  },
+  {
+    "term_id": "ONT_180",
+    "term_name": "不寐",
+    "category": "症狀",
+    "definition": "即失眠。包括難入睡、易醒、早醒、醒後難入睡。",
+    "synonyms": ["睡不著", "失眠"]
+  },
+  {
+    "term_id": "ONT_181",
+    "term_name": "早醒",
+    "category": "症狀",
+    "definition": "天未亮即醒，醒後不能再睡，多屬肝鬱化火或心腎不交。",
+    "synonyms": ["太早醒", "半夜醒來"]
+  },
+  {
+    "term_id": "ONT_182",
+    "term_name": "大便秘結",
+    "category": "症狀",
+    "definition": "大便乾硬，排出困難，數日一行。",
+    "synonyms": ["便秘", "大便硬"]
+  },
+  {
+    "term_id": "ONT_183",
+    "term_name": "大便溏薄",
+    "category": "症狀",
+    "definition": "大便稀軟不成形，含水量高。",
+    "synonyms": ["拉肚子", "軟便", "大便稀"]
+  },
+  {
+    "term_id": "ONT_184",
+    "term_name": "排便無力",
+    "category": "症狀",
+    "definition": "雖有便意，且大便不乾，但努掙乏力，難以排出，多屬氣虛。",
+    "synonyms": ["大不出來", "沒力氣大便"]
+  },
+  {
+    "term_id": "ONT_185",
+    "term_name": "大便先乾後溏",
+    "category": "症狀",
+    "definition": "大便起始乾燥，後段稀溏，多屬脾虛。",
+    "synonyms": ["前面硬後面軟"]
+  },
+  {
+    "term_id": "ONT_186",
+    "term_name": "肛門灼熱",
+    "category": "症狀",
+    "definition": "排便時肛門有灼熱感，多屬大腸濕熱。",
+    "synonyms": ["屁股熱熱的", "拉肚子屁股痛"]
+  },
+  {
+    "term_id": "ONT_187",
+    "term_name": "滑瀉",
+    "category": "症狀",
+    "definition": "大便失禁，不由自主地流出，多屬脾腎陽虛。",
+    "synonyms": ["大便失禁", "止不住"]
+  },
+  {
+    "term_id": "ONT_188",
+    "term_name": "小便頻數",
+    "category": "症狀",
+    "definition": "排尿次數增多。量多色清為寒，量少色黃為熱。",
+    "synonyms": ["頻尿", "一直上廁所"]
+  },
+  {
+    "term_id": "ONT_189",
+    "term_name": "癃閉",
+    "category": "病名",
+    "definition": "小便點滴而出為癃，閉塞不通為閉。",
+    "synonyms": ["尿不出來", "排尿困難"]
+  },
+  {
+    "term_id": "ONT_190",
+    "term_name": "餘瀝不盡",
+    "category": "症狀",
+    "definition": "排尿後尿液點滴不盡，弄濕衣褲，多屬腎氣不固。",
+    "synonyms": ["尿不乾淨", "滴尿"]
+  },
+  {
+    "term_id": "ONT_191",
+    "term_name": "遺尿",
+    "category": "症狀",
+    "definition": "睡夢中不自主排尿，俗稱尿床，多屬腎氣不足。",
+    "synonyms": ["尿床"]
+  },
+  {
+    "term_id": "ONT_192",
+    "term_name": "小便澀痛",
+    "category": "症狀",
+    "definition": "排尿時尿道艱澀疼痛，多屬濕熱下注。",
+    "synonyms": ["尿尿痛", "尿道痛"]
+  },
+  {
+    "term_id": "ONT_193",
+    "term_name": "寒戰",
+    "category": "症狀",
+    "definition": "惡寒嚴重，全身發抖，牙關打顫，多見於瘧疾或外感重症。",
+    "synonyms": ["發冷發抖", "打寒顫"]
+  },
+  {
+    "term_id": "ONT_194",
+    "term_name": "壯熱",
+    "category": "症狀",
+    "definition": "高熱持續不退（39度以上），不惡寒反惡熱，多屬實熱證。",
+    "synonyms": ["高燒不退", "發高燒"]
+  },
+  {
+    "term_id": "ONT_195",
+    "term_name": "陰虛內熱",
+    "category": "病機",
+    "definition": "體內陰液虧損，水不制火，導致虛火內生。",
+    "synonyms": ["虛火", "陰虛火旺"]
+  },
+  {
+    "term_id": "ONT_196",
+    "term_name": "氣機不暢",
+    "category": "病機",
+    "definition": "氣的升降出入運動受阻，導致臟腑功能失調。",
+    "synonyms": ["氣不順", "鬱悶"]
+  },
+  {
+    "term_id": "ONT_197",
+    "term_name": "中氣下陷",
+    "category": "病機",
+    "definition": "脾氣虛弱，升舉無力，導致臟器下垂（脫肛、子宮脫垂）。",
+    "synonyms": ["氣下陷", "胃下垂"]
+  },
+  {
+    "term_id": "ONT_198",
+    "term_name": "肝陽上亢",
+    "category": "病機",
+    "definition": "肝腎陰虛，水不涵木，導致肝陽亢逆於上。",
+    "synonyms": ["血壓高", "肝火旺"]
+  },
+  {
+    "term_id": "ONT_199",
+    "term_name": "痰飲",
+    "category": "病理產物",
+    "definition": "體內水液代謝障礙所形成的病理產物。稠者為痰，稀者為飲。",
+    "synonyms": ["痰濕", "水飲"]
+  },
+  {
+    "term_id": "ONT_200",
+    "term_name": "瘀血",
+    "category": "病理產物",
+    "definition": "體內血液運行不暢，或離經之血積於體內，形成的病理產物。",
+    "synonyms": ["血瘀", "死血", "氣滯血瘀"]
+  },
+  {
+    "term_id": "ONT_201",
+    "term_name": "天癸",
+    "category": "生理概念",
+    "definition": "腎中精氣充盈到一定程度所產生的物質，主導人體生長、發育與生殖（類似性荷爾蒙）。",
+    "synonyms": ["腎水", "生殖之精"]
+  },
+  {
+    "term_id": "ONT_202",
+    "term_name": "經閉",
+    "category": "症狀",
+    "definition": "女子年逾18歲月經尚未來潮，或已來潮而中斷6個月以上者。",
+    "synonyms": ["閉經", "月經不來", "停經"]
+  },
+  {
+    "term_id": "ONT_203",
+    "term_name": "倒經",
+    "category": "症狀",
+    "definition": "經期或經行前後，出現週期性吐血或衄血，伴月經減少或不行。",
+    "synonyms": ["逆經", "經期流鼻血"]
+  },
+  {
+    "term_id": "ONT_204",
+    "term_name": "惡露",
+    "category": "生理產物",
+    "definition": "產後自陰道排出的餘血濁液，包含血液、壞死蛻膜組織等。",
+    "synonyms": ["產後排血"]
+  },
+  {
+    "term_id": "ONT_205",
+    "term_name": "惡露不絕",
+    "category": "症狀",
+    "definition": "產後惡露持續三週以上仍淋漓不斷者。",
+    "synonyms": ["惡露排不乾淨"]
+  },
+  {
+    "term_id": "ONT_206",
+    "term_name": "胎動不安",
+    "category": "症狀",
+    "definition": "妊娠期間出現腰痠、腹痛或下腹墜脹，伴有少量陰道出血。",
+    "synonyms": ["動了胎氣", "先兆流產"]
+  },
+  {
+    "term_id": "ONT_207",
+    "term_name": "滑胎",
+    "category": "病名",
+    "definition": "凡墮胎、小產連續發生三次以上者，即習慣性流產。",
+    "synonyms": ["習慣性流產", "留不住小孩"]
+  },
+  {
+    "term_id": "ONT_208",
+    "term_name": "陰癢",
+    "category": "症狀",
+    "definition": "婦女外陰及陰道內瘙癢不堪，甚則痛癢難忍。",
+    "synonyms": ["私密處癢", "陰部搔癢"]
+  },
+  {
+    "term_id": "ONT_209",
+    "term_name": "陰挺",
+    "category": "病名",
+    "definition": "子宮位置下垂，甚至脫出陰道口外。",
+    "synonyms": ["子宮脫垂", "茄子掉出來"]
+  },
+  {
+    "term_id": "ONT_210",
+    "term_name": "陰吹",
+    "category": "症狀",
+    "definition": "婦女陰道中有氣排出，如矢氣狀，多屬脾氣虛陷或氣滯。",
+    "synonyms": ["陰道排氣"]
+  },
+  {
+    "term_id": "ONT_211",
+    "term_name": "陽痿",
+    "category": "症狀",
+    "definition": "男性陰莖不能勃起，或勃起不堅，不能進行性交。",
+    "synonyms": ["不舉", "勃起功能障礙", "舉而不堅"]
+  },
+  {
+    "term_id": "ONT_212",
+    "term_name": "早洩",
+    "category": "症狀",
+    "definition": "性交時射精過早，甚至未交即泄，無法進行正常性生活。",
+    "synonyms": ["太快射精", "擋不住"]
+  },
+  {
+    "term_id": "ONT_213",
+    "term_name": "遺精",
+    "category": "症狀",
+    "definition": "不因性生活而精液自出。有夢而遺為夢遺，無夢而遺為滑精。",
+    "synonyms": ["夢遺", "流精"]
+  },
+  {
+    "term_id": "ONT_214",
+    "term_name": "滑精",
+    "category": "症狀",
+    "definition": "清醒時精液自出，或睡中無夢而遺，屬腎氣大虛。",
+    "synonyms": ["精關不固", "漏精"]
+  },
+  {
+    "term_id": "ONT_215",
+    "term_name": "疝氣",
+    "category": "病名",
+    "definition": "睪丸或陰囊腫痛，或腹部有物突出，多屬寒滯肝脈。",
+    "synonyms": ["墜腸", "小腸氣"]
+  },
+  {
+    "term_id": "ONT_216",
+    "term_name": "齒痕",
+    "category": "舌象",
+    "definition": "舌體邊緣有牙齒壓迫的痕跡，多屬脾虛濕盛。",
+    "synonyms": ["舌頭有牙印", "花邊舌"]
+  },
+  {
+    "term_id": "ONT_217",
+    "term_name": "點刺",
+    "category": "舌象",
+    "definition": "舌面上出現高起的紅色或紫紅色小點（芒刺），主熱毒極盛。",
+    "synonyms": ["草莓舌", "舌頭有紅點"]
+  },
+  {
+    "term_id": "ONT_218",
+    "term_name": "裂紋",
+    "category": "舌象",
+    "definition": "舌面上有各種形狀的裂溝，主陰血虧損，或熱盛傷津。",
+    "synonyms": ["舌頭裂開", "地圖舌"]
+  },
+  {
+    "term_id": "ONT_219",
+    "term_name": "舌瘦薄",
+    "category": "舌象",
+    "definition": "舌體瘦小而薄，主氣血兩虛或陰虛火旺。",
+    "synonyms": ["舌頭很小"]
+  },
+  {
+    "term_id": "ONT_220",
+    "term_name": "舌下絡脈怒張",
+    "category": "舌象",
+    "definition": "舌下靜脈曲張、增粗、色青紫，主氣滯血瘀。",
+    "synonyms": ["舌下青筋"]
+  },
+  {
+    "term_id": "ONT_221",
+    "term_name": "舌歪斜",
+    "category": "舌象",
+    "definition": "伸舌時舌體偏向一側，主中風或中風先兆。",
+    "synonyms": ["舌頭歪一邊"]
+  },
+  {
+    "term_id": "ONT_222",
+    "term_name": "舌卷縮",
+    "category": "舌象",
+    "definition": "舌體卷曲收縮，不能伸出口外，主危重症（寒凝或熱極）。",
+    "synonyms": ["縮舌", "舌頭縮進去"]
+  },
+  {
+    "term_id": "ONT_223",
+    "term_name": "弄舌",
+    "category": "舌象",
+    "definition": "舌頭時時伸出口外，舐弄口唇，主心脾有熱或動風先兆。",
+    "synonyms": ["吐舌頭"]
+  },
+  {
+    "term_id": "ONT_224",
+    "term_name": "苔灰黑",
+    "category": "舌象",
+    "definition": "舌苔顏色呈淺黑（灰）或深黑，主熱極或寒極。",
+    "synonyms": ["黑苔", "灰苔"]
+  },
+  {
+    "term_id": "ONT_225",
+    "term_name": "洪脈",
+    "category": "脈象",
+    "definition": "脈形寬大，來盛去衰，如波濤洶湧，主氣分熱盛。",
+    "synonyms": ["脈很大", "脈像波浪"]
+  },
+  {
+    "term_id": "ONT_226",
+    "term_name": "微脈",
+    "category": "脈象",
+    "definition": "極細極軟，按之欲絕，若有若無，主氣血大虛。",
+    "synonyms": ["脈摸不太到", "脈很弱"]
+  },
+  {
+    "term_id": "ONT_227",
+    "term_name": "緊脈",
+    "category": "脈象",
+    "definition": "脈來繃急，如牽繩轉索，主寒、痛、宿食。",
+    "synonyms": ["脈很緊", "脈像繩子"]
+  },
+  {
+    "term_id": "ONT_228",
+    "term_name": "緩脈",
+    "category": "脈象",
+    "definition": "一息四至（正常），來去怠緩。病脈則主濕證或脾虛。",
+    "synonyms": ["脈慢且從容"]
+  },
+  {
+    "term_id": "ONT_229",
+    "term_name": "濡脈",
+    "category": "脈象",
+    "definition": "浮而細軟，如水上浮棉，主濕證或氣虛。",
+    "synonyms": ["軟軟的脈"]
+  },
+  {
+    "term_id": "ONT_230",
+    "term_name": "弱脈",
+    "category": "脈象",
+    "definition": "沉細而無力，主氣血虧虛。",
+    "synonyms": ["脈沉又弱"]
+  },
+  {
+    "term_id": "ONT_231",
+    "term_name": "芤脈",
+    "category": "脈象",
+    "definition": "浮大而軟，按之中央空，兩邊實，如按蔥管，主大失血。",
+    "synonyms": ["脈中空", "像蔥管"]
+  },
+  {
+    "term_id": "ONT_232",
+    "term_name": "革脈",
+    "category": "脈象",
+    "definition": "浮而搏指，中空外堅，如按鼓皮，主亡血失精。",
+    "synonyms": ["像打鼓皮"]
+  },
+  {
+    "term_id": "ONT_233",
+    "term_name": "牢脈",
+    "category": "脈象",
+    "definition": "沉按實大弦長，堅牢不移，主陰寒內積或癥瘕。",
+    "synonyms": ["脈很硬很深"]
+  },
+  {
+    "term_id": "ONT_234",
+    "term_name": "伏脈",
+    "category": "脈象",
+    "definition": "重按推筋著骨始得，主邪閉或厥證。",
+    "synonyms": ["脈躲起來", "深按才有"]
+  },
+  {
+    "term_id": "ONT_235",
+    "term_name": "動脈",
+    "category": "脈象",
+    "definition": "脈短如豆，滑數有力，主痛、驚。",
+    "synonyms": ["脈像豆子跳"]
+  },
+  {
+    "term_id": "ONT_236",
+    "term_name": "促脈",
+    "category": "脈象",
+    "definition": "脈數而時有一止，止無定數，主陽盛實熱。",
+    "synonyms": ["脈快且亂"]
+  },
+  {
+    "term_id": "ONT_237",
+    "term_name": "結脈",
+    "category": "脈象",
+    "definition": "脈緩而時有一止，止無定數，主陰盛氣結。",
+    "synonyms": ["脈慢且亂"]
+  },
+  {
+    "term_id": "ONT_238",
+    "term_name": "代脈",
+    "category": "脈象",
+    "definition": "脈來一止，止有定數，良久方還，主臟氣衰微。",
+    "synonyms": ["脈規律停跳"]
+  },
+  {
+    "term_id": "ONT_239",
+    "term_name": "散脈",
+    "category": "脈象",
+    "definition": "浮散無根，至數不齊，主元氣離散。",
+    "synonyms": ["脈散亂"]
+  },
+  {
+    "term_id": "ONT_240",
+    "term_name": "骨蒸潮熱",
+    "category": "症狀",
+    "definition": "自覺熱從骨髓中透出，伴隨午後潮熱，主陰虛重證。",
+    "synonyms": ["骨頭裡發熱"]
+  },
+  {
+    "term_id": "ONT_241",
+    "term_name": "肌膚甲錯",
+    "category": "症狀",
+    "definition": "皮膚乾枯粗糙，如魚鱗狀，主內有瘀血。",
+    "synonyms": ["皮膚像魚鱗", "皮膚很粗"]
+  },
+  {
+    "term_id": "ONT_242",
+    "term_name": "轉筋",
+    "category": "症狀",
+    "definition": "筋脈拘攣強直，牽引作痛，多見於霍亂或津液大傷。",
+    "synonyms": ["抽筋"]
+  },
+  {
+    "term_id": "ONT_243",
+    "term_name": "脫肛",
+    "category": "病名",
+    "definition": "直腸黏膜或直腸全層脫出肛門外。",
+    "synonyms": ["大腸頭掉出來"]
+  },
+  {
+    "term_id": "ONT_244",
+    "term_name": "癥瘕",
+    "category": "病名",
+    "definition": "腹內結塊，伴有脹痛。有形固定的為癥，無形聚散的為瘕。",
+    "synonyms": ["腹部腫塊", "子宮肌瘤"]
+  },
+  {
+    "term_id": "ONT_245",
+    "term_name": "畏寒",
+    "category": "症狀",
+    "definition": "怕冷，但加衣被或近火取暖後可緩解，主陽虛。",
+    "synonyms": ["怕冷", "手腳冰冷"]
+  },
+  {
+    "term_id": "ONT_246",
+    "term_name": "惡熱",
+    "category": "症狀",
+    "definition": "厭惡炎熱，即使在寒冷環境中也不願加衣，主實熱。",
+    "synonyms": ["怕熱"]
+  },
+  {
+    "term_id": "ONT_247",
+    "term_name": "喜溫",
+    "category": "症狀",
+    "definition": "喜歡溫暖，得溫則舒，主寒證。",
+    "synonyms": ["喜歡熱敷"]
+  },
+  {
+    "term_id": "ONT_248",
+    "term_name": "喜冷",
+    "category": "症狀",
+    "definition": "喜歡涼爽，得冷則舒，主熱證。",
+    "synonyms": ["喜歡冰敷"]
+  },
+  {
+    "term_id": "ONT_249",
+    "term_name": "精神萎靡",
+    "category": "症狀",
+    "definition": "精神不振，意志消沉，反應遲鈍，目光無神。",
+    "synonyms": ["沒精神", "懨懨的"]
+  },
+  {
+    "term_id": "ONT_250",
+    "term_name": "煩躁",
+    "category": "症狀",
+    "definition": "心中煩悶不舒，手足躁動不安。",
+    "synonyms": ["阿雜", "心情煩亂"]
+  },
+  {
+    "term_id": "ONT_251",
+    "term_name": "辛溫解表",
+    "category": "治法",
+    "definition": "使用藥性辛溫的藥物，通過發汗方式，驅散在表的風寒邪氣。",
+    "synonyms": ["發散風寒", "散寒解表"]
+  },
+  {
+    "term_id": "ONT_252",
+    "term_name": "辛涼解表",
+    "category": "治法",
+    "definition": "使用藥性辛涼的藥物，通過發汗解肌方式，驅散在表的風熱邪氣。",
+    "synonyms": ["疏散風熱", "疏風熱"]
+  },
+  {
+    "term_id": "ONT_253",
+    "term_name": "清熱解毒",
+    "category": "治法",
+    "definition": "使用寒涼藥物，清除體內的熱毒邪氣（如瘡瘍、紅腫、高熱）。",
+    "synonyms": ["降火解毒", "消炎退火"]
+  },
+  {
+    "term_id": "ONT_254",
+    "term_name": "清熱涼血",
+    "category": "治法",
+    "definition": "清除血分熱邪，治療熱入營血導致的出血、發斑、神昏。",
+    "synonyms": ["涼血", "清血熱"]
+  },
+  {
+    "term_id": "ONT_255",
+    "term_name": "清熱燥濕",
+    "category": "治法",
+    "definition": "使用苦寒藥物，清除體內的濕熱邪氣（如黃疸、濕疹、痢疾）。",
+    "synonyms": ["清利濕熱", "去濕熱"]
+  },
+  {
+    "term_id": "ONT_256",
+    "term_name": "溫中散寒",
+    "category": "治法",
+    "definition": "溫暖中焦脾胃，驅散寒邪，治療脾胃虛寒引起的腹痛、腹瀉。",
+    "synonyms": ["暖胃", "溫補脾胃"]
+  },
+  {
+    "term_id": "ONT_257",
+    "term_name": "回陽救逆",
+    "category": "治法",
+    "definition": "使用大劑溫熱藥（如附子、乾薑），挽救極度衰竭的陽氣，治療亡陽證。",
+    "synonyms": ["強心救脫", "回陽"]
+  },
+  {
+    "term_id": "ONT_258",
+    "term_name": "和解少陽",
+    "category": "治法",
+    "definition": "調和少陽膽經的氣機，治療寒熱往來、胸脅苦滿。",
+    "synonyms": ["和解表裡"]
+  },
+  {
+    "term_id": "ONT_259",
+    "term_name": "調和肝脾",
+    "category": "治法",
+    "definition": "疏肝理氣配合健脾，治療肝氣犯脾導致的腹痛腹瀉。",
+    "synonyms": ["疏肝健脾", "肝脾雙調理"]
+  },
+  {
+    "term_id": "ONT_260",
+    "term_name": "消食導滯",
+    "category": "治法",
+    "definition": "消導積滯，促進消化，治療飲食停滯胃脘。",
+    "synonyms": ["幫助消化", "消積"]
+  },
+  {
+    "term_id": "ONT_261",
+    "term_name": "峻下熱結",
+    "category": "治法",
+    "definition": "使用攻下藥（如大黃、芒硝），急下腸道燥屎熱結，治療陽明腑實證。",
+    "synonyms": ["通便瀉火", "通大便"]
+  },
+  {
+    "term_id": "ONT_262",
+    "term_name": "潤腸通便",
+    "category": "治法",
+    "definition": "使用油脂類或滋潤藥物，潤滑腸道，治療腸燥便秘（多見於老人、產後）。",
+    "synonyms": ["軟便", "潤腸"]
+  },
+  {
+    "term_id": "ONT_263",
+    "term_name": "疏肝理氣",
+    "category": "治法",
+    "definition": "疏通肝臟氣機，解除鬱結，治療情志抑鬱、脅痛。",
+    "synonyms": ["疏肝解鬱", "放鬆情緒"]
+  },
+  {
+    "term_id": "ONT_264",
+    "term_name": "平肝潛陽",
+    "category": "治法",
+    "definition": "平息肝陽之亢逆，治療肝陽上亢引起的高血壓、眩暈。",
+    "synonyms": ["降肝火", "鎮肝"]
+  },
+  {
+    "term_id": "ONT_265",
+    "term_name": "熄風止痙",
+    "category": "治法",
+    "definition": "平息內風，緩解抽搐痙攣，治療中風、驚風。",
+    "synonyms": ["止抽搐", "去風"]
+  },
+  {
+    "term_id": "ONT_266",
+    "term_name": "芳香化濕",
+    "category": "治法",
+    "definition": "使用芳香類藥物，醒脾化濕，治療濕濁中阻。",
+    "synonyms": ["化濕", "去濕氣"]
+  },
+  {
+    "term_id": "ONT_267",
+    "term_name": "利水滲濕",
+    "category": "治法",
+    "definition": "通過利尿方式，排出體內多餘水液，治療水腫、淋證。",
+    "synonyms": ["利尿", "消水腫"]
+  },
+  {
+    "term_id": "ONT_268",
+    "term_name": "活血化瘀",
+    "category": "治法",
+    "definition": "促進血液運行，消散瘀血，治療疼痛、腫塊、經閉。",
+    "synonyms": ["通血路", "化瘀", "散瘀"]
+  },
+  {
+    "term_id": "ONT_269",
+    "term_name": "益氣固表",
+    "category": "治法",
+    "definition": "補益肺氣，鞏固衛表，治療氣虛自汗、易感冒。",
+    "synonyms": ["增強抵抗力", "補氣止汗"]
+  },
+  {
+    "term_id": "ONT_270",
+    "term_name": "補中益氣",
+    "category": "治法",
+    "definition": "補益脾胃之氣，升舉清陽，治療中氣下陷（脫垂）。",
+    "synonyms": ["升提", "補脾胃"]
+  },
+  {
+    "term_id": "ONT_271",
+    "term_name": "滋補肝腎",
+    "category": "治法",
+    "definition": "滋養肝腎之陰精，治療肝腎陰虛導致的視物模糊、腰膝痠軟。",
+    "synonyms": ["補肝腎", "滋陰"]
+  },
+  {
+    "term_id": "ONT_272",
+    "term_name": "開竅醒神",
+    "category": "治法",
+    "definition": "辛香走竄，開啟心竅，甦醒神志，治療閉證神昏。",
+    "synonyms": ["叫醒病人", "急救"]
+  },
+  {
+    "term_id": "ONT_273",
+    "term_name": "澀腸止瀉",
+    "category": "治法",
+    "definition": "收斂固澀腸道，治療久瀉、久痢滑脫不禁者。",
+    "synonyms": ["止瀉", "收斂"]
+  },
+  {
+    "term_id": "ONT_274",
+    "term_name": "表證",
+    "category": "病機",
+    "definition": "病邪侵襲體表（皮毛、口鼻），病位淺，以惡寒發熱、脈浮為主。",
+    "synonyms": ["外感初起", "表病"]
+  },
+  {
+    "term_id": "ONT_275",
+    "term_name": "裡證",
+    "category": "病機",
+    "definition": "病位深在臟腑氣血骨髓，非表證者皆屬裡證。",
+    "synonyms": ["內傷", "臟腑病"]
+  },
+  {
+    "term_id": "ONT_276",
+    "term_name": "寒證",
+    "category": "病機",
+    "definition": "感受寒邪，或陽虛陰盛，導致機體機能衰退、凝滯的證候。",
+    "synonyms": ["虛寒", "實寒"]
+  },
+  {
+    "term_id": "ONT_277",
+    "term_name": "熱證",
+    "category": "病機",
+    "definition": "感受熱邪，或陰虛陽亢，導致機體機能亢進的證候。",
+    "synonyms": ["虛熱", "實熱"]
+  },
+  {
+    "term_id": "ONT_278",
+    "term_name": "虛證",
+    "category": "病機",
+    "definition": "人體正氣（氣血陰陽）不足所表現的證候。",
+    "synonyms": ["身體虛", "虛弱"]
+  },
+  {
+    "term_id": "ONT_279",
+    "term_name": "實證",
+    "category": "病機",
+    "definition": "邪氣亢盛，而正氣未衰，正邪劇烈抗爭所表現的證候。",
+    "synonyms": ["邪氣實", "發炎"]
+  },
+  {
+    "term_id": "ONT_280",
+    "term_name": "陰虛",
+    "category": "病機",
+    "definition": "體內陰液虧損，滋潤、寧靜功能減退，導致虛熱內生。",
+    "synonyms": ["陰虧", "津液不足"]
+  },
+  {
+    "term_id": "ONT_281",
+    "term_name": "陽虛",
+    "category": "病機",
+    "definition": "體內陽氣不足，溫煦、推動功能減退，導致虛寒內生。",
+    "synonyms": ["陽氣弱", "冷底"]
+  },
+  {
+    "term_id": "ONT_282",
+    "term_name": "亡陽",
+    "category": "病機",
+    "definition": "陽氣突然大量脫失，生命垂危。表現為大汗淋漓（冷汗）、肢冷。",
+    "synonyms": ["虛脫", "休克"]
+  },
+  {
+    "term_id": "ONT_283",
+    "term_name": "亡陰",
+    "category": "病機",
+    "definition": "陰液突然大量消耗。表現為汗熱味鹹、煩躁、渴喜冷飲、脈虛數。",
+    "synonyms": ["脫水"]
+  },
+  {
+    "term_id": "ONT_284",
+    "term_name": "真寒假熱",
+    "category": "病機",
+    "definition": "內有真寒，外見假熱（格陽）。如身熱但欲蓋衣被，面紅如妝。",
+    "synonyms": ["戴陽證", "陰盛格陽"]
+  },
+  {
+    "term_id": "ONT_285",
+    "term_name": "真熱假寒",
+    "category": "病機",
+    "definition": "內有真熱，外見假寒（陽厥）。如四肢厥冷但身熱不惡寒，口渴便秘。",
+    "synonyms": ["熱深厥深", "陽盛格陰"]
+  },
+  {
+    "term_id": "ONT_286",
+    "term_name": "上熱下寒",
+    "category": "病機",
+    "definition": "上部表現熱象（如口瘡、牙痛），下部表現寒象（如腹瀉、足冷）。",
+    "synonyms": ["寒熱錯雜"]
+  },
+  {
+    "term_id": "ONT_287",
+    "term_name": "氣不攝血",
+    "category": "病機",
+    "definition": "氣虛不能統攝血液，導致各種出血（便血、崩漏、皮下出血）。",
+    "synonyms": ["脾不統血"]
+  },
+  {
+    "term_id": "ONT_288",
+    "term_name": "氣隨血脫",
+    "category": "病機",
+    "definition": "大量出血時，氣隨之暴脫，出現面色蒼白、暈厥、脈微。",
+    "synonyms": ["失血性休克"]
+  },
+  {
+    "term_id": "ONT_289",
+    "term_name": "痰瘀互結",
+    "category": "病機",
+    "definition": "痰濁與瘀血相互搏結，形成有形癥積，病程纏綿難癒。",
+    "synonyms": ["久病入絡"]
+  },
+  {
+    "term_id": "ONT_290",
+    "term_name": "肝腎同源",
+    "category": "生理概念",
+    "definition": "肝藏血，腎藏精，精血互生。治療上常肝腎同治。",
+    "synonyms": ["乙癸同源"]
+  },
+  {
+    "term_id": "ONT_291",
+    "term_name": "風痰",
+    "category": "病理產物",
+    "definition": "風邪與痰濁互結。在肺見咳喘泡沫痰；在經絡見肢體麻木；在腦見中風。",
+    "synonyms": ["內風夾痰"]
+  },
+  {
+    "term_id": "ONT_292",
+    "term_name": "宿食",
+    "category": "病理產物",
+    "definition": "停留在胃腸道內未消化的食物，易化熱化腐。",
+    "synonyms": ["積食", "食滯"]
+  },
+  {
+    "term_id": "ONT_293",
+    "term_name": "燥屎",
+    "category": "病理產物",
+    "definition": "腸道內乾結的糞便，多見於陽明腑實證。",
+    "synonyms": ["宿便", "硬屎"]
+  },
+  {
+    "term_id": "ONT_294",
+    "term_name": "托毒生肌",
+    "category": "治法",
+    "definition": "用補益氣血藥配合排毒藥，扶助正氣以托毒外出，促進傷口癒合。",
+    "synonyms": ["促進癒合", "排膿"]
+  },
+  {
+    "term_id": "ONT_295",
+    "term_name": "寒包火",
+    "category": "病機",
+    "definition": "內有鬱熱，外感風寒。表現為惡寒發熱，同時伴有煩躁、咽痛。",
+    "synonyms": ["表寒裡熱"]
+  },
+  {
+    "term_id": "ONT_296",
+    "term_name": "通陽",
+    "category": "治法",
+    "definition": "溫通陽氣，祛除陰霾。多用於治療胸痺（心陽不振）或痰飲。",
+    "synonyms": ["溫通心陽"]
+  },
+  {
+    "term_id": "ONT_297",
+    "term_name": "化氣行水",
+    "category": "治法",
+    "definition": "溫補腎陽，氣化水液。用於治療腎陽虛水腫。",
+    "synonyms": ["溫陽利水"]
+  },
+  {
+    "term_id": "ONT_298",
+    "term_name": "降氣平喘",
+    "category": "治法",
+    "definition": "降逆下氣，平定喘息。用於肺氣上逆之咳喘。",
+    "synonyms": ["定喘", "止喘"]
+  },
+  {
+    "term_id": "ONT_299",
+    "term_name": "軟堅散結",
+    "category": "治法",
+    "definition": "使用鹹寒或消痰藥，軟化堅硬的腫塊（如瘰癧、腫瘤、痰核）。",
+    "synonyms": ["消腫塊", "化痰核"]
+  },
+  {
+    "term_id": "ONT_300",
+    "term_name": "引火歸元",
+    "category": "治法",
+    "definition": "引導浮游之假熱（虛火）回到腎中。用於真寒假熱證。",
+    "synonyms": ["引火歸原", "導龍入海"]
+  },
+  {
+    "term_id": "ONT_301",
+    "term_name": "四氣",
+    "category": "藥性",
+    "definition": "中藥的寒、熱、溫、涼四種藥性。寒涼屬陰，溫熱屬陽。",
+    "synonyms": ["四性", "寒熱溫涼"]
+  },
+  {
+    "term_id": "ONT_302",
+    "term_name": "寒性",
+    "category": "藥性",
+    "definition": "藥性寒冷，具有清熱、瀉火、涼血、解毒的作用。主治熱證。",
+    "synonyms": ["大寒", "寒藥"]
+  },
+  {
+    "term_id": "ONT_303",
+    "term_name": "熱性",
+    "category": "藥性",
+    "definition": "藥性溫熱，具有溫裡、散寒、助陽、通絡的作用。主治寒證。",
+    "synonyms": ["大熱", "熱藥"]
+  },
+  {
+    "term_id": "ONT_304",
+    "term_name": "溫性",
+    "category": "藥性",
+    "definition": "藥性微熱，較熱藥緩和，具有溫中、行氣、散寒作用。",
+    "synonyms": ["溫藥", "性溫"]
+  },
+  {
+    "term_id": "ONT_305",
+    "term_name": "涼性",
+    "category": "藥性",
+    "definition": "藥性微寒，較寒藥緩和，具有清熱、生津、養陰作用。",
+    "synonyms": ["涼藥", "性涼"]
+  },
+  {
+    "term_id": "ONT_306",
+    "term_name": "平性",
+    "category": "藥性",
+    "definition": "藥性寒熱偏向不明顯，作用緩和，寒證熱證皆可配伍使用。",
+    "synonyms": ["性平", "不寒不熱"]
+  },
+  {
+    "term_id": "ONT_307",
+    "term_name": "五味",
+    "category": "藥性",
+    "definition": "辛、甘、酸、苦、鹹五種滋味，代表藥物的不同作用。",
+    "synonyms": ["藥味"]
+  },
+  {
+    "term_id": "ONT_308",
+    "term_name": "辛味",
+    "category": "藥性",
+    "definition": "具有發散、行氣、行血的作用。如麻黃、薄荷。",
+    "synonyms": ["辣味", "辛散"]
+  },
+  {
+    "term_id": "ONT_309",
+    "term_name": "甘味",
+    "category": "藥性",
+    "definition": "具有補益、和中、緩急止痛的作用。如人參、甘草。",
+    "synonyms": ["甜味", "甘補"]
+  },
+  {
+    "term_id": "ONT_310",
+    "term_name": "酸味",
+    "category": "藥性",
+    "definition": "具有收斂、固澀的作用。如烏梅、五味子。",
+    "synonyms": ["酸澀", "收斂"]
+  },
+  {
+    "term_id": "ONT_311",
+    "term_name": "苦味",
+    "category": "藥性",
+    "definition": "具有泄熱、燥濕、堅陰的作用。如黃連、蒼朮。",
+    "synonyms": ["苦寒", "苦燥"]
+  },
+  {
+    "term_id": "ONT_312",
+    "term_name": "鹹味",
+    "category": "藥性",
+    "definition": "具有軟堅散結、瀉下的作用。如芒硝、昆布。",
+    "synonyms": ["鹹軟"]
+  },
+  {
+    "term_id": "ONT_313",
+    "term_name": "淡味",
+    "category": "藥性",
+    "definition": "附於甘味，具有滲濕、利尿的作用。如茯苓、薏苡仁。",
+    "synonyms": ["淡滲"]
+  },
+  {
+    "term_id": "ONT_314",
+    "term_name": "升降浮沉",
+    "category": "藥性",
+    "definition": "藥物作用於人體的四種趨向。升浮主上行向外，沉降主下行向內。",
+    "synonyms": ["藥勢"]
+  },
+  {
+    "term_id": "ONT_315",
+    "term_name": "歸經",
+    "category": "藥性",
+    "definition": "藥物對某些臟腑經絡有特殊的選擇性作用。",
+    "synonyms": ["引經", "藥物靶點"]
+  },
+  {
+    "term_id": "ONT_316",
+    "term_name": "解表劑",
+    "category": "方劑分類",
+    "definition": "以汗法為主，解除表證的方劑。如桂枝湯、銀翹散。",
+    "synonyms": ["發汗藥", "感冒藥"]
+  },
+  {
+    "term_id": "ONT_317",
+    "term_name": "瀉下劑",
+    "category": "方劑分類",
+    "definition": "通導大便，蕩滌腸胃積滯的方劑。如大承氣湯。",
+    "synonyms": ["通便藥", "瀉藥"]
+  },
+  {
+    "term_id": "ONT_318",
+    "term_name": "和解劑",
+    "category": "方劑分類",
+    "definition": "調和肝脾、少陽半表半裡的方劑。如小柴胡湯、逍遙散。",
+    "synonyms": ["調和藥"]
+  },
+  {
+    "term_id": "ONT_319",
+    "term_name": "清熱劑",
+    "category": "方劑分類",
+    "definition": "清熱瀉火，涼血解毒的方劑。如白虎湯、黃連解毒湯。",
+    "synonyms": ["退火藥", "消炎藥"]
+  },
+  {
+    "term_id": "ONT_320",
+    "term_name": "溫裡劑",
+    "category": "方劑分類",
+    "definition": "溫中祛寒，回陽救逆的方劑。如理中丸、四逆湯。",
+    "synonyms": ["溫補藥", "熱藥"]
+  },
+  {
+    "term_id": "ONT_321",
+    "term_name": "補益劑",
+    "category": "方劑分類",
+    "definition": "補益人體氣血陰陽不足的方劑。如四君子湯、四物湯。",
+    "synonyms": ["補藥", "補品"]
+  },
+  {
+    "term_id": "ONT_322",
+    "term_name": "固澀劑",
+    "category": "方劑分類",
+    "definition": "收斂固澀，治療氣血精津滑脫散失的方劑。如金鎖固精丸。",
+    "synonyms": ["收澀藥", "止汗止洩藥"]
+  },
+  {
+    "term_id": "ONT_323",
+    "term_name": "安神劑",
+    "category": "方劑分類",
+    "definition": "鎮驚安神，滋養心肝的方劑。如酸棗仁湯、硃砂安神丸。",
+    "synonyms": ["助眠藥", "安定藥"]
+  },
+  {
+    "term_id": "ONT_324",
+    "term_name": "開竅劑",
+    "category": "方劑分類",
+    "definition": "開通心竅，甦醒神志的方劑。如安宮牛黃丸。",
+    "synonyms": ["急救藥"]
+  },
+  {
+    "term_id": "ONT_325",
+    "term_name": "理氣劑",
+    "category": "方劑分類",
+    "definition": "調理氣機，行氣解鬱或降氣平喘的方劑。如越鞠丸。",
+    "synonyms": ["順氣藥", "消脹氣藥"]
+  },
+  {
+    "term_id": "ONT_326",
+    "term_name": "理血劑",
+    "category": "方劑分類",
+    "definition": "活血化瘀或止血的方劑。如血府逐瘀湯。",
+    "synonyms": ["通血路藥", "化瘀藥"]
+  },
+  {
+    "term_id": "ONT_327",
+    "term_name": "治風劑",
+    "category": "方劑分類",
+    "definition": "疏散外風或平熄內風的方劑。如川芎茶調散、天麻鉤藤飲。",
+    "synonyms": ["祛風藥", "止暈藥"]
+  },
+  {
+    "term_id": "ONT_328",
+    "term_name": "治燥劑",
+    "category": "方劑分類",
+    "definition": "輕宣外燥或滋陰潤燥的方劑。如桑杏湯、增液湯。",
+    "synonyms": ["潤燥藥"]
+  },
+  {
+    "term_id": "ONT_329",
+    "term_name": "祛濕劑",
+    "category": "方劑分類",
+    "definition": "化濕利水，通淋泄濁的方劑。如平胃散、八正散。",
+    "synonyms": ["去濕藥", "排毒藥"]
+  },
+  {
+    "term_id": "ONT_330",
+    "term_name": "祛痰劑",
+    "category": "方劑分類",
+    "definition": "消除痰濁，化痰止咳的方劑。如二陳湯。",
+    "synonyms": ["化痰藥"]
+  },
+  {
+    "term_id": "ONT_331",
+    "term_name": "消食劑",
+    "category": "方劑分類",
+    "definition": "消積導滯，促進消化的方劑。如保和丸。",
+    "synonyms": ["消化藥"]
+  },
+  {
+    "term_id": "ONT_332",
+    "term_name": "驅蟲劑",
+    "category": "方劑分類",
+    "definition": "驅殺腸道寄生蟲的方劑。如烏梅丸。",
+    "synonyms": ["打蟲藥"]
+  },
+  {
+    "term_id": "ONT_333",
+    "term_name": "中風中經絡",
+    "category": "病名",
+    "definition": "中風輕證，邪在經絡，神志清醒，僅見半身不遂、口眼歪斜。",
+    "synonyms": ["輕微中風", "小中風"]
+  },
+  {
+    "term_id": "ONT_334",
+    "term_name": "中風中臟腑",
+    "category": "病名",
+    "definition": "中風重證，邪入臟腑，除癱瘓外，伴有神志昏迷或不清。",
+    "synonyms": ["重度中風", "昏迷中風"]
+  },
+  {
+    "term_id": "ONT_335",
+    "term_name": "閉證",
+    "category": "病機",
+    "definition": "中風中臟腑之一，牙關緊閉，兩手握固，無汗，脈有力，屬實證。",
+    "synonyms": ["緊閉"]
+  },
+  {
+    "term_id": "ONT_336",
+    "term_name": "脫證",
+    "category": "病機",
+    "definition": "中風中臟腑之一，口張目合，手撒遺尿，大汗淋漓，屬虛證危候。",
+    "synonyms": ["虛脫", "脫陽"]
+  },
+  {
+    "term_id": "ONT_337",
+    "term_name": "陽閉",
+    "category": "病機",
+    "definition": "閉證屬熱者，面赤身熱，氣粗口臭，苔黃膩，脈弦滑數。",
+    "synonyms": ["熱閉"]
+  },
+  {
+    "term_id": "ONT_338",
+    "term_name": "陰閉",
+    "category": "病機",
+    "definition": "閉證屬寒者，面白唇暗，靜臥不煩，四肢不溫，苔白膩，脈沉滑。",
+    "synonyms": ["寒閉"]
+  },
+  {
+    "term_id": "ONT_339",
+    "term_name": "痰熱互結",
+    "category": "病機",
+    "definition": "熱邪與痰濁互結，表現為胸脘痞悶，咳痰黃稠，苔黃膩。",
+    "synonyms": ["痰火"]
+  },
+  {
+    "term_id": "ONT_340",
+    "term_name": "寒飲伏肺",
+    "category": "病機",
+    "definition": "寒冷的水飲停留在肺，受寒即發，咳喘痰多稀白。",
+    "synonyms": ["冷哮", "寒喘"]
+  },
+  {
+    "term_id": "ONT_341",
+    "term_name": "肝火挾痰",
+    "category": "病機",
+    "definition": "肝火旺盛灼津為痰，火痰上擾，見急躁、頭暈、失眠。",
+    "synonyms": ["痰火擾心"]
+  },
+  {
+    "term_id": "ONT_342",
+    "term_name": "心腎不交",
+    "category": "病機",
+    "definition": "心火亢於上，腎水虧於下，水火不濟，見心煩失眠、腰痠。",
+    "synonyms": ["水火未濟"]
+  },
+  {
+    "term_id": "ONT_343",
+    "term_name": "脾胃濕熱",
+    "category": "病機",
+    "definition": "濕熱蘊結中焦，見脘腹痞悶、口苦膩、大便黏滯。",
+    "synonyms": ["腸胃濕熱"]
+  },
+  {
+    "term_id": "ONT_344",
+    "term_name": "寒濕困脾",
+    "category": "病機",
+    "definition": "寒濕內盛，困阻脾陽，見腹脹、口淡、便溏、頭身困重。",
+    "synonyms": ["太陰寒濕"]
+  },
+  {
+    "term_id": "ONT_345",
+    "term_name": "胃氣不和",
+    "category": "病機",
+    "definition": "胃氣失於和降，表現為胃脘脹痛、噯氣、噁心。",
+    "synonyms": ["胃不和"]
+  },
+  {
+    "term_id": "ONT_346",
+    "term_name": "胃陰不足",
+    "category": "病機",
+    "definition": "胃之陰液虧損，見胃脘隱痛、飢不欲食、口乾舌紅。",
+    "synonyms": ["胃陰虛"]
+  },
+  {
+    "term_id": "ONT_347",
+    "term_name": "食積化熱",
+    "category": "病機",
+    "definition": "飲食停滯過久，鬱而化熱，見口臭、便秘、手足心熱。",
+    "synonyms": ["積熱"]
+  },
+  {
+    "term_id": "ONT_348",
+    "term_name": "氣虛血瘀",
+    "category": "病機",
+    "definition": "氣虛運血無力，血行不暢致瘀。見乏力伴刺痛、舌淡紫。",
+    "synonyms": ["氣虛血滯"]
+  },
+  {
+    "term_id": "ONT_349",
+    "term_name": "表寒裡熱",
+    "category": "病機",
+    "definition": "外有表寒（惡寒），內有裡熱（煩躁口渴），俗稱寒包火。",
+    "synonyms": ["寒包火"]
+  },
+  {
+    "term_id": "ONT_350",
+    "term_name": "上實下虛",
+    "category": "病機",
+    "definition": "上部表現實喘（如痰濁壅肺），下部表現虛證（如腎不納氣）。",
+    "synonyms": ["蘇子降氣湯證"]
+  },
+  {
+    "term_id": "ONT_351",
+    "term_name": "人參",
+    "category": "核心藥物",
+    "definition": "大補元氣之聖藥，補脾益肺，生津，安神。主治氣虛欲脫之危重證。",
+    "synonyms": ["高麗參", "吉林參", "補氣第一"]
+  },
+  {
+    "term_id": "ONT_352",
+    "term_name": "黃耆",
+    "category": "核心藥物",
+    "definition": "補氣升陽，益衛固表，利水消腫，托毒生肌。主治肺脾氣虛。",
+    "synonyms": ["北耆", "固表止汗"]
+  },
+  {
+    "term_id": "ONT_353",
+    "term_name": "白朮",
+    "category": "核心藥物",
+    "definition": "健脾益氣，燥濕利水，止汗，安胎。為補氣健脾要藥。",
+    "synonyms": ["健脾燥濕"]
+  },
+  {
+    "term_id": "ONT_354",
+    "term_name": "甘草",
+    "category": "核心藥物",
+    "definition": "補脾益氣，清熱解毒，祛痰止咳，緩急止痛，調和諸藥。",
+    "synonyms": ["國老", "調和藥"]
+  },
+  {
+    "term_id": "ONT_355",
+    "term_name": "當歸",
+    "category": "核心藥物",
+    "definition": "補血活血，調經止痛，潤腸通便。為婦科聖藥，血中之氣藥。",
+    "synonyms": ["補血聖藥", "秦歸"]
+  },
+  {
+    "term_id": "ONT_356",
+    "term_name": "熟地黃",
+    "category": "核心藥物",
+    "definition": "滋陰補血，益精填髓。主治肝腎陰虛，腰膝痠軟。",
+    "synonyms": ["熟地", "補腎陰"]
+  },
+  {
+    "term_id": "ONT_357",
+    "term_name": "白芍",
+    "category": "核心藥物",
+    "definition": "養血斂陰，柔肝止痛，平抑肝陽。主治脅痛、腹痛。",
+    "synonyms": ["柔肝", "斂陰"]
+  },
+  {
+    "term_id": "ONT_358",
+    "term_name": "阿膠",
+    "category": "核心藥物",
+    "definition": "補血滋陰，潤燥，止血。主治血虛萎黃，出血證。",
+    "synonyms": ["補血止血"]
+  },
+  {
+    "term_id": "ONT_359",
+    "term_name": "附子",
+    "category": "核心藥物",
+    "definition": "回陽救逆第一品，補火助陽，散寒止痛。主治亡陽證。",
+    "synonyms": ["回陽", "純陽之藥"]
+  },
+  {
+    "term_id": "ONT_360",
+    "term_name": "肉桂",
+    "category": "核心藥物",
+    "definition": "補火助陽，引火歸元，散寒止痛，溫通經脈。",
+    "synonyms": ["溫腎陽", "引火歸原"]
+  },
+  {
+    "term_id": "ONT_361",
+    "term_name": "鹿茸",
+    "category": "核心藥物",
+    "definition": "壯腎陽，益精血，強筋骨，調衝任。主治腎陽不足之重證。",
+    "synonyms": ["補腎陽", "補精血"]
+  },
+  {
+    "term_id": "ONT_362",
+    "term_name": "麥門冬",
+    "category": "核心藥物",
+    "definition": "養陰生津，潤肺清心。主治肺燥乾咳，虛熱煩躁。",
+    "synonyms": ["麥冬", "滋陰潤肺"]
+  },
+  {
+    "term_id": "ONT_363",
+    "term_name": "麻黃",
+    "category": "核心藥物",
+    "definition": "發汗解表之力最強，宣肺平喘，利水消腫。主治風寒表實證。",
+    "synonyms": ["發汗第一", "宣肺"]
+  },
+  {
+    "term_id": "ONT_364",
+    "term_name": "桂枝",
+    "category": "核心藥物",
+    "definition": "發汗解肌，溫通經脈，助陽化氣。主治風寒表虛證。",
+    "synonyms": ["解肌", "溫經"]
+  },
+  {
+    "term_id": "ONT_365",
+    "term_name": "薄荷",
+    "category": "核心藥物",
+    "definition": "疏散風熱，清利頭目，利咽，透疹，疏肝行氣。",
+    "synonyms": ["清頭目", "散風熱"]
+  },
+  {
+    "term_id": "ONT_366",
+    "term_name": "石膏",
+    "category": "核心藥物",
+    "definition": "清熱瀉火，除煩止渴。主治氣分實熱，高熱大渴。",
+    "synonyms": ["清氣分熱", "退燒"]
+  },
+  {
+    "term_id": "ONT_367",
+    "term_name": "黃連",
+    "category": "核心藥物",
+    "definition": "清熱燥濕，瀉火解毒。主治濕熱痞滿，心火亢盛。",
+    "synonyms": ["苦寒", "瀉心火", "燥濕"]
+  },
+  {
+    "term_id": "ONT_368",
+    "term_name": "金銀花",
+    "category": "核心藥物",
+    "definition": "清熱解毒，疏散風熱。主治癰腫疔瘡，外感風熱。",
+    "synonyms": ["忍冬", "解毒"]
+  },
+  {
+    "term_id": "ONT_369",
+    "term_name": "生地黃",
+    "category": "核心藥物",
+    "definition": "清熱涼血，養陰生津。主治熱入營血，陰虛內熱。",
+    "synonyms": ["生地", "涼血"]
+  },
+  {
+    "term_id": "ONT_370",
+    "term_name": "大黃",
+    "category": "核心藥物",
+    "definition": "瀉下攻積，清熱瀉火，涼血解毒，逐瘀通經。主治陽明腑實。",
+    "synonyms": ["將軍", "通便", "瀉下"]
+  },
+  {
+    "term_id": "ONT_371",
+    "term_name": "茯苓",
+    "category": "核心藥物",
+    "definition": "利水滲濕，健脾，寧心。主治水腫，痰飲，脾虛。",
+    "synonyms": ["利水", "去濕"]
+  },
+  {
+    "term_id": "ONT_372",
+    "term_name": "半夏",
+    "category": "核心藥物",
+    "definition": "燥濕化痰，降逆止嘔，消痞散結。主治濕痰寒痰，嘔吐。",
+    "synonyms": ["止嘔", "化痰"]
+  },
+  {
+    "term_id": "ONT_373",
+    "term_name": "陳皮",
+    "category": "核心藥物",
+    "definition": "理氣健脾，燥濕化痰。主治脾胃氣滯，濕痰咳嗽。",
+    "synonyms": ["廣皮", "理氣化痰"]
+  },
+  {
+    "term_id": "ONT_374",
+    "term_name": "柴胡",
+    "category": "核心藥物",
+    "definition": "疏肝解鬱，升舉陽氣，和解表裡。主治肝鬱氣滯，寒熱往來。",
+    "synonyms": ["疏肝", "升陽"]
+  },
+  {
+    "term_id": "ONT_375",
+    "term_name": "丹參",
+    "category": "核心藥物",
+    "definition": "活血祛瘀，通經止痛，清心除煩，涼血消癰。",
+    "synonyms": ["一味丹參功同四物", "活血"]
+  },
+  {
+    "term_id": "ONT_376",
+    "term_name": "川芎",
+    "category": "核心藥物",
+    "definition": "活血行氣，祛風止痛。為血中之氣藥，治頭痛要藥。",
+    "synonyms": ["治頭痛", "行血"]
+  },
+  {
+    "term_id": "ONT_377",
+    "term_name": "酸棗仁",
+    "category": "核心藥物",
+    "definition": "養心補肝，寧心安神，斂汗，生津。主治虛煩不眠。",
+    "synonyms": ["安神", "治失眠"]
+  },
+  {
+    "term_id": "ONT_378",
+    "term_name": "龍骨",
+    "category": "核心藥物",
+    "definition": "鎮驚安神，平肝潛陽，收斂固澀。主治驚癇，陽亢。",
+    "synonyms": ["重鎮安神", "收澀"]
+  },
+  {
+    "term_id": "ONT_379",
+    "term_name": "五味子",
+    "category": "核心藥物",
+    "definition": "收斂固澀，益氣生津，補腎寧心。主治久咳，自汗，遺精。",
+    "synonyms": ["收斂", "五味"]
+  },
+  {
+    "term_id": "ONT_380",
+    "term_name": "山楂",
+    "category": "核心藥物",
+    "definition": "消食化積，行氣散瘀。主治肉食積滯，產後瘀阻。",
+    "synonyms": ["消肉積", "化瘀"]
+  },
+  {
+    "term_id": "ONT_381",
+    "term_name": "平和體質",
+    "category": "體質",
+    "definition": "體態適中，面色紅潤，精力充沛，耐受寒熱，睡眠安和。",
+    "synonyms": ["健康體質", "正常體質"]
+  },
+  {
+    "term_id": "ONT_382",
+    "term_name": "氣虛體質",
+    "category": "體質",
+    "definition": "元氣不足，肌肉鬆軟，聲音低弱，易出汗，易感冒，易疲乏。",
+    "synonyms": ["氣虛", "體虛"]
+  },
+  {
+    "term_id": "ONT_383",
+    "term_name": "陽虛體質",
+    "category": "體質",
+    "definition": "陽氣不足，畏寒怕冷，手足不溫，喜熱飲食，精神不振。",
+    "synonyms": ["陽虛", "冷底", "虛寒體質"]
+  },
+  {
+    "term_id": "ONT_384",
+    "term_name": "陰虛體質",
+    "category": "體質",
+    "definition": "陰液虧少，口燥咽乾，手足心熱，體形偏瘦，性情急躁。",
+    "synonyms": ["陰虛", "燥熱體質"]
+  },
+  {
+    "term_id": "ONT_385",
+    "term_name": "痰濕體質",
+    "category": "體質",
+    "definition": "痰濕凝聚，體形肥胖，腹部肥滿，口黏苔膩，身重不爽。",
+    "synonyms": ["痰濕", "肥胖體質", "濕氣重"]
+  },
+  {
+    "term_id": "ONT_386",
+    "term_name": "濕熱體質",
+    "category": "體質",
+    "definition": "濕熱內蘊，面垢油光，易生痤瘡，口苦口乾，大便黏滯。",
+    "synonyms": ["濕熱", "長痘痘體質"]
+  },
+  {
+    "term_id": "ONT_387",
+    "term_name": "血瘀體質",
+    "category": "體質",
+    "definition": "血行不暢，膚色晦暗，色素沈著，口唇紫暗，易有瘀斑。",
+    "synonyms": ["血瘀", "循環不好"]
+  },
+  {
+    "term_id": "ONT_388",
+    "term_name": "氣鬱體質",
+    "category": "體質",
+    "definition": "氣機鬱滯，神情抑鬱，情感脆弱，煩悶不樂，多愁善感。",
+    "synonyms": ["氣鬱", "憂鬱體質"]
+  },
+  {
+    "term_id": "ONT_389",
+    "term_name": "特稟體質",
+    "category": "體質",
+    "definition": "先天失常，適應力弱，易過敏（哮喘、蕁麻疹、鼻炎）。",
+    "synonyms": ["過敏體質"]
+  },
+  {
+    "term_id": "ONT_390",
+    "term_name": "寒熱往來",
+    "category": "症狀",
+    "definition": "惡寒與發熱交替出現，界線分明，一日數次或無定時，主少陽證。",
+    "synonyms": ["忽冷忽熱"]
+  },
+  {
+    "term_id": "ONT_391",
+    "term_name": "但熱不寒",
+    "category": "症狀",
+    "definition": "只覺發熱，不覺怕冷，多屬裡熱證。",
+    "synonyms": ["一直發燒"]
+  },
+  {
+    "term_id": "ONT_392",
+    "term_name": "但寒不熱",
+    "category": "症狀",
+    "definition": "只覺怕冷，不覺發熱，多屬裡寒證。",
+    "synonyms": ["一直怕冷"]
+  },
+  {
+    "term_id": "ONT_393",
+    "term_name": "日晡潮熱",
+    "category": "症狀",
+    "definition": "下午3-5時（申時）發熱明顯，聲高氣粗，多屬陽明腑實。",
+    "synonyms": ["陽明潮熱"]
+  },
+  {
+    "term_id": "ONT_394",
+    "term_name": "微熱",
+    "category": "症狀",
+    "definition": "發熱度數不高（37-38度），或自覺身熱，多屬陰虛或氣虛。",
+    "synonyms": ["低燒", "夯夯"]
+  },
+  {
+    "term_id": "ONT_395",
+    "term_name": "四肢厥冷",
+    "category": "症狀",
+    "definition": "手足冷至肘膝關節以上，多屬陽氣衰微之重證。",
+    "synonyms": ["手腳冰冷嚴重", "厥逆"]
+  },
+  {
+    "term_id": "ONT_396",
+    "term_name": "手足不溫",
+    "category": "症狀",
+    "definition": "手足冷至腕踝關節以下，多屬陽虛或氣滯。",
+    "synonyms": ["手腳涼"]
+  },
+  {
+    "term_id": "ONT_397",
+    "term_name": "大汗淋漓",
+    "category": "症狀",
+    "definition": "汗出如雨，淋漓不斷，多屬亡陽或實熱重證。",
+    "synonyms": ["爆汗", "流汗不止"]
+  },
+  {
+    "term_id": "ONT_398",
+    "term_name": "絕汗",
+    "category": "症狀",
+    "definition": "病危時汗出，如油如珠，黏膩難拭，為亡陰或亡陽之兆。",
+    "synonyms": ["脫汗"]
+  },
+  {
+    "term_id": "ONT_399",
+    "term_name": "戰汗",
+    "category": "症狀",
+    "definition": "先全身戰慄抖動，而後汗出，多見於熱病正邪交爭之轉折點。",
+    "synonyms": ["打冷顫後流汗"]
+  },
+  {
+    "term_id": "ONT_400",
+    "term_name": "冷汗",
+    "category": "症狀",
+    "definition": "汗出觸之冰冷，伴有畏寒肢冷，多屬陽虛或驚嚇。",
+    "synonyms": ["冒冷汗"]
+  },
+  {
+    "term_id": "ONT_401",
+    "term_name": "斑",
+    "category": "體徵",
+    "definition": "皮膚黏膜出現紅紫色的片狀改變，平鋪於皮膚，撫之不礙手（不突起）。",
+    "synonyms": ["紅斑", "瘀斑", "發斑"]
+  },
+  {
+    "term_id": "ONT_402",
+    "term_name": "疹",
+    "category": "體徵",
+    "definition": "皮膚表面出現粟粒狀突起，顏色紅，撫之礙手（有觸感）。",
+    "synonyms": ["紅疹", "皮疹", "起疹子"]
+  },
+  {
+    "term_id": "ONT_403",
+    "term_name": "白㾦",
+    "category": "體徵",
+    "definition": "皮膚上出現晶瑩如粟的白色小水泡，多因濕溫汗出不徹所致。",
+    "synonyms": ["痱子", "汗疹"]
+  },
+  {
+    "term_id": "ONT_404",
+    "term_name": "癰",
+    "category": "病名",
+    "definition": "發生於體表皮肉之間的急性化膿性疾患。特徵為局部紅腫熱痛，範圍約3-4寸。",
+    "synonyms": ["癰腫", "大顆膿包"]
+  },
+  {
+    "term_id": "ONT_405",
+    "term_name": "疽",
+    "category": "病名",
+    "definition": "發生於皮肉筋骨間的化膿性疾患。初起皮膚顏色不變，漫腫無頭，疼痛徹骨。",
+    "synonyms": ["深部膿瘍", "陰疽"]
+  },
+  {
+    "term_id": "ONT_406",
+    "term_name": "疔",
+    "category": "病名",
+    "definition": "瘡形小，根腳堅硬，狀如釘丁，病情變化迅速，易致黃毒走散（敗血症）。",
+    "synonyms": ["釘子瘡", "疔瘡"]
+  },
+  {
+    "term_id": "ONT_407",
+    "term_name": "瘰癧",
+    "category": "病名",
+    "definition": "發生於頸項、耳後或腋下的結塊腫物，累累如貫珠。多屬淋巴結結核。",
+    "synonyms": ["老鼠瘡", "淋巴結腫大"]
+  },
+  {
+    "term_id": "ONT_408",
+    "term_name": "癭氣",
+    "category": "病名",
+    "definition": "頸前結喉兩側腫大，皮色不變，隨吞嚥動作而上下移動。多屬甲狀腺腫大。",
+    "synonyms": ["大脖子病", "甲狀腺腫"]
+  },
+  {
+    "term_id": "ONT_409",
+    "term_name": "痰核",
+    "category": "體徵",
+    "definition": "皮下結塊，不紅不腫，觸之滑動，無痛，多因濕痰流聚而成。",
+    "synonyms": ["皮下腫瘤", "脂肪瘤", "囊腫"]
+  },
+  {
+    "term_id": "ONT_410",
+    "term_name": "黃疸",
+    "category": "病名",
+    "definition": "以目黃、身黃、尿黃為主要特徵。色澤鮮明為陽黃，晦暗如煙燻為陰黃。",
+    "synonyms": ["皮膚變黃", "眼白變黃"]
+  },
+  {
+    "term_id": "ONT_411",
+    "term_name": "鼓脹",
+    "category": "病名",
+    "definition": "腹部膨脹如鼓，皮色蒼黃，脈絡暴露，即腹水。為肝硬化晚期常見症狀。",
+    "synonyms": ["腹水", "肚子大"]
+  },
+  {
+    "term_id": "ONT_412",
+    "term_name": "積聚",
+    "category": "病名",
+    "definition": "腹內結塊。痛有定處、推之不移為積（臟病，血瘀）；痛無定處、聚散無常為聚（腑病，氣滯）。",
+    "synonyms": ["腹部腫塊", "痞塊"]
+  },
+  {
+    "term_id": "ONT_413",
+    "term_name": "痿證",
+    "category": "病名",
+    "definition": "肢體筋脈弛緩，軟弱無力，日久因不能運動而肌肉萎縮。",
+    "synonyms": ["肌肉萎縮", "手腳無力"]
+  },
+  {
+    "term_id": "ONT_414",
+    "term_name": "痙證",
+    "category": "病名",
+    "definition": "以項背強直，四肢抽搐，甚至角弓反張為主要表現的疾病。",
+    "synonyms": ["抽筋", "痙攣"]
+  },
+  {
+    "term_id": "ONT_415",
+    "term_name": "瘧疾",
+    "category": "病名",
+    "definition": "感受瘧邪，以寒戰壯熱，頭痛，汗出，休作有時（定時發作）為特徵。",
+    "synonyms": ["打擺子", "寒熱往來"]
+  },
+  {
+    "term_id": "ONT_416",
+    "term_name": "霍亂",
+    "category": "病名",
+    "definition": "猝然起病，上吐下瀉，腹痛或不痛，揮霍繚亂，極易傷津耗氣。",
+    "synonyms": ["上吐下瀉", "急性腸胃炎"]
+  },
+  {
+    "term_id": "ONT_417",
+    "term_name": "脫髮",
+    "category": "症狀",
+    "definition": "頭髮脫落。多屬腎虛或血熱。",
+    "synonyms": ["掉頭髮", "禿頭"]
+  },
+  {
+    "term_id": "ONT_418",
+    "term_name": "斑禿",
+    "category": "症狀",
+    "definition": "頭髮呈片狀突然脫落，頭皮光亮，無自覺症狀。",
+    "synonyms": ["鬼剃頭", "圓形禿"]
+  },
+  {
+    "term_id": "ONT_419",
+    "term_name": "爪甲枯脆",
+    "category": "體徵",
+    "definition": "指甲乾枯、變薄、變脆，容易折斷，多屬肝血不足。",
+    "synonyms": ["指甲容易斷", "指甲沒光澤"]
+  },
+  {
+    "term_id": "ONT_420",
+    "term_name": "鼻衄",
+    "category": "症狀",
+    "definition": "鼻腔出血。",
+    "synonyms": ["流鼻血", "鼻出血"]
+  },
+  {
+    "term_id": "ONT_421",
+    "term_name": "齒衄",
+    "category": "症狀",
+    "definition": "牙齦出血，紅腫疼痛者為胃火，不紅不腫微痛者為腎火。",
+    "synonyms": ["牙齦流血"]
+  },
+  {
+    "term_id": "ONT_422",
+    "term_name": "肌衄",
+    "category": "症狀",
+    "definition": "皮膚出現青紫斑點或斑塊，鼻眼耳口等亦有出血。",
+    "synonyms": ["紫斑", "皮下出血"]
+  },
+  {
+    "term_id": "ONT_423",
+    "term_name": "咳血",
+    "category": "症狀",
+    "definition": "血由肺來，隨咳嗽而出，血色鮮紅，常混有痰液。",
+    "synonyms": ["咳出血", "痰中帶血"]
+  },
+  {
+    "term_id": "ONT_424",
+    "term_name": "吐血",
+    "category": "症狀",
+    "definition": "血由胃來，隨嘔吐而出，血色紫暗，常夾有食物殘渣。",
+    "synonyms": ["吐血", "胃出血"]
+  },
+  {
+    "term_id": "ONT_425",
+    "term_name": "便血",
+    "category": "症狀",
+    "definition": "血從肛門排出。先血後便為近血，先便後血為遠血（此古說，現多指顏色深淺）。",
+    "synonyms": ["大便有血", "拉血"]
+  },
+  {
+    "term_id": "ONT_426",
+    "term_name": "遠血",
+    "category": "症狀",
+    "definition": "大便色黑如柏油，或呈暗紅色，出血部位距肛門較遠（上消化道）。",
+    "synonyms": ["黑便", "柏油便"]
+  },
+  {
+    "term_id": "ONT_427",
+    "term_name": "近血",
+    "category": "症狀",
+    "definition": "大便出血色鮮紅，附於糞便表面或滴出，出血部位距肛門較近（直腸肛門）。",
+    "synonyms": ["血便", "痔瘡出血"]
+  },
+  {
+    "term_id": "ONT_428",
+    "term_name": "尿血",
+    "category": "症狀",
+    "definition": "小便中混有血液，或純血尿，伴或不伴疼痛。",
+    "synonyms": ["血尿", "尿尿有血"]
+  },
+  {
+    "term_id": "ONT_429",
+    "term_name": "膿",
+    "category": "病理產物",
+    "definition": "熱毒壅聚，腐敗血肉所化生的黃白色黏稠液體。",
+    "synonyms": ["化膿", "膿液"]
+  },
+  {
+    "term_id": "ONT_430",
+    "term_name": "視物模糊",
+    "category": "症狀",
+    "definition": "視力下降，看東西不清楚，多屬肝腎陰虛或氣血不足。",
+    "synonyms": ["視力模糊", "看不清楚", "眼花"]
+  },
+  {
+    "term_id": "ONT_431",
+    "term_name": "雀盲",
+    "category": "症狀",
+    "definition": "白晝視力正常，黃昏後視力顯著減退，如雀之盲。",
+    "synonyms": ["夜盲症", "晚上看不見"]
+  },
+  {
+    "term_id": "ONT_432",
+    "term_name": "歧視",
+    "category": "症狀",
+    "definition": "視一物為二物，即複視，多屬肝腎虧損或精氣不足。",
+    "synonyms": ["複視", "看成兩個影"]
+  },
+  {
+    "term_id": "ONT_433",
+    "term_name": "迎風流淚",
+    "category": "症狀",
+    "definition": "眼睛不紅不腫，唯遇風則流淚，多屬肝腎兩虛或感受風邪。",
+    "synonyms": ["吹風流淚"]
+  },
+  {
+    "term_id": "ONT_434",
+    "term_name": "目乾",
+    "category": "症狀",
+    "definition": "兩眼乾澀少淚，多屬肝陰虛或肝血不足。",
+    "synonyms": ["眼睛乾", "乾眼症"]
+  },
+  {
+    "term_id": "ONT_435",
+    "term_name": "胞瞼腫脹",
+    "category": "體徵",
+    "definition": "眼瞼浮腫。上瞼屬脾，下瞼屬腎。早起眼腫多屬水濕。",
+    "synonyms": ["眼皮腫", "金魚眼"]
+  },
+  {
+    "term_id": "ONT_436",
+    "term_name": "聲音重濁",
+    "category": "症狀",
+    "definition": "語聲重濁，如鼻塞甕聲，多屬外感風寒。",
+    "synonyms": ["鼻音重", "聲音悶悶的"]
+  },
+  {
+    "term_id": "ONT_437",
+    "term_name": "昏迷",
+    "category": "症狀",
+    "definition": "神志喪失，對外界刺激無反應。",
+    "synonyms": ["不省人事", "昏倒"]
+  },
+  {
+    "term_id": "ONT_438",
+    "term_name": "暈厥",
+    "category": "症狀",
+    "definition": "突然昏倒，不省人事，移時逐漸甦醒。",
+    "synonyms": ["昏倒一下", "暈倒"]
+  },
+  {
+    "term_id": "ONT_439",
+    "term_name": "關格",
+    "category": "病名",
+    "definition": "小便不通與嘔吐並見。指腎氣衰絕，濁邪內蘊之危重證。",
+    "synonyms": ["尿毒症"]
+  },
+  {
+    "term_id": "ONT_440",
+    "term_name": "中暑",
+    "category": "病名",
+    "definition": "夏季感受暑邪，卒然昏倒，身熱汗出，氣促等。",
+    "synonyms": ["熱暈厥", "熱衰竭"]
+  },
+  {
+    "term_id": "ONT_441",
+    "term_name": "傷暑",
+    "category": "病名",
+    "definition": "感受暑邪，症狀較輕，見發熱、汗出、口渴、疲乏。",
+    "synonyms": ["輕微中暑"]
+  },
+  {
+    "term_id": "ONT_442",
+    "term_name": "厭食",
+    "category": "症狀",
+    "definition": "長期食慾減退或消失，厭惡進食。",
+    "synonyms": ["不想吃東西", "沒胃口"]
+  },
+  {
+    "term_id": "ONT_443",
+    "term_name": "多食",
+    "category": "症狀",
+    "definition": "食慾亢進，進食量明顯增多，多屬胃火。",
+    "synonyms": ["吃很多", "暴食"]
+  },
+  {
+    "term_id": "ONT_444",
+    "term_name": "偏食",
+    "category": "症狀",
+    "definition": "嗜食某種食物，或厭惡某種食物，多見於小兒。",
+    "synonyms": ["挑食"]
+  },
+  {
+    "term_id": "ONT_445",
+    "term_name": "異嗜",
+    "category": "症狀",
+    "definition": "喜食泥土、生米等非食物異物，多屬蟲積。",
+    "synonyms": ["亂吃東西"]
+  },
+  {
+    "term_id": "ONT_446",
+    "term_name": "三叉神經痛",
+    "category": "病名",
+    "definition": "面部三叉神經分布區內的反覆發作性劇痛，中醫多屬「面痛」範疇。",
+    "synonyms": ["臉痛"]
+  },
+  {
+    "term_id": "ONT_447",
+    "term_name": "口眼歪斜",
+    "category": "症狀",
+    "definition": "口角向一側歪斜，眼瞼閉合不全，為面癱（中風或吊線風）主症。",
+    "synonyms": ["顏面神經麻痺", "嘴歪眼斜"]
+  },
+  {
+    "term_id": "ONT_448",
+    "term_name": "面肌痙攣",
+    "category": "症狀",
+    "definition": "面部肌肉不自主地抽動。",
+    "synonyms": ["臉部抽筋"]
+  },
+  {
+    "term_id": "ONT_449",
+    "term_name": "耳聾",
+    "category": "症狀",
+    "definition": "聽力減退，甚至聽覺喪失。暴聾屬實，久聾屬虛。",
+    "synonyms": ["聽不見", "耳背"]
+  },
+  {
+    "term_id": "ONT_450",
+    "term_name": "重聽",
+    "category": "症狀",
+    "definition": "聽力減退，需大聲說話方能聽見。",
+    "synonyms": ["聽力不好"]
+  },
+  {
+    "term_id": "ONT_451",
+    "term_name": "元氣",
+    "category": "生理概念",
+    "definition": "人體最根本、最重要的氣，源於先天之精，藏於腎，推動人體生長發育。",
+    "synonyms": ["原氣", "真氣"]
+  },
+  {
+    "term_id": "ONT_452",
+    "term_name": "宗氣",
+    "category": "生理概念",
+    "definition": "積於胸中之氣，由肺吸入之清氣與脾胃運化之水穀精氣結合而成，主呼吸與行血。",
+    "synonyms": ["大氣", "動氣"]
+  },
+  {
+    "term_id": "ONT_453",
+    "term_name": "營氣",
+    "category": "生理概念",
+    "definition": "行於脈中之氣，具有營養全身和化生血液的作用。屬陰。",
+    "synonyms": ["榮氣"]
+  },
+  {
+    "term_id": "ONT_454",
+    "term_name": "衛氣",
+    "category": "生理概念",
+    "definition": "行於脈外之氣，具有防禦外邪、溫養肌膚、調控汗孔開合的作用。屬陽。",
+    "synonyms": ["衛陽"]
+  },
+  {
+    "term_id": "ONT_455",
+    "term_name": "三焦",
+    "category": "生理結構",
+    "definition": "六腑之一，為元氣之別使，水液運行之道路。上焦主受納，中焦主化生，下焦主排泄。",
+    "synonyms": ["孤府", "決瀆之官"]
+  },
+  {
+    "term_id": "ONT_456",
+    "term_name": "命門",
+    "category": "生理結構",
+    "definition": "生命之根本，內藏真火（腎陽），為人體陽氣之源。",
+    "synonyms": ["先天之本"]
+  },
+  {
+    "term_id": "ONT_457",
+    "term_name": "督脈",
+    "category": "經絡",
+    "definition": "行於背部正中，總督一身之陽經，稱為「陽脈之海」。",
+    "synonyms": ["陽脈之海"]
+  },
+  {
+    "term_id": "ONT_458",
+    "term_name": "任脈",
+    "category": "經絡",
+    "definition": "行於腹部正中，總任一身之陰經，稱為「陰脈之海」，主胞胎。",
+    "synonyms": ["陰脈之海"]
+  },
+  {
+    "term_id": "ONT_459",
+    "term_name": "沖脈",
+    "category": "經絡",
+    "definition": "為十二經之海，調節十二經氣血，與女子月經及生殖功能密切相關。",
+    "synonyms": ["血海", "十二經之海"]
+  },
+  {
+    "term_id": "ONT_460",
+    "term_name": "帶脈",
+    "category": "經絡",
+    "definition": "橫行腰部，如束帶，約束縱行諸經，固攝下元。",
+    "synonyms": ["約束諸經"]
+  },
+  {
+    "term_id": "ONT_461",
+    "term_name": "木火刑金",
+    "category": "病機",
+    "definition": "肝火過旺，灼傷肺金，導致乾咳、咯血、胸脅痛。",
+    "synonyms": ["肝火犯肺"]
+  },
+  {
+    "term_id": "ONT_462",
+    "term_name": "水不涵木",
+    "category": "病機",
+    "definition": "腎陰不足，不能滋養肝陰，導致肝陽上亢。見頭暈、耳鳴、腰膝痠軟。",
+    "synonyms": ["滋水涵木(治法)", "肝腎陰虛"]
+  },
+  {
+    "term_id": "ONT_463",
+    "term_name": "培土生金",
+    "category": "治法",
+    "definition": "通過健脾益氣來補益肺氣。適用於肺脾氣虛證。",
+    "synonyms": ["補脾益肺"]
+  },
+  {
+    "term_id": "ONT_464",
+    "term_name": "金水相生",
+    "category": "治法",
+    "definition": "滋養肺腎之陰。適用於肺腎陰虛證。",
+    "synonyms": ["滋養肺腎"]
+  },
+  {
+    "term_id": "ONT_465",
+    "term_name": "益火補土",
+    "category": "治法",
+    "definition": "溫腎陽（火）以暖脾土。適用於脾腎陽虛證。",
+    "synonyms": ["溫腎健脾"]
+  },
+  {
+    "term_id": "ONT_466",
+    "term_name": "瀉南補北",
+    "category": "治法",
+    "definition": "瀉心火（南）補腎水（北）。適用於心腎不交證。",
+    "synonyms": ["滋陰降火"]
+  },
+  {
+    "term_id": "ONT_467",
+    "term_name": "抑木扶土",
+    "category": "治法",
+    "definition": "疏肝（抑木）以健脾（扶土）。適用於肝鬱脾虛證。",
+    "synonyms": ["疏肝健脾"]
+  },
+  {
+    "term_id": "ONT_468",
+    "term_name": "熱入血室",
+    "category": "病名",
+    "definition": "婦女經期感受外邪，邪熱乘虛侵入胞宮（血室），見寒熱如瘧，暮則譫語。",
+    "synonyms": ["經期感冒入裡"]
+  },
+  {
+    "term_id": "ONT_469",
+    "term_name": "合病",
+    "category": "病機",
+    "definition": "傷寒病中，兩經或三經同時發病。如太陽陽明合病。",
+    "synonyms": ["多經同病"]
+  },
+  {
+    "term_id": "ONT_470",
+    "term_name": "併病",
+    "category": "病機",
+    "definition": "傷寒病中，一經病證未罷，又出現另一經病證。",
+    "synonyms": ["病情傳變"]
+  },
+  {
+    "term_id": "ONT_471",
+    "term_name": "直中",
+    "category": "病機",
+    "definition": "外邪不經三陽經，直接侵犯三陰經，病情沉重。",
+    "synonyms": ["直中三陰"]
+  },
+  {
+    "term_id": "ONT_472",
+    "term_name": "少陰病",
+    "category": "病名",
+    "definition": "傷寒六經病之一，心腎陽虛或陰虛，精神萎靡，脈微細。",
+    "synonyms": ["心腎陽虛證"]
+  },
+  {
+    "term_id": "ONT_473",
+    "term_name": "厥陰病",
+    "category": "病名",
+    "definition": "傷寒六經病之末，寒熱錯雜，厥熱勝復，見消渴、氣上撞心。",
+    "synonyms": ["寒熱錯雜證"]
+  },
+  {
+    "term_id": "ONT_474",
+    "term_name": "太陰病",
+    "category": "病名",
+    "definition": "傷寒六經病之一，脾陽虛衰，寒濕內盛，見腹滿而吐，食不下，自利。",
+    "synonyms": ["脾虛寒濕證"]
+  },
+  {
+    "term_id": "ONT_475",
+    "term_name": "少陽病",
+    "category": "病名",
+    "definition": "傷寒六經病之一，邪在半表半裡，口苦、咽乾、目眩、寒熱往來。",
+    "synonyms": ["半表半裡證"]
+  },
+  {
+    "term_id": "ONT_476",
+    "term_name": "陽明病",
+    "category": "病名",
+    "definition": "傷寒六經病之一，胃腸實熱，見身熱、汗出、不惡寒反惡熱。",
+    "synonyms": ["胃腸實熱證"]
+  },
+  {
+    "term_id": "ONT_477",
+    "term_name": "太陽病",
+    "category": "病名",
+    "definition": "傷寒六經病之首，風寒襲表，脈浮，頭項強痛而惡寒。",
+    "synonyms": ["表寒證"]
+  },
+  {
+    "term_id": "ONT_478",
+    "term_name": "衛氣營血",
+    "category": "辨證體系",
+    "definition": "溫病學說的辨證方法，將外感熱病分為衛分、氣分、營分、血分四個階段。",
+    "synonyms": ["溫病辨證"]
+  },
+  {
+    "term_id": "ONT_479",
+    "term_name": "逆傳心包",
+    "category": "病機",
+    "definition": "溫病邪氣不順傳氣分，而直接由衛分內陷心包，病情危急。",
+    "synonyms": ["熱陷心包"]
+  },
+  {
+    "term_id": "ONT_480",
+    "term_name": "濁邪害清",
+    "category": "病機",
+    "definition": "濕濁之邪上干清竅（頭面），導致頭重如裹、昏蒙不清。",
+    "synonyms": ["濕阻清竅"]
+  },
+  {
+    "term_id": "ONT_481",
+    "term_name": "中精之府",
+    "category": "生理結構",
+    "definition": "指膽，因貯藏清淨之膽汁而得名。",
+    "synonyms": ["膽"]
+  },
+  {
+    "term_id": "ONT_482",
+    "term_name": "髓海",
+    "category": "生理結構",
+    "definition": "指腦，腦為髓之海。",
+    "synonyms": ["腦"]
+  },
+  {
+    "term_id": "ONT_483",
+    "term_name": "苗竅",
+    "category": "生理結構",
+    "definition": "指舌，舌為心之苗。",
+    "synonyms": ["舌"]
+  },
+  {
+    "term_id": "ONT_484",
+    "term_name": "華蓋",
+    "category": "生理結構",
+    "definition": "指肺，肺居胸腔最高位，覆蓋諸臟。",
+    "synonyms": ["肺"]
+  },
+  {
+    "term_id": "ONT_485",
+    "term_name": "後天之本",
+    "category": "生理概念",
+    "definition": "指脾胃，氣血生化之源，人出生後賴以生存的根本。",
+    "synonyms": ["脾胃"]
+  },
+  {
+    "term_id": "ONT_486",
+    "term_name": "罷極之本",
+    "category": "生理概念",
+    "definition": "指肝，肝主筋，耐受疲勞，為人體運動機能的根本。",
+    "synonyms": ["肝"]
+  },
+  {
+    "term_id": "ONT_487",
+    "term_name": "氣化",
+    "category": "生理概念",
+    "definition": "氣的運動而產生的各種變化，如精、氣、血、津液的化生與代謝。",
+    "synonyms": ["代謝"]
+  },
+  {
+    "term_id": "ONT_488",
+    "term_name": "開闔",
+    "category": "生理概念",
+    "definition": "指毛孔、膀胱、肺等器官的開啟與閉合功能。",
+    "synonyms": ["開合"]
+  },
+  {
+    "term_id": "ONT_489",
+    "term_name": "壯火",
+    "category": "病機",
+    "definition": "病理之火，會消耗人體的正氣（壯火食氣）。",
+    "synonyms": ["實火"]
+  },
+  {
+    "term_id": "ONT_490",
+    "term_name": "少火",
+    "category": "生理概念",
+    "definition": "生理之火，具有溫煦生發作用，能滋養元氣（少火生氣）。",
+    "synonyms": ["陽氣"]
+  },
+  {
+    "term_id": "ONT_491",
+    "term_name": "伏邪",
+    "category": "病機",
+    "definition": "藏伏於體內而不即時發病的邪氣，待時而發。",
+    "synonyms": ["伏氣"]
+  },
+  {
+    "term_id": "ONT_492",
+    "term_name": "新感",
+    "category": "病機",
+    "definition": "感受外邪後立即發病。",
+    "synonyms": ["新病"]
+  },
+  {
+    "term_id": "ONT_493",
+    "term_name": "關門",
+    "category": "生理結構",
+    "definition": "指胃之下口（幽門），或腎主水液排泄之門。",
+    "synonyms": ["幽門"]
+  },
+  {
+    "term_id": "ONT_494",
+    "term_name": "魄門",
+    "category": "生理結構",
+    "definition": "指肛門，為肺（魄）之通道。",
+    "synonyms": ["肛門"]
+  },
+  {
+    "term_id": "ONT_495",
+    "term_name": "七情",
+    "category": "病因",
+    "definition": "喜、怒、憂、思、悲、恐、驚七種情志變化。",
+    "synonyms": ["情志"]
+  },
+  {
+    "term_id": "ONT_496",
+    "term_name": "六淫",
+    "category": "病因",
+    "definition": "風、寒、暑、濕、燥、火六種外感病邪。",
+    "synonyms": ["外邪"]
+  },
+  {
+    "term_id": "ONT_497",
+    "term_name": "五勞",
+    "category": "病因",
+    "definition": "久視傷血、久臥傷氣、久坐傷肉、久立傷骨、久行傷筋。",
+    "synonyms": ["勞損"]
+  },
+  {
+    "term_id": "ONT_498",
+    "term_name": "七傷",
+    "category": "病因",
+    "definition": "大飽傷脾，大怒氣逆傷肝，強力舉重久坐濕地傷腎等。",
+    "synonyms": ["內傷"]
+  },
+  {
+    "term_id": "ONT_499",
+    "term_name": "子盜母氣",
+    "category": "病機",
+    "definition": "子臟之病累及母臟。如肺病（金，子）累及脾（土，母）。",
+    "synonyms": ["子病犯母"]
+  },
+  {
+    "term_id": "ONT_500",
+    "term_name": "母病及子",
+    "category": "病機",
+    "definition": "母臟之病累及子臟。如腎病（水，母）累及肝（木，子）。",
+    "synonyms": ["母病傳子"]
+  }
+]

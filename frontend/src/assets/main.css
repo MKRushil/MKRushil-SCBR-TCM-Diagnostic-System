@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+:root {
+    --sidebar-width: 260px;
+    --header-height: 60px;
+    --primary: #0f766e;
+    --primary-bg: #f0fdfa;
+    --bg-body: #f1f5f9;
+    --border: #e2e8f0;
+    --transition-speed: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: var(--bg-body);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 頂部導航列 (全域) --- */
+.global-header {
+    height: var(--header-height);
+    background: white;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 50;
+    flex-shrink: 0;
+}
+
+.brand-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.layout-switcher {
+    display: flex;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.layout-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #64748b;
+    transition: all 0.2s;
+}
+
+.layout-btn.active {
+    background: white;
+    color: var(--primary);
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* --- 應用程式主容器 --- */
+.app-container {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    transition: all var(--transition-speed);
+}
+
+/* --- 左側 Sidebar (僅在 Dashboard 模式顯示) --- */
+.sidebar {
+    width: var(--sidebar-width);
+    background: #1e293b;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    transition: margin-left var(--transition-speed);
+}
+
+.sidebar-menu {
+    padding: 20px 0;
+}
+
+.menu-item {
+    padding: 12px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #94a3b8;
+    transition: 0.2s;
+}
+
+.menu-item:hover, .menu-item.active {
+    background: rgba(255,255,255,0.05);
+    color: white;
+    border-left: 3px solid var(--primary);
+}
+
+/* --- 主內容區 (Canvas) --- */
+.main-canvas {
+    flex-grow: 1;
+    background: var(--bg-body);
+    position: relative;
+    overflow: hidden;
+    display: flex; /* 預設使用 Flex */
+}
+
+/* =============================================
+   核心佈局邏輯：Dashboard vs Workbench
+   =============================================
+*/
+
+/* 模式 A: Dashboard (Sidebar 顯示，內容區單一視圖) */
+.layout-dashboard .sidebar {
+    margin-left: 0;
+}
+.layout-dashboard .panel {
+    display: none; /* 預設隱藏所有面板 */
+    width: 100%;   /* 滿版 */
+    height: 100%;
+}
+.layout-dashboard .panel.active {
+    display: flex; /* 僅顯示 active 的面板 */
+}
+/* Dashboard 模式下隱藏 Right Panel 的 Tab 切換器 */
+.layout-dashboard .workbench-tabs {
+    display: none !important;
+}
+
+
+/* 模式 B: Workbench (Sidebar 隱藏，內容區分割) */
+.layout-workbench .sidebar {
+    margin-left: calc(var(--sidebar-width) * -1); /* 隱藏 Sidebar */
+}
+
+.layout-workbench .main-canvas {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* 左對話，右輔助 */
+}
+
+/* 強制顯示 Chat，不管它有沒有 active class */
+.layout-workbench #panel-chat {
+    display: flex !important; 
+    border-right: 1px solid var(--border);
+    z-index: 10;
+}
+
+/* 右側區域 Wrapper */
+.layout-workbench .workbench-right-col {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+/* 隱藏 Dashboard 的一些特定元素 */
+.layout-workbench .dashboard-only {
+    display: none;
+}
+
+
+/* --- 通用面板樣式 --- */
+.panel {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow: hidden;
+}
+
+.panel-header {
+    height: 50px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+    justify-content: space-between;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.panel-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Workbench Right Tabs */
+.workbench-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: #f8fafc;
+    flex-shrink: 0;
+}
+.wb-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #64748b;
+    border-bottom: 2px solid transparent;
+}
+.wb-tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: white;
+}

@@ -1,0 +1,13 @@
+2026-01-22 16:39:20,338 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-22 16:39:20,356 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-22 16:39:20,365 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-22 16:39:23,013 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-22 16:39:23,015 - main - INFO - [Startup] Schema check passed.
+2026-01-22 16:39:23,015 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-22 16:56:21,727 - main - INFO - Shutting down system...
+2026-01-22 16:57:14,030 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-22 16:57:14,041 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-22 16:57:14,058 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-22 16:57:16,080 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-22 16:57:16,082 - main - INFO - [Startup] Schema check passed.
+2026-01-22 16:57:16,083 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.

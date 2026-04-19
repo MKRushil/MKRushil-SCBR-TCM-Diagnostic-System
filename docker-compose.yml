@@ -1,0 +1,83 @@
+version: '3.8'
+
+services:
+  # 1. 向量資料庫服務
+  weaviate:
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - '8080'
+      - --scheme
+      - http
+    image: cr.weaviate.io/semitechnologies/weaviate:1.27.0
+    ports:
+      - "8080:8080"
+      - "50051:50051"
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    restart: on-failure:0
+    environment:
+      QUERY_DEFAULTS_LIMIT: 25
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
+      # 關鍵：BYOV 模式，不使用 Weaviate 內建的模型
+      DEFAULT_VECTORIZER_MODULE: 'none'
+      ENABLE_MODULES: ''
+      CLUSTER_HOSTNAME: 'node1'
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/v1/.well-known/ready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # 2. 後端 API 服務
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: scbr_backend
+    ports:
+      - "8000:8000"
+    environment:
+      # 讓 Docker 內部的 Backend 能連到 Weaviate 容器
+      - WEAVIATE_URL=http://weaviate:8080
+      # 傳遞 NVIDIA API Keys (或是讀取 .env)
+      - NVIDIA_LLM_API_KEY=${NVIDIA_LLM_API_KEY}
+      - NVIDIA_EMBEDDING_API_KEY=${NVIDIA_EMBEDDING_API_KEY}
+      - EMBEDDING_MODEL_NAME=${EMBEDDING_MODEL_NAME}
+      - LLM_MODEL_NAME=${LLM_MODEL_NAME}
+      - USE_V31_PIPELINE=${USE_V31_PIPELINE}
+      - ENABLE_RERANK=${ENABLE_RERANK}
+    volumes:
+      # 掛載程式碼以便熱重載 (Hot Reload)
+      - ./backend:/app
+      # 掛載日誌目錄 (Persist Logs)
+      - ./backend/logs:/app/logs
+    depends_on:
+      weaviate:
+        condition: service_healthy
+    # 啟動指令 (開發模式)
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  # 3. 前端 UI 服務
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: scbr_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_BASE_URL=/api
+    depends_on:
+      - backend
+    # --host 0.0.0.0 讓外部瀏覽器可以訪問容器內的 Vite
+    command: npm run dev -- --host 0.0.0.0
+
+volumes:
+  weaviate_data:

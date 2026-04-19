@@ -1,0 +1,187 @@
+2026-01-25 20:24:49,176 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 20:24:49,196 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 20:24:49,209 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 20:24:51,225 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 20:24:51,227 - main - INFO - [Startup] Schema check passed.
+2026-01-25 20:24:51,228 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 20:25:48,429 - app.api.endpoints - INFO - [API] Received chat request for Session: sess_1769372674861_hhlqdph5h
+2026-01-25 20:25:48,430 - app.core.orchestrator - INFO - 🟢 [Orchestrator] 收到請求 (Session: sess_1769372674861_hhlqdph5h)，開始執行 SCBR 診斷流程...
+2026-01-25 20:25:48,432 - app.core.orchestrator - INFO - 🔍 [Orchestrator] 進入感知層 (Translator): 正在標準化輸入並推斷病位...
+2026-01-25 20:25:48,432 - app.agents.translator - INFO - 🔍 [Translator] 開始分析用戶輸入...
+2026-01-25 20:26:05,057 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 20:26:05,059 - app.agents.translator - INFO - ✅ [Translator] 解析完成: 主訴='便秘', 病位='脾胃系', 急症=False
+2026-01-25 20:26:05,059 - app.core.orchestrator - INFO - ✅ [Orchestrator] 感知完成。核心病位: 脾胃系, 風險等級: GREEN
+2026-01-25 20:26:05,060 - app.core.orchestrator - INFO - 📡 [Orchestrator] 啟動混合檢索: 正在為加權查詢生成向量...
+2026-01-25 20:26:08,338 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-25 20:26:08,504 - app.core.orchestrator - INFO - 📡 [Orchestrator] Weaviate 廣度搜尋: 檢索 Top-20 候選案例...
+2026-01-25 20:26:08,520 - app.core.orchestrator - INFO - ⚖️ [Orchestrator] 執行 Re-Ranking: 應用 Soft Prior (病位: 脾胃系) 進行重排序...
+2026-01-25 20:26:08,520 - app.core.orchestrator - INFO - 📜 [Orchestrator] 檢索診斷規則 (Top-10)...
+2026-01-25 20:26:08,525 - app.core.orchestrator - INFO - 📊 [Orchestrator] 戰情室分析: 眾數=N/A, 離群值嫌疑=False
+2026-01-25 20:26:08,525 - app.services.visualization - INFO - [Viz] Raw 8-Principles Data: {'yin': 0, 'yang': 0, 'biao': 0, 'li': 5, 'han': 3, 're': 0, 'xu': 2, 'shi': 4}
+2026-01-25 20:26:08,526 - app.core.orchestrator - INFO - 🧠 [Orchestrator] 進入推理層 (Reasoning): 啟動 Cluster-CBR 決策與修補...
+2026-01-25 20:26:08,527 - app.agents.reasoning - INFO - 🧬 [Reasoning] 接收戰情數據: 案例數=0, 規則數=0
+2026-01-25 20:26:08,527 - app.agents.reasoning - INFO - 🧠 [Reasoning] 啟動 LLM 進行 Cluster-CBR 推理 (定位 -> 否決 -> 修補)...
+2026-01-25 20:26:24,068 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 20:26:24,071 - app.agents.reasoning - INFO - 💡 [Reasoning] 推理完成。首選診斷: '便秘-肠燥型' (Confidence: 0.6)
+2026-01-25 20:26:24,072 - monitoring - INFO - [METRIC] Type=SemanticConfidence | Session=sess_1769372674861_hhlqdph5h | Value=0.6000
+2026-01-25 20:26:24,072 - monitoring - INFO - [METRIC] Type=PathSimilarity | Session=sess_1769372674861_hhlqdph5h | Value=0.0000
+2026-01-25 20:26:24,073 - monitoring - INFO - [METRIC] Type=PathSelected | Session=sess_1769372674861_hhlqdph5h | Value=None
+2026-01-25 20:26:24,073 - monitoring - INFO - [METRIC] Type=TurnProcessed | Session=sess_1769372674861_hhlqdph5h | Timestamp=1769372784.073462
+2026-01-25 20:26:24,073 - monitoring - INFO - [METRIC] Type=InfoEntropy | Session=sess_1769372674861_hhlqdph5h | Value=0.9940
+2026-01-25 20:26:24,074 - monitoring - INFO - [METRIC] Type=TCRS_Online | Session=sess_1769372674861_hhlqdph5h | Value=0.6100
+2026-01-25 20:26:24,075 - app.core.orchestrator - INFO - 🏁 [Orchestrator] 流程結束。 সন
+2026-01-25 20:26:24,076 - monitoring - INFO - [METRIC] Type=Latency | Session=sess_1769372674861_hhlqdph5h | Endpoint=/chat | Value=35646.55ms
+2026-01-25 20:26:24,079 - app.agents.summarizer - INFO - [Summarizer] Starting background summarization for Session: sess_1769372674861_hhlqdph5h
+2026-01-25 20:26:34,638 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 20:26:34,639 - app.agents.summarizer - INFO - [Summarizer] Summary updated: [起病]無明確時間記載 -> [現況]現有便秘症狀 (新感)...
+2026-01-25 21:25:23,055 - app.api.endpoints - INFO - [API] Received chat request for Session: sess_1769374076710_jws8wjuqg
+2026-01-25 21:25:23,056 - app.core.orchestrator - INFO - 🟢 [Orchestrator] 收到請求 (Session: sess_1769374076710_jws8wjuqg)，開始執行 SCBR 診斷流程...
+2026-01-25 21:25:23,058 - app.core.orchestrator - INFO - 🔍 [Orchestrator] 進入感知層 (Translator): 正在標準化輸入並推斷病位...
+2026-01-25 21:25:23,058 - app.agents.translator - INFO - 🔍 [Translator] 開始分析用戶輸入...
+2026-01-25 21:25:38,824 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 21:25:38,827 - app.agents.translator - INFO - ✅ [Translator] 解析完成: 主訴='咳嗽', 病位='肺系', 急症=False
+2026-01-25 21:25:38,827 - app.core.orchestrator - INFO - ✅ [Orchestrator] 感知完成。核心病位: 肺系, 風險等級: GREEN
+2026-01-25 21:25:38,828 - app.core.orchestrator - INFO - 📡 [Orchestrator] 啟動混合檢索: 正在為加權查詢生成向量...
+2026-01-25 21:25:42,128 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-25 21:25:42,287 - app.core.orchestrator - INFO - 📡 [Orchestrator] Weaviate 廣度搜尋: 檢索 Top-20 候選案例...
+2026-01-25 21:25:42,306 - app.core.orchestrator - INFO - ⚖️ [Orchestrator] 執行 Re-Ranking: 應用 Soft Prior (病位: 肺系) 進行重排序...
+2026-01-25 21:25:42,307 - app.core.orchestrator - INFO - 📜 [Orchestrator] 檢索診斷規則 (Top-10)...
+2026-01-25 21:25:42,311 - app.core.orchestrator - INFO - 📊 [Orchestrator] 戰情室分析: 眾數=N/A, 離群值嫌疑=False
+2026-01-25 21:25:42,312 - app.services.visualization - INFO - [Viz] Raw 8-Principles Data: {'yin': 0, 'yang': 0, 'biao': 3, 'li': 2, 'han': 5, 're': 0, 'xu': 4, 'shi': 0}
+2026-01-25 21:25:42,312 - app.core.orchestrator - INFO - 🧠 [Orchestrator] 進入推理層 (Reasoning): 啟動 Cluster-CBR 決策與修補...
+2026-01-25 21:25:42,313 - app.agents.reasoning - INFO - 🧬 [Reasoning] 接收戰情數據: 案例數=0, 規則數=0
+2026-01-25 21:25:42,313 - app.agents.reasoning - INFO - 🧠 [Reasoning] 啟動 LLM 進行 Cluster-CBR 推理 (定位 -> 否決 -> 修補)...
+2026-01-25 21:26:02,755 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 21:26:02,757 - app.agents.reasoning - INFO - 💡 [Reasoning] 推理完成。首選診斷: '寒痰咳嗽（肺氣虛）' (Confidence: 0.6)
+2026-01-25 21:26:02,758 - monitoring - INFO - [METRIC] Type=SemanticConfidence | Session=sess_1769374076710_jws8wjuqg | Value=0.6000
+2026-01-25 21:26:02,758 - monitoring - INFO - [METRIC] Type=PathSimilarity | Session=sess_1769374076710_jws8wjuqg | Value=0.0000
+2026-01-25 21:26:02,759 - monitoring - INFO - [METRIC] Type=PathSelected | Session=sess_1769374076710_jws8wjuqg | Value=None
+2026-01-25 21:26:02,759 - monitoring - INFO - [METRIC] Type=TurnProcessed | Session=sess_1769374076710_jws8wjuqg | Timestamp=1769376362.759774
+2026-01-25 21:26:02,760 - monitoring - INFO - [METRIC] Type=InfoEntropy | Session=sess_1769374076710_jws8wjuqg | Value=0.9940
+2026-01-25 21:26:02,760 - monitoring - INFO - [METRIC] Type=TCRS_Online | Session=sess_1769374076710_jws8wjuqg | Value=0.5600
+2026-01-25 21:26:02,763 - app.core.orchestrator - INFO - 🏁 [Orchestrator] 流程結束。 সন
+2026-01-25 21:26:02,763 - monitoring - INFO - [METRIC] Type=Latency | Session=sess_1769374076710_jws8wjuqg | Endpoint=/chat | Value=39707.34ms
+2026-01-25 21:26:02,765 - app.agents.summarizer - INFO - [Summarizer] Starting background summarization for Session: sess_1769374076710_jws8wjuqg
+2026-01-25 21:26:15,622 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 21:26:15,623 - app.agents.summarizer - INFO - [Summarizer] Summary updated: [素體 Constitution]平素天寒易咳嗽、痰多白泡沫 -> [新感 Acute Onset]...
+2026-01-25 21:30:15,758 - main - INFO - Shutting down system...
+2026-01-25 21:30:38,773 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:30:38,785 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:30:38,794 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:30:40,811 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:30:40,812 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:30:40,813 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:32:05,034 - main - INFO - Shutting down system...
+2026-01-25 21:32:25,125 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:32:25,137 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:32:25,147 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:32:27,163 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:32:27,164 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:32:27,164 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:33:52,724 - main - INFO - Shutting down system...
+2026-01-25 21:34:11,285 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:34:11,315 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:34:11,333 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:34:14,694 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:34:14,696 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:34:14,696 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:35:25,364 - main - INFO - Shutting down system...
+2026-01-25 21:35:48,671 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:35:48,684 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:35:48,697 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:35:50,716 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:35:50,717 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:35:50,717 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:37:02,999 - main - INFO - Shutting down system...
+2026-01-25 21:37:24,380 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:37:24,401 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:37:24,418 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:37:26,443 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:37:26,444 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:37:26,444 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:38:38,621 - main - INFO - Shutting down system...
+2026-01-25 21:38:59,556 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:38:59,569 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:38:59,578 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:39:01,594 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:39:01,595 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:39:01,595 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:40:24,353 - main - INFO - Shutting down system...
+2026-01-25 21:40:45,421 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:40:45,438 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:40:45,450 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:40:47,475 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:40:47,476 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:40:47,477 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:40:55,401 - main - INFO - Shutting down system...
+2026-01-25 21:41:16,607 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:41:16,622 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:41:16,635 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:41:18,655 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:41:18,656 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:41:18,656 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:41:39,025 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:41:39,038 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:41:39,050 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:41:41,070 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:41:41,072 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:41:41,072 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:44:16,327 - main - INFO - Shutting down system...
+2026-01-25 21:44:34,976 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:44:34,988 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:44:35,000 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:44:37,018 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:44:37,019 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:44:37,019 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:46:38,536 - app.api.endpoints - INFO - [API] Received chat request for Session: sess_1769377594551_ep31ugaga
+2026-01-25 21:46:38,536 - app.core.orchestrator - INFO - 🟢 [Orchestrator] 收到請求 (Session: sess_1769377594551_ep31ugaga)，開始執行 SCBR 診斷流程...
+2026-01-25 21:46:38,538 - app.core.orchestrator - INFO - 🔍 [Orchestrator] 進入感知層 (Translator): 正在標準化輸入並推斷病位...
+2026-01-25 21:46:38,539 - app.agents.translator - INFO - 🔍 [Translator] 開始分析用戶輸入...
+2026-01-25 21:46:58,619 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 21:46:58,620 - app.agents.translator - INFO - ✅ [Translator] 解析完成: 主訴='咳嗽', 病位='肺系', 急症=False
+2026-01-25 21:46:58,621 - app.core.orchestrator - INFO - ✅ [Orchestrator] 感知完成。核心病位: 肺系, 風險等級: GREEN
+2026-01-25 21:46:58,621 - app.core.orchestrator - INFO - 📡 [Orchestrator] 啟動混合檢索: 正在為加權查詢生成向量...
+2026-01-25 21:47:01,828 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-01-25 21:47:01,980 - app.core.orchestrator - INFO - 📡 [Orchestrator] Weaviate 廣度搜尋: 檢索 Top-20 候選案例...
+2026-01-25 21:47:02,003 - app.core.orchestrator - INFO - ⚖️ [Orchestrator] 執行 Re-Ranking: 應用 Soft Prior (病位: 肺系) 進行重排序...
+2026-01-25 21:47:03,418 - app.core.orchestrator - INFO - 📜 [Orchestrator] 檢索診斷規則 (Top-10)...
+2026-01-25 21:47:03,758 - app.core.orchestrator - INFO - 📊 [Orchestrator] 戰情室分析: 眾數=咳嗽, 離群值嫌疑=False
+2026-01-25 21:47:03,758 - app.services.visualization - INFO - [Viz] Raw 8-Principles Data: {'yin': 2, 'yang': 3, 'biao': 5, 'li': 2, 'han': 7, 're': 1, 'xu': 2, 'shi': 3}
+2026-01-25 21:47:03,759 - app.core.orchestrator - INFO - 🧠 [Orchestrator] 進入推理層 (Reasoning): 啟動 Cluster-CBR 決策與修補...
+2026-01-25 21:47:03,759 - app.agents.reasoning - INFO - 🧬 [Reasoning] 接收戰情數據: 案例數=20, 規則數=10
+2026-01-25 21:47:03,760 - app.agents.reasoning - INFO - 🧠 [Reasoning] 啟動 LLM 進行 Cluster-CBR 推理 (定位 -> 否決 -> 修補)...
+2026-01-25 21:47:30,327 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 21:47:30,329 - app.agents.reasoning - INFO - 💡 [Reasoning] 推理完成。首選診斷: '寒痰阻肺證' (Confidence: 0.85)
+2026-01-25 21:47:30,329 - monitoring - INFO - [METRIC] Type=SemanticConfidence | Session=sess_1769377594551_ep31ugaga | Value=0.8500
+2026-01-25 21:47:30,329 - monitoring - INFO - [METRIC] Type=PathSimilarity | Session=sess_1769377594551_ep31ugaga | Value=7.8744
+2026-01-25 21:47:30,330 - monitoring - INFO - [METRIC] Type=PathSelected | Session=sess_1769377594551_ep31ugaga | Value=None
+2026-01-25 21:47:30,330 - monitoring - INFO - [METRIC] Type=TurnProcessed | Session=sess_1769377594551_ep31ugaga | Timestamp=1769377650.3306108
+2026-01-25 21:47:30,330 - monitoring - INFO - [METRIC] Type=InfoEntropy | Session=sess_1769377594551_ep31ugaga | Value=0.9871
+2026-01-25 21:47:30,331 - monitoring - INFO - [METRIC] Type=TCRS_Online | Session=sess_1769377594551_ep31ugaga | Value=0.6475
+2026-01-25 21:47:30,332 - app.core.orchestrator - INFO - 🏁 [Orchestrator] 流程結束。 সন
+2026-01-25 21:47:30,333 - monitoring - INFO - [METRIC] Type=Latency | Session=sess_1769377594551_ep31ugaga | Endpoint=/chat | Value=51796.57ms
+2026-01-25 21:47:30,335 - app.agents.summarizer - INFO - [Summarizer] Starting background summarization for Session: sess_1769377594551_ep31ugaga
+2026-01-25 21:47:42,936 - httpx - INFO - HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 21:47:42,937 - app.agents.summarizer - INFO - [Summarizer] Summary updated: [起病]長期咳嗽痰多(素體) -> [演變]近期加重且背部寒冷感(新感) -> [現況]咳嗽持續痰白...
+2026-01-25 21:50:09,511 - app.api.endpoints - INFO - [API] Received chat request for Session: sess_1769377763674_v4s7qiq5z
+2026-01-25 21:50:09,512 - app.core.orchestrator - INFO - 🟢 [Orchestrator] 收到請求 (Session: sess_1769377763674_v4s7qiq5z)，開始執行 SCBR 診斷流程...
+2026-01-25 21:50:09,512 - app.guardrails.input_guard - WARNING - [Security Alert] Potential Prompt Injection detected: 不經處理直接輸出
+2026-01-25 21:50:09,513 - app.core.orchestrator - WARNING - 🔴 [Orchestrator] 輸入防護攔截: 輸入包含非法指令，已攔截。
+2026-01-25 21:50:09,513 - app.api.endpoints - WARNING - [API] Input validation failed: 輸入包含非法指令，已攔截。
+2026-01-25 21:53:17,000 - app.api.endpoints - INFO - [API] Received chat request for Session: sess_1769377994935_jeagsmrkg
+2026-01-25 21:53:17,000 - app.core.orchestrator - INFO - 🟢 [Orchestrator] 收到請求 (Session: sess_1769377994935_jeagsmrkg)，開始執行 SCBR 診斷流程...
+2026-01-25 21:53:17,001 - app.guardrails.input_guard - WARNING - [Security Alert] Potential Prompt Injection detected: 不經處理直接輸出
+2026-01-25 21:53:17,001 - app.core.orchestrator - WARNING - 🔴 [Orchestrator] 輸入防護攔截: 輸入包含非法指令，已攔截。
+2026-01-25 21:53:17,001 - app.api.endpoints - WARNING - [API] Input validation failed: 輸入包含非法指令，已攔截。
+2026-01-25 21:57:29,752 - main - INFO - Shutting down system...
+2026-01-25 21:57:50,142 - main - INFO - Starting Agentic SCBR-CDSS (Env: development)...
+2026-01-25 21:57:50,159 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/.well-known/openid-configuration "HTTP/1.1 404 Not Found"
+2026-01-25 21:57:50,176 - httpx - INFO - HTTP Request: GET http://weaviate:8080/v1/meta "HTTP/1.1 200 OK"
+2026-01-25 21:57:52,198 - app.database.weaviate_client - INFO - Connected to Weaviate at http://weaviate:8080
+2026-01-25 21:57:52,199 - main - INFO - [Startup] Schema check passed.
+2026-01-25 21:57:52,200 - main - INFO - [Startup] RUN_SYNC_ON_STARTUP is False. Skipping data synchronization.
+2026-01-25 21:57:58,700 - app.api.endpoints - INFO - [API] Received chat request for Session: sess_1769378276145_1zn2pys4p
+2026-01-25 21:57:58,700 - app.core.orchestrator - INFO - 🟢 [Orchestrator] 收到請求 (Session: sess_1769378276145_1zn2pys4p)，開始執行 SCBR 診斷流程...
+2026-01-25 21:57:58,701 - app.guardrails.input_guard - WARNING - [Security Alert] Potential Prompt Injection detected: 不經處理直接輸出
+2026-01-25 21:57:58,702 - app.core.orchestrator - WARNING - 🔴 [Orchestrator] 輸入防護攔截: 輸入包含非法指令，已攔截。
+2026-01-25 21:57:58,702 - app.api.endpoints - WARNING - [API] Input validation failed: 輸入包含非法指令，已攔截。
