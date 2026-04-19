@@ -81,7 +81,7 @@
 ### 後端
 - **框架**: FastAPI
 - **語言**: Python 3.10+
-- **LLM**: NVIDIA Llama 3.3 70B
+- **LLM**: NVIDIA llama-3.3-nemotron-super-49b-v1.5
 
 ### 前端
 - **語言**: TypeScript
